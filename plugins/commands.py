@@ -47,7 +47,7 @@ async def start(client, message):
                     InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/Katnices'),
                     InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/Belle_Alice')
                   ],[
-                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ', callback_data="spu"),
+                    InlineKeyboardButton('📚 Aiɗes', callback_data="spu"),
                     InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about'),
                   ],[
                     InlineKeyboardButton('🥰 Vᴏɪʀ ʟᴇs Nᴏᴜᴠᴇᴀᴜᴛᴇ́s ᴀᴠᴇᴄ Mᴏɪ 🦋', callback_data='help') 
