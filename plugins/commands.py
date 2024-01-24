@@ -85,7 +85,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Ꭱꭼ́ꭼꮪꮪꭺꭹꭼꮓ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Veuillez rejoindre mon cɑnɑl pour utiliser ce bot!**",
+            text="**Vous n'êtes pɑs membɾe de notɾe chɑîne ci-dessous, vous ne ɾecevɾez donc pɑs le fichieɾ...\n\nSi vous voulez le fichieɾ vidéo, cliquez suɾ le bouton '👉 🤖 Rᴇᴊᴏɪɢɴᴇᴢ ᴍᴏɴ Cᴀɴᴀʟ' ci-dessous et ɾejoignez le cɑnɑl , puis cliquez suɾ le bouton '🔄 Rᴇ́ᴇssᴀʏᴇᴢ En bas...\n\nEnsuite, vous obtiendɾez les fichieɾs vidéo...!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -109,7 +109,7 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("Please wait")
+        sts = await message.reply("Vᥱᥙιᥣᥣᥱz ρᥲtιᥱᥒtᥱr..")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -119,7 +119,7 @@ async def start(client, message):
                     msgs=json.loads(file_data.read())
             except:
                 await sts.edit("FAILED")
-                return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
+                return await client.send_message(LOG_CHANNEL, "ɪᴍᴘᴏssɪʙʟᴇ ᴅ·ᴏᴜᴠʀɪᴇʀ ʟᴇ ғɪᴄʜɪᴇʀ.")
             os.remove(file)
             BATCH_FILES[file_id] = msgs
         for msg in msgs:
