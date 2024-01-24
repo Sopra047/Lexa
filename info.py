@@ -101,7 +101,7 @@ AI = is_enabled((environ.get("AI","True")), True)
 OPENAI_API = environ.get("OPENAI_API","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")
 GOOGLE_API_KEY = os.environ.get('API_KEY', '') # give your Google api key
 AI_LOGS = int(environ.get("AI_LOGS"," ")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/XBOTSUPPORTS')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/TestDek')
 
 
 #Auto approve
@@ -114,10 +114,10 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/XBOTSUPPORTS")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/MALLU_MOVIES_PROK")
+S_GROUP = environ.get('S_GROUP',"https://t.me/TestDek")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/SharVision_Support")
 #Must change this link to work redirect (FILE_FORWORD)
-FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+1dbVg9pA2GphZmI1")
+FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+-he3Hfab_xgzMTdk")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
