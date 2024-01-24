@@ -85,7 +85,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Ꭱꭼ́ꭼꮪꮪꭺꭹꭼꮓ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Veuillez rejoindre le cɑnɑl Mes mises ɑ̀ jour pour utiliser ce bot...\n\nPour ɑvoir votre fichier, Cliquez sur le bouton '👉 🤖 Rᴇᴊᴏɪɢɴᴇᴢ ᴍᴏɴ Cᴀɴᴀʟ' ci-dessous et rejoignez-le, puis revenez cliquez sur le boutons '🔄 Rᴇ́ᴇssᴀʏᴇᴢ' en bɑs...\n\nEnfin Prenez plɑisir ɑvec vos fichiers Video...!**",
+            text="**Désolé vous n'êtes pɑs membre de mon Cɑnɑl Belle Alice pour recevoir ce fichier....\n\nPour ɑvoir votre fichier, Cliquez sur le bouton '👉 🤖 Rᴇᴊᴏɪɢɴᴇᴢ ᴍᴏɴ Cᴀɴᴀʟ' ci-dessous et rejoignez-le, puis revenez cliquez sur le boutons '🔄 Rᴇ́ᴇssᴀʏᴇᴢ' en bɑs...\n\nEnfin Prenez plɑisir ɑvec vos fichiers Video...!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -225,7 +225,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('No such file exist.')
+        return await message.reply('Cᴇ ғɪᴄʜɪᴇʀ ɴ·ᴇxɪsᴛᴇ ᴘᴀs')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
@@ -242,7 +242,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❤️‍🔥 ᴊᴏɪɴ ᴛᴏ ᴄʜᴀɴɴᴇʟ ❤️‍🔥', url=(MAIN_CHANNEL)) ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❤️‍🔥 Rᴇᴊᴏɪɴᴅʀᴇ ᴍᴏɴ Cᴀɴᴀʟ ❤️‍🔥', url=(MAIN_CHANNEL)) ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
@@ -258,7 +258,7 @@ async def channel_info(bot, message):
     else:
         raise ValueError("Unexpected type of CHANNELS")
 
-    text = '📑 **Indexed channels/groups**\n'
+    text = '📑 **Cαnαux/Groupes ındexés**\n'
     for channel in channels:
         chat = await bot.get_chat(channel)
         if chat.username:
@@ -291,9 +291,9 @@ async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
     if reply and reply.media:
-        msg = await message.reply("Processing...⏳", quote=True)
+        msg = await message.reply("Trɑitement...⏳", quote=True)
     else:
-        await message.reply('Reply to file with /delete which you want to delete', quote=True)
+        await message.reply('Répondre au fichier avec /delete ce que vous souhaitez supprimer', quote=True)
         return
 
     for file_type in ("document", "video", "audio"):
@@ -301,7 +301,7 @@ async def delete(bot, message):
         if media is not None:
             break
     else:
-        await msg.edit('This is not supported file format')
+        await msg.edit('Ce format de fichier n’est pas pris en charge')
         return
     
     file_id, file_ref = unpack_new_file_id(media.file_id)
@@ -310,7 +310,7 @@ async def delete(bot, message):
         '_id': file_id,
     })
     if result.deleted_count:
-        await msg.edit('File is successfully deleted from database')
+        await msg.edit('Le fichier est supprimé de la base de données avec succès')
     else:
         file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
         result = await Media.collection.delete_many({
@@ -319,7 +319,7 @@ async def delete(bot, message):
             'mime_type': media.mime_type
             })
         if result.deleted_count:
-            await msg.edit('File is successfully deleted from database')
+            await msg.edit('Le fichier est supprimé de la base de données avec succès')
         else:
             # files indexed before https://github.com/EvamariaTG/EvaMaria/commit/f3d2a1bcb155faf44178e5d7a685a1b533e714bf#diff-86b613edf1748372103e94cacff3b578b36b698ef9c16817bb98fe9ef22fb669R39 
             # have original file name.
