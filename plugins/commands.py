@@ -42,14 +42,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('' 👨‍👩‍👦‍👦 — 𝐑𝐞𝐣𝐨𝐢𝐠𝐧𝐞𝐳-𝐍𝐨𝐮𝐬 — 👨‍👩‍👦‍👦 ', url=f'https://t.me/SharVision')
                   ],[
-                    InlineKeyboardButton('🍁 Oᴡɴᴇʀ', url='https://t.me/HORRIDduo'),
-                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ', callback_data="spu")
+                    InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/Katnices'),
+                    InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/Belle_Alice')
                   ],[
-                    InlineKeyboardButton('❗ Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('🕵️ Aʙᴏᴜᴛ', callback_data='about'),
+                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ', callback_data="spu"),
+                    InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about'),
                   ],[
+                    InlineKeyboardButton('🥰 Vᴏɪʀ ʟᴇs Nᴏᴜᴠᴇᴀᴜᴛᴇ́s ᴀᴠᴇᴄ Mᴏɪ 🦋', callback_data='help') 
+                    ],[
                     InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
