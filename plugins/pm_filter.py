@@ -812,20 +812,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "fmal":
         await query.answer(
-            "കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 10 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!"
+            "En raison des droits d'auteur, le fichier sera supprimé d'ici dans 10 minutes, alors téléchargez-le après avoir été déplacé d'ici vers un autre endroit !"
                       
         )                    
     elif query.data == "start":
-         buttons = [[
+        buttons = [[
             InlineKeyboardButton(' 👨‍👩‍👦‍👦 — 𝐑𝐞𝐣𝐨𝐢𝐠𝐧𝐞𝐳-𝐍𝐨𝐮𝐬 — 👨‍👩‍👦‍👦 ', url=f'https://t.me/SharVision')
-            ],[
-            InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/Katnices'),
-            InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/Belle_Alice')
-            ],[
-            InlineKeyboardButton('📚 Aiɗes', callback_data='help'),
-            InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about')
-            ],[
-            InlineKeyboardButton('🥰 Vᴏɪʀ ʟᴇs Nᴏᴜᴠᴇᴀᴜᴛᴇ́s ᴀᴠᴇᴄ Mᴏɪ 🦋', url='https://t.me/Shar_Group')
+                  ],[
+                    InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/Katnices'),
+                    InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/Belle_Alice')
+                  ],[
+                    InlineKeyboardButton('📚 Aiɗes', callback_data="spu"),
+                    InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about'),
+                  ],[
+                    InlineKeyboardButton('🥰 Vᴏɪʀ ʟᴇs Nᴏᴜᴠᴇᴀᴜᴛᴇ́s ᴀᴠᴇᴄ Mᴏɪ 🦋', callback_data='help') 
+                    ],[
+                    InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
