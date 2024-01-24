@@ -56,7 +56,7 @@ async def ai_generate(client, message):
 @Client.on_message(filters.command("ask"))
 async def ai_generate_private(client, message):
   buttons = [[
-    InlineKeyboardButton("SᑌᑭᑭOᖇT GᖇOᑌᑭ ", url="https://t.me/TestDek")
+    InlineKeyboardButton("Test Katy ", url="https://t.me/TestDek")
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ɪn SᑌᑭᑭOᖇT GᖇOᑌᑭ  👇 ", reply_markup=reply_markup)
