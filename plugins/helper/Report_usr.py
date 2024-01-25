@@ -12,7 +12,7 @@ async def report_user(bot, message):
         reporter = str(message.from_user.id)
         mention = message.from_user.mention
         success = True
-        report = f"𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})" + "\n"
+        report = f"Dᴇᴍᴀɴᴅᴇᴜʀ : {mention} ({reporter})" + "\n"
         report += f"𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {message.reply_to_message.link}"
         # Using latest pyrogram's enums to filter out chat administrators
         async for admin in bot.get_chat_members(chat_id=message.chat.id, filter=enums.ChatMembersFilter.ADMINISTRATORS):
