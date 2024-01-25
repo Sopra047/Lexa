@@ -6,13 +6,13 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API = "https://api.sumanjay.cf/covid/?country="
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data='close_data')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("Fᥱrmᥱr", callback_data='close_data')]])
 
 @Client.on_message(filters.command("covid"))
 async def reply_info(client, message):
     query = message.text.split(None, 1)[1]
     await message.reply_photo(
-        photo="https://telegra.ph/file/51fdcccb41510ff8af8b1.jpg",
+        photo="https://telegra.ph/file/ba80a640f5f659aade51b.jpg",
         caption=covid_info(query),
         quote=True
     )
@@ -32,15 +32,15 @@ def covid_info(country_name):
         longitude = info['longitude']
         recovered = info['recovered']
         covid_info = f"""--**𝙲𝙾𝚅𝙸𝙳 𝟷𝟿 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽**--
-᚛› Country : `{country}`
-᚛› Actived : `{active}`
-᚛› Confirmed : `{confirmed}`
-᚛› Deaths : `{deaths}`
+᚛› Ƥɑყs : `{country}`
+᚛› Aᴄᴛɪғ : `{active}`
+᚛› Cᴏɴғɪʀᴍᴇ́ : `{confirmed}`
+᚛› Dᴇ́ᴄᴇ̀s : `{deaths}`
 ᚛› ID : `{info_id}`
-᚛› Last Update : `{last_update}`
+᚛› Dᴇʀɴɪᴇ̀ʀᴇ ᴍɪsᴇ ᴀ̀ ᴊᴏᴜʀ : `{last_update}`
 ᚛› Latitude : `{latitude}`
 ᚛› Longitude : `{longitude}`
-᚛› Recovered : `{recovered}`"""
+᚛› Rᴇ́ᴛᴀʙʟɪ : `{recovered}`"""
         return covid_info
     except Exception as error:
         return error
