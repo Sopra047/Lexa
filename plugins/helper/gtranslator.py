@@ -16,12 +16,12 @@ async def left(client,message):
                                 [
                                     [
                                         InlineKeyboardButton(
-                                            text=f"𝘔𝘰𝘳𝘦 𝘓𝘢𝘯𝘨 𝘊𝘰𝘥𝘦𝘴", url="https://cloud.google.com/translate/docs/languages"
+                                            text=f"Lᴇs ᴄᴏᴅᴇs Lᴀɴɢᴜᴇs", url="https://cloud.google.com/translate/docs/languages"
                                         )
                                     ],
 				    [
                                         InlineKeyboardButton(
-                                            "𝘊𝘭𝘰𝘴𝘦", callback_data="close_data"
+                                            "Fᴇʀᴍᴇʀ", callback_data="close_data"
                                         )
                                     ],
                                 ]
@@ -32,13 +32,13 @@ async def left(client,message):
 						fromt = i
 					if list[i] == translation.dest:
 						to = i 
-				await message.reply_text(f"translated from {fromt.capitalize()} to {to.capitalize()}\n\n```{translation.text}```", reply_markup=hehek, quote=True)
+				await message.reply_text(f"Trᥲdᥙιt dᥱ {fromt.capitalize()} ɑ̀ {to.capitalize()}\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			except:
-			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
+			   	await message.reply_text(f"Trɑduit de **{translation.src}** ɑ̀ **{translation.dest}**\n\n```{translation.text}```", reply_markup=hehek, quote=True)
 			
 
 		except :
 			print("error")
 	else:
-			 ms = await message.reply_text("You can Use This Command by using reply to message")
+			 ms = await message.reply_text("𝖴𝗍𝗂𝗅𝗂𝗌𝖾𝗋 𝖼𝖾𝗍𝗍𝖾 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝖾 𝖾𝗇 𝖱𝖾́𝗉𝗈𝗇𝖽𝗋𝖾 𝖺̀ 𝗎𝗇 𝗆𝖾𝗌𝗌𝖺𝗀𝖾")
 			 await ms.delete()
