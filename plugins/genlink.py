@@ -71,15 +71,15 @@ async def gen_link_batch(bot, message):
     except (UsernameInvalid, UsernameNotModified):
         return await message.reply('Lien spécifié non valide.')
     except Exception as e:
-        return await message.reply(f'Errors - {e}')
+        return await message.reply(f'Erreurs - {e}')
 
     sts = await message.reply("Génération de lien pour votre message.\nCela peut prendre du temps en fonction du nombre de messages")
     if chat_id in FILE_STORE_CHANNEL:
         string = f"{f_msg_id}_{l_msg_id}_{chat_id}_{cmd.lower().strip()}"
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-        return await sts.edit(f"Here is your link https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
+        return await sts.edit(f"Voici votre lien https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
 
-    FRMT = "Generating Link...\nTotal Messages: `{total}`\nDone: `{current}`\nRemaining: `{rem}`\nStatus: `{sts}`"
+    FRMT = "Générɑtion du Lien...\nNombre totɑl de messɑges: `{total}`\nFᥲιt: `{current}`\nRᥱstᥲᥒt: `{rem}`\nStᥲtᥙt: `{sts}`"
 
     outlist = []
 
@@ -119,7 +119,7 @@ async def gen_link_batch(bot, message):
                 pass
     with open(f"batchmode_{message.from_user.id}.json", "w+") as out:
         json.dump(outlist, out)
-    post = await bot.send_document(LOG_CHANNEL, f"batchmode_{message.from_user.id}.json", file_name="Batch.json", caption="⚠️Generated for filestore.")
+    post = await bot.send_document(LOG_CHANNEL, f"batchmode_{message.from_user.id}.json", file_name="Batch.json", caption="⚠️𝖦𝖾́𝗇𝖾́𝗋𝖾́ 𝗉𝗈𝗎𝗋 𝗅𝗈𝗍𝗌 𝖽𝖾 𝖿𝗂𝖼𝗁𝗂𝖾𝗋𝗌.")
     os.remove(f"batchmode_{message.from_user.id}.json")
     file_id, ref = unpack_new_file_id(post.document.file_id)
-    await sts.edit(f"Here is your link\nContains `{og_msg}` files.\n https://t.me/{temp.U_NAME}?start=BATCH-{file_id}")
+    await sts.edit(f"𝖵𝗈𝗂𝖼𝗂 𝗏𝗈𝗍𝗋𝖾 𝗅𝗂𝖾𝗇\n𝖢𝗈𝗇𝗍𝗂𝖾𝗇𝗍 `{og_msg}` 𝖥𝗂𝖼𝗁𝗂𝖾𝗋𝗌.\n https://t.me/{temp.U_NAME}?start=BATCH-{file_id}")
