@@ -32,7 +32,7 @@ class Bot(Client):
             bot_token=BOT_TOKEN,
             workers=150,
             plugins={"root": "plugins"},
-            sleep_threshold=5,
+            sleep_threshold=0,
         )
 
     async def start(self):
@@ -60,7 +60,7 @@ class Bot(Client):
 
     async def stop(self, *args):
         await super().stop()
-        logging.info("Bot stopped. Bye.")
+        logging.info("𝖫𝖾 𝖻𝗈𝗍 𝗌’𝖾𝗌𝗍 𝖺𝗋𝗋𝖾̂𝗍𝖾́. 𝖠𝗎 𝗋𝖾𝗏𝗈𝗂𝗋.")
     
     async def iter_messages(
         self,
