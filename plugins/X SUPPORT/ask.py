@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
-@Client.on_message(filters.command('ask') & filters.chat(SUPPORT_CHAT_ID)) # support work only added 
+@Client.on_message(filters.command('ask'))
 async def ai_generate(client, message):
    user_input = message.text.split()[1:]
 
@@ -53,7 +53,7 @@ async def ai_generate(client, message):
    await client.send_message(LOG_CHANNEL, text=f"#ask ʀᴇǫᴜᴇsᴛ ғʀᴏᴍ {message.from_user.mention}\nǫᴜᴇʀʏ ɪs:- {user_input}")
    await s.delete()
 
-@Client.on_message(filters.command("ask"))
+@Client.on_message(filters.command("si"))
 async def ai_generate_private(client, message):
   buttons = [[
     InlineKeyboardButton("Test Katy ", url="https://t.me/TestDek")
