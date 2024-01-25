@@ -38,7 +38,7 @@ class evamaria(Client):
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
             parse_mode=enums.ParseMode.HTML,
-            sleep_threshold=0
+            sleep_threshold=60
         )
 
 # Bot information
