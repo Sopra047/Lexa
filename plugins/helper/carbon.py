@@ -31,19 +31,19 @@ async def make_carbon(code):
 async def carbon_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text(
-            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
+            "Rᴇ́ᴘᴏɴᴅʀᴇ ᴀ̀ ᴜɴ ᴍᴇssᴀɢᴇ ᴘᴏᴜʀ ғᴀɪʀᴇ ᴅᴜ ᴄᴀʀʙᴏɴᴇ."
         )
     if not message.reply_to_message.text:
         return await message.reply_text(
-            "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴛᴇxᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀʀʙᴏɴ."
+            "Rᴇ́ᴘᴏɴᴅʀᴇ ᴀ̀ ᴜɴ ᴍᴇssᴀɢᴇ ᴘᴏᴜʀ ғᴀɪʀᴇ ᴅᴜ ᴄᴀʀʙᴏɴᴇ."
         )
     user_id = message.from_user.id
     m = await message.reply_text("ᴘʀᴏᴄᴇssɪɴɢ...")
     carbon = await make_carbon(message.reply_to_message.text)
-    await m.edit("ᴜᴘʟᴏᴀᴅɪɴɢ..")
+    await m.edit("Téléchɑrgement..")
     await message.reply_photo(
         photo=carbon,
-        caption="**ᴛʜɪs ᴘɪᴄ ɪs ɴɪᴄᴇ ᴏɴᴇ\nᴍᴀᴅᴇ ʙʏ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ**",
+        caption="**Cᥱttᥱ ρhoto ᥱst sყmρᥲ\nRᥱ́ᥲᥣιsᥱ́ ρᥲr @SHARCLUB**",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=S_GROUP)]]),                   
     )
     await m.delete()
