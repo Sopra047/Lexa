@@ -13,7 +13,7 @@ media_filter = filters.document | filters.video | filters.audio
 
 @Client.on_message(filters.chat(DELETE_CHANNELS) & media_filter)
 async def deletemultiplemedia(bot, message):
-    """Delete Multiple files from database"""
+    """Suppɾimeɾ plusieuɾs fichieɾs de lɑ bɑse de données"""
 
     for file_type in ("document", "video", "audio"):
         media = getattr(message, file_type, None)
@@ -28,7 +28,7 @@ async def deletemultiplemedia(bot, message):
         '_id': file_id,
     })
     if result.deleted_count:
-        logger.info('File is successfully deleted from database.')
+        logger.info('𝖫𝖾 𝖿𝗂𝖼𝗁𝗂𝖾𝗋 𝖺 𝖾́𝗍𝖾́ 𝗌𝗎𝗉𝗉𝗋𝗂𝗆𝖾́ 𝖺𝗏𝖾𝖼 𝗌𝗎𝖼𝖼𝖾̀𝗌 𝖽𝖾 𝗅𝖺 𝖻𝖺𝗌𝖾 𝖽𝖾 𝖽𝗈𝗇𝗇𝖾́𝖾𝗌.')
     else:
         file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
         result = await Media.collection.delete_many({
@@ -37,7 +37,7 @@ async def deletemultiplemedia(bot, message):
             'mime_type': media.mime_type
             })
         if result.deleted_count:
-            logger.info('File is successfully deleted from database.')
+            logger.info('𝖫𝖾 𝖿𝗂𝖼𝗁𝗂𝖾𝗋 𝖺 𝖾́𝗍𝖾́ 𝗌𝗎𝗉𝗉𝗋𝗂𝗆𝖾́ 𝖺𝗏𝖾𝖼 𝗌𝗎𝖼𝖼𝖾̀𝗌 𝖽𝖾 𝗅𝖺 𝖻𝖺𝗌𝖾 𝖽𝖾 𝖽𝗈𝗇𝗇𝖾́𝖾𝗌..')
         else:
             result = await Media.collection.delete_many({
                 'file_name': media.file_name,
@@ -45,6 +45,6 @@ async def deletemultiplemedia(bot, message):
                 'mime_type': media.mime_type
             })
             if result.deleted_count:
-                logger.info('File is successfully deleted from database.')
+                logger.info('𝖫𝖾 𝖿𝗂𝖼𝗁𝗂𝖾𝗋 𝖺 𝖾́𝗍𝖾́ 𝗌𝗎𝗉𝗉𝗋𝗂𝗆𝖾́ 𝖺𝗏𝖾𝖼 𝗌𝗎𝖼𝖼𝖾̀𝗌 𝖽𝖾 𝗅𝖺 𝖻𝖺𝗌𝖾 𝖽𝖾 𝖽𝗈𝗇𝗇𝖾́𝖾𝗌..')
             else:
-                logger.info('File not found in database.')
+                logger.info('𝖥𝗂𝖼𝗁𝗂𝖾𝗋 𝗂𝗇𝗍𝗋𝗈𝗎𝗏𝖺𝖻𝗅𝖾 𝖽𝖺𝗇𝗌 𝗅𝖺 𝖻𝖺𝗌𝖾 𝖽𝖾 𝖽𝗈𝗇𝗇𝖾́𝖾𝗌.')
