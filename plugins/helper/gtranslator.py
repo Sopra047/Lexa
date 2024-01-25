@@ -41,4 +41,4 @@ async def left(client,message):
 			print("error")
 	else:
 			 ms = await message.reply_text("𝖴𝗍𝗂𝗅𝗂𝗌𝖾𝗋 𝖼𝖾𝗍𝗍𝖾 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝖾 𝖾𝗇 𝖱𝖾́𝗉𝗈𝗇𝖽𝗋𝖾 𝖺̀ 𝗎𝗇 𝗆𝖾𝗌𝗌𝖺𝗀𝖾")
-			 await ms.delete()
+			 await ms.delete(5)
