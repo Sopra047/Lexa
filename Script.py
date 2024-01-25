@@ -1,7 +1,6 @@
 class script(object):
-    START_TXT = """<b>𝙷𝙴𝙻𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈</b>"""
-
+    START_TXT = """Sᴀʟᴜᴛ🖐  {},
+Mᴏɴ Nᴏᴍ ᴇsᴛ <a href=https://t.me/{}>{}</a>, Jᴇ ᴘᴇᴜx ᴛᴇ ғᴏᴜʀɴɪʀ ᴅᴇs ғɪʟᴍs ᴇᴛ ᴅᴇs sᴇ́ʀɪᴇs﹐ ɪʟ sᴜғғɪᴛ ᴊᴜsᴛᴇ ᴅᴇ ʀᴇᴊᴏɪɴᴅʀᴇ ᴍᴇs ᴄᴀɴᴀᴜx ᴇᴛ ᴅᴇ ᴘʀᴏғɪᴛᴇʀ 😍"""
     HELP_TXT = """ {}
 Je ѕυιѕ Kαтɴιce de Sнαrιɴɢ Clυв!
 ✯ Reтroυvez ɢrα̂ce ὰ мoι leѕ ғιcнιerѕ ѕυpprιмer deѕ cαɴαυх oғғιcιelѕ de Sнαrιɴɢ Clυв.
