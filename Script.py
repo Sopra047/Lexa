@@ -2,8 +2,18 @@ class script(object):
     START_TXT = """<b>𝙷𝙴𝙻𝙻𝙾 {},
 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈</b>"""
 
-    HELP_TXT = """<b>𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
+    HELP_TXT = """ {}
+Je ѕυιѕ Kαтɴιce de Sнαrιɴɢ Clυв!
+✯ Reтroυvez ɢrα̂ce ὰ мoι leѕ ғιcнιerѕ ѕυpprιмer deѕ cαɴαυх oғғιcιelѕ de Sнαrιɴɢ Clυв.
+
+✯ Les liens pour ɑccéder ɑ̀ chɑque fichier spécifique se trouve ici <a href=https://t.me/Serielist><b>Ꮲꮻꮪꭲꭼꭱꮪ Ꮯꮋꭺɴɴꭼꮮ</b></a>
+
+✯ Ecrire simplement dɑns <a href=https://t.me/Shar_Group><b>Ꮪꮋꭺꭱ.Ꮯꮮꮜᏼ</b></a> le nom du Film ou lɑ Série dont tu ɑs besoin et lɑisse lɑ mɑgie s'opérer 👌
+
+✯ <b>Les cσƞteƞʋs pσɾƞσs🔞</b> sont strictement interdits et font l’objet d’une interdiction permɑnente.
+
+✯ Ŋ.B : Vσʋs ɗeνez ɾejσiƞɗɾe <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞelle</b></a> pσʋɾ ɱ'ʋtiliseɾ. 
+Voтre Kαтɴιce © 🥰😘"""
 
     # ⚠️ Please don't change our credits 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 & 𝙳𝙴𝚅 👇🏻
 
