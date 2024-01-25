@@ -2,6 +2,7 @@ from pyrogram import Client, filters
 import requests
 from info import LOG_CHANNEL, GOOGLE_API_KEY, SUPPORT_CHAT_ID
 import google.generativeai as genai
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
