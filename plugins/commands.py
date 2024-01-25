@@ -329,25 +329,25 @@ async def delete(bot, message):
                 'mime_type': media.mime_type
             })
             if result.deleted_count:
-                await msg.edit('File is successfully deleted from database')
+                await msg.edit('Le fichier est supprimé de la base de données avec succès')
             else:
-                await msg.edit('File not found in database')
+                await msg.edit('Fichier introuvable dans la base de données')
 
 
 @Client.on_message(filters.command('deleteall') & filters.user(ADMINS))
 async def delete_all_index(bot, message):
     await message.reply_text(
-        'This will delete all indexed files.\nDo you want to continue??',
+        'Cela supprimera tous les fichiers indexés.\nVoulez-vous continuer??',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="YES", callback_data="autofilter_delete"
+                        text="OUI", callback_data="autofilter_delete"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="CANCEL", callback_data="close_data"
+                        text="ANNULER", callback_data="close_data"
                     )
                 ],
             ]
@@ -360,14 +360,14 @@ async def delete_all_index(bot, message):
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
     await message.answer(MSG_ALRT)
-    await message.message.edit('Succesfully Deleted All The Indexed Files.')
+    await message.message.edit('Suppression réussie de tous les fichiers indexés.')
 
 
 @Client.on_message(filters.command('settings'))
 async def settings(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"Vᴏᴜs ᴇ̂ᴛᴇs ᴜɴ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴀɴᴏɴʏᴍᴇ. ᴜᴛɪʟɪsᴇʀ /connect {message.chat.id} en ᴘᴍ")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
