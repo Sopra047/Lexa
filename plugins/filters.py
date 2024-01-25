@@ -17,7 +17,7 @@ from info import ADMINS
 async def addfilter(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"Vous êtes administrateur anonyme. Utiliser /connect {message.chat.id} en PM")
     chat_type = message.chat.type
     args = message.text.html.split(None, 1)
 
@@ -29,10 +29,10 @@ async def addfilter(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("Assurez-vous que je sois présente dans votre groupe!!", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("Je ne suis connecté à aucun groupe!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -52,21 +52,21 @@ async def addfilter(client, message):
 
 
     if len(args) < 2:
-        await message.reply_text("Command Incomplete :(", quote=True)
+        await message.reply_text("Commande incomplète :(", quote=True)
         return
 
     extracted = split_quotes(args[1])
     text = extracted[0].lower()
 
     if not message.reply_to_message and len(extracted) < 2:
-        await message.reply_text("Add some content to save your filter!", quote=True)
+        await message.reply_text("Ajoutez du contenu pour enregistrer votre filtre!", quote=True)
         return
 
     if (len(extracted) >= 2) and not message.reply_to_message:
         reply_text, btn, alert = parser(extracted[1], text)
         fileid = None
         if not reply_text:
-            await message.reply_text("You cannot have buttons alone, give some text to go with it!", quote=True)
+            await message.reply_text("Vous ne pouvez pas avoir de boutons seuls, donnez du texte pour l’accompagner!", quote=True)
             return
 
     elif message.reply_to_message and message.reply_to_message.reply_markup:
@@ -122,7 +122,7 @@ async def get_all(client, message):
     chat_type = message.chat.type
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"Vous êtes administrateur anonyme. Utilisez /connect  {message.chat.id} en PM")
     if chat_type == enums.ChatType.PRIVATE:
         grpid = await active_connection(str(userid))
         if grpid is not None:
@@ -131,7 +131,7 @@ async def get_all(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("Assurez-vous que je sois présente dans votre groupe!!", quote=True)
                 return
         else:
             await message.reply_text("I'm not connected to any groups!", quote=True)
