@@ -12,14 +12,14 @@ GPLINKS_API = os.environ.get("GPLINKS_API", "008ccaedd6061ad1948838f410947603de9
 
 reply_markup = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton("𝘊𝘭𝘰𝘴𝘦", callback_data='close_data')
+        InlineKeyboardButton("Fᥱrmᥱr", callback_data='close_data')
         ]]
     )
 
 @Client.on_message(filters.command(["short"]) & filters.regex(r'https?://[^\s]+'))
 async def reply_shortens(bot, update):
     message = await update.reply_text(
-        text="`Analysing your link...`",
+        text="`𝖠𝗇𝖺𝗅𝗒𝗌𝖾 𝖽𝖾 𝗏𝗈𝗍𝗋𝖾 𝗅𝗂𝖾𝗇...`",
         disable_web_page_preview=True,
         quote=True
     )
@@ -60,7 +60,7 @@ async def short(link):
             url = s.bitly.short(link)
             shorten_urls += f"\n**Bit.ly :-** {url}"
         except Exception as error:
-            print(f"Bit.ly error :- {error}")
+            print(f"Bit.ly erreur :- {error}")
     
     # Chilp.it shorten
     try:
@@ -68,7 +68,7 @@ async def short(link):
         url = s.chilpit.short(link)
         shorten_urls += f"\n**Chilp.it :-** {url}"
     except Exception as error:
-        print(f"Chilp.it error :- {error}")
+        print(f"Chilp.it erreur :- {error}")
     
     # Clck.ru shorten
     try:
@@ -76,7 +76,7 @@ async def short(link):
         url = s.clckru.short(link)
         shorten_urls += f"\n**Clck.ru :-** {url}"
     except Exception as error:
-        print(f"Click.ru error :- {error}")
+        print(f"Click.ru erreur :- {error}")
     
     # Cutt.ly shorten
     if CUTTLY_API:
@@ -85,7 +85,7 @@ async def short(link):
             url = s.cuttly.short(link)
             shorten_urls += f"\n**Cutt.ly :-** {url}"
         except Exception as error:
-            print(f"Cutt.ly error :- {error}")
+            print(f"Cutt.ly erreur :- {error}")
     
     # Da.gd shorten
     try:
@@ -93,7 +93,7 @@ async def short(link):
         url = s.dagd.short(link)
         shorten_urls += f"\n**Da.gd :-** {url}"
     except Exception as error:
-        print(f"Da.gd error :- {error}")
+        print(f"Da.gd erreur :- {error}")
     
     # Is.gd shorten
     try:
@@ -101,7 +101,7 @@ async def short(link):
         url = s.isgd.short(link)
         shorten_urls += f"\n**Is.gd :-** {url}"
     except Exception as error:
-        print(f"Is.gd error :- {error}")
+        print(f"Is.gd erreur :- {error}")
     
     # Osdb.link shorten
     try:
@@ -117,7 +117,7 @@ async def short(link):
         url = s.owly.short(link)
         shorten_urls += f"\n**Ow.ly :-** {url}"
     except Exception as error:
-        print(f"Ow.ly error :- {error}")
+        print(f"Ow.ly erreur :- {error}")
     
     # Po.st shorten
     try:
@@ -125,7 +125,7 @@ async def short(link):
         url = s.post.short(link)
         shorten_urls += f"\n**Po.st :-** {url}"
     except Exception as error:
-        print(f"Po.st error :- {error}")
+        print(f"Po.st erreur :- {error}")
     
     # Qps.ru shorten
     try:
@@ -133,7 +133,7 @@ async def short(link):
         url = s.qpsru.short(link)
         shorten_urls += f"\n**Qps.ru :-** {url}"
     except Exception as error:
-        print(f"Qps.ru error :- {error}")
+        print(f"Qps.ru erreur :- {error}")
     
     # Short.cm shorten
     if SHORTCM_API:
@@ -142,7 +142,7 @@ async def short(link):
             url = s.shortcm.short(link)
             shorten_urls += f"\n**Short.cm :-** {url}"
         except Exception as error:
-            print(f"Short.cm error :- {error}")
+            print(f"Short.cm erreur :- {error}")
     
     # TinyURL.com shorten
     try:
@@ -150,7 +150,7 @@ async def short(link):
         url = s.tinyurl.short(link)
         shorten_urls += f"\n**TinyURL.com :-** {url}"
     except Exception as error:
-        print(f"TinyURL.com error :- {error}")
+        print(f"TinyURL.com erreur :- {error}")
     
     # NullPointer shorten
     try:
@@ -158,7 +158,7 @@ async def short(link):
         url = s.nullpointer.short(link)
         shorten_urls += f"\n**0x0.st :-** {url}"
     except Exception as error:
-        print(f"NullPointer error :- {error}")
+        print(f"NullPointer erreur :- {error}")
     
     # GPLinks shorten
     try:
@@ -170,7 +170,7 @@ async def short(link):
                 url = data["shortenedUrl"]
                 shorten_urls += f"\n**GPLinks.in :-** {url}"
     except Exception as error:
-        print(f"GPLink error :- {error}")
+        print(f"GPLink erreur :- {error}")
     
     # Send the text
     try:
