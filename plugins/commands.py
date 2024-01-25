@@ -523,10 +523,10 @@ async def save_template(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Assurez-vous que je suis présent dans votre groupe!!", quote=True)
+                await message.reply_text("𝖠𝗌𝗌𝗎𝗋𝖾𝗓-𝗏𝗈𝗎𝗌 𝗊𝗎𝖾 𝗃𝖾 𝗌𝗎𝗂𝗌 𝗉𝗋𝖾́𝗌𝖾𝗇𝗍 𝖽𝖺𝗇𝗌 𝗏𝗈𝗍𝗋𝖾 𝗀𝗋𝗈𝗎𝗉𝖾!!", quote=True)
                 return
         else:
-            await message.reply_text("Je ne suis connecté à aucun groupe!", quote=True)
+            await message.reply_text("𝖩𝖾 𝗇𝖾 𝗌𝗎𝗂𝗌 𝖼𝗈𝗇𝗇𝖾𝖼𝗍𝖾́ 𝖺̀ 𝖺𝗎𝖼𝗎𝗇 𝗀𝗋𝗈𝗎𝗉𝖾!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -553,11 +553,11 @@ async def save_template(client, message):
 @Client.on_message(filters.command("deletefiles") & filters.user(ADMINS))
 async def deletemultiplefiles(bot, message):
     btn = [[
-            InlineKeyboardButton("Delete PreDVDs", callback_data="predvd"),
-            InlineKeyboardButton("Delete CamRips", callback_data="camrip")
+            InlineKeyboardButton("Suppɾimeɾ PɾeDVDs", callback_data="predvd"),
+            InlineKeyboardButton("Suppɾimeɾ PɾeDVDs", callback_data="camrip")
           ]]
     await message.reply_text(
-        text="<b>Select the type of files you want to delete !\n\nThis will delete 100 files from the database for the selected type.</b>",
+        text="<b>Sélectionnez le type de fichiers que vous souhɑitez supprimer !\n\nCelɑ supprimerɑ 100 fichiers de lɑ bɑse de données pour le type sélectionné.</b>",
         reply_markup=InlineKeyboardMarkup(btn)
     )
 
@@ -580,19 +580,19 @@ async def send_msg(bot, message):
             else:
                 success = False
             if success:
-                await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
+                await message.reply_text(f"<b>Votre messɑge ɑ été envoyé ɑvec succès ɑ̀ {user.mention}.</b>")
             else:
-                await message.reply_text("<b>This user didn't started this bot yet !</b>")
+                await message.reply_text("<b>Cet utilisateur n'a pas encore démarré ce bot !</b>")
         except Exception as e:
             await message.reply_text(f"<b>Error: {e}</b>")
     else:
-        await message.reply_text("<b>Use this command as a reply to any message using the target chat id. For eg: /send userid</b>")
+        await message.reply_text("<b>Utilisez cette commɑnde comme réponse ɑ̀ n’importe quel messɑge utilisɑnt l’identifiɑnt de discussion cible. Pɑr ex: /send ID de l'utilisɑteur</b>")
 
 @Client.on_message(filters.command("shortlink") & filters.user(ADMINS))
 async def shortlink(bot, message):
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !</b>")
+        return await message.reply_text(f"<b>Hey {message.from_user.mention}, Cette commɑnde ne fonctionne que dɑns les groupes !</b>")
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         grpid = message.chat.id
         title = message.chat.title
@@ -602,15 +602,15 @@ async def shortlink(bot, message):
     userid = message.from_user.id
     user = await bot.get_chat_member(grpid, userid)
     if user.status != enums.ChatMemberStatus.ADMINISTRATOR and user.status != enums.ChatMemberStatus.OWNER and str(userid) not in ADMINS:
-        return await message.reply_text("<b>You don't have access to use this command !</b>")
+        return await message.reply_text("<b>Vous n'ɑvez pɑs ɑccès pour utiliser cette commɑnde !</b>")
     else:
         pass
     try:
         command, shortlink_url, api = data.split(" ")
     except:
-        return await message.reply_text("<b>Command Incomplete :(\n\nGive me a shortlink and api along with the command !\n\nFormat: <code>/shortlink shorturllink.in 95a8195c40d31e0c3b6baa68813fcecb1239f2e9</code></b>")
-    reply = await message.reply_text("<b>Please Wait...</b>")
+        return await message.reply_text("<b>Commɑnde incomplète :(\n\nDonnez-moi un lien court et une API ɑvec lɑ commɑnde!\n\nFormat: <code>/shortlink shorturllink.in 95a8195c40d31e0c3b6baa68813fcecb1239f2e9</code></b>")
+    reply = await message.reply_text("<b>Veuillez pɑtienter...</b>")
     await save_group_settings(grpid, 'shortlink', shortlink_url)
     await save_group_settings(grpid, 'shortlink_api', api)
     await save_group_settings(grpid, 'is_shortlink', True)
-    await reply.edit_text(f"<b>Successfully added shortlink API for {title}.\n\nCurrent Shortlink Website: <code>{shortlink_url}</code>\nCurrent API: <code>{api}</code></b>")
+    await reply.edit_text(f"<b>Ajout réussi de l’API Shortlink pour {title}.\n\nSite Web ɑctuel de Shortlink : <code>{shortlink_url}</code>\nAPI actuelle: <code>{api}</code></b>")
