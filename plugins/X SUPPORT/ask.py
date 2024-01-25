@@ -49,7 +49,7 @@ async def ai_generate(client, message):
 
    prompt_parts = [user_input]
    response = model.generate_content(prompt_parts)
-   await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\n Question:- {user_input}\n\nRéponse:\n\n{response.text}")         
+   await message.reply_text(text=f"🙋Ꭰꭼꮇꭺɴꭰꭼꮜꭱ: {message.from_user.mention}\n🤦Question:- {user_input}\n\n📝Réponse:\n\n{response.text}")         
    await client.send_message(LOG_CHANNEL, text=f"#ask Rᴇϙᴜᴇ̂ᴛᴇ ᴅᴇ {message.from_user.mention}\nQuestion:- {user_input}")
    await s.delete()
 
@@ -59,4 +59,4 @@ async def ai_generate_private(client, message):
     InlineKeyboardButton("Test Katy ", url="https://t.me/TestDek")
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
-  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\n𝖴𝗍𝗂𝗅𝗂𝗌𝖾𝗋 𝖼𝖾𝗍𝗍𝖾 𝖿𝗈𝗇𝖼𝗍𝗂𝗈𝗇𝗇𝖺𝗅𝗂𝗍𝖾́ 𝖽𝖺𝗇𝗌 𝗅𝖾 𝗀𝗋𝗈𝗎𝗉𝖾 𝖽𝖾 𝗌𝗎𝗉𝗉𝗈𝗋𝗍  👇 ", reply_markup=reply_markup)
+  await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\n𝖴𝗍𝗂𝗅𝗂𝗌𝖾𝗋 𝖼𝖾𝗍𝗍𝖾 𝖿𝗈𝗇𝖼𝗍𝗂𝗈𝗇𝗇𝖺𝗅𝗂𝗍𝖾́ 𝖽𝖺𝗇𝗌 𝗅𝖾 𝗀𝗋𝗈𝗎𝗉𝖾 𝖽𝖾 𝗌𝗎𝗉𝗉𝗈𝗋𝗍 👇 ", reply_markup=reply_markup)
