@@ -299,14 +299,14 @@ Name - {}
 """
 
     IMDB_TEMPLATE_TXT = """
-<b>🔖 TITRE :<a href={url}>{title}</a>
+<b>🔖 Tɪᴛʀᴇ :<a href={url}>{title}</a>
 
-🎭 GENRE : {genres}
-🎖 NOTATION : <a href={url}/ratings>{rating}</a> / 10 (ʙᴀsᴇᴅ ᴏɴ {votes} ᴜsᴇʀ ʀᴀᴛɪɴɢ.)
+🎭 Gᴇɴʀᴇ : {genres}
+🎖 Nᴏᴛᴀᴛɪᴏɴ : <a href={url}/ratings>{rating}</a> / 10 (Bᥲsᥱ́ sᥙr ᥣ’ᥱ́vᥲᥣᥙᥲtιoᥒ dᥱ {votes} ᥙtιᥣιsᥲtᥱᥙrs.)
 
-📆 ANNEE : {release_date}
-🗞 LANGUAGE : {languages}
-🌎 PAYS : {countries}
+📆 Aɴɴᴇ́ᴇ : {release_date}
+🗞 Lᴀɴɢᴜᴀɢᴇ : {languages}
+🌎 Pᴀʏs : {countries}
 
 ©{message.chat.title}</b>
 """
