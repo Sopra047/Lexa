@@ -504,7 +504,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ])
 
         await query.message.edit_text(
-            f"Group Name : **{title}**\nGroup ID : `{group_id}`",
+            f"Nᴏᴍ ᴅᴜ ɢʀᴏᴜᴘᴇ : **{title}**\nID ᴅᴜ ɢʀᴏᴜᴘᴇ : `{group_id}`",
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
@@ -524,7 +524,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if mkact:
             await query.message.edit_text(
-                f"Connected to **{title}**",
+                f"𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝖾́ 𝖺̀ **{title}**",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
@@ -549,7 +549,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text(
-                f"Some error occurred!!",
+                f"𝖴𝗇𝖾 𝖾𝗋𝗋𝖾𝗎𝗋 𝗌’𝖾𝗌𝗍 𝗉𝗋𝗈𝖽𝗎𝗂𝗍𝖾!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
         return await query.answer(MSG_ALRT)
@@ -563,11 +563,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if delcon:
             await query.message.edit_text(
-                "Successfully deleted connection"
+                "Connexion supprimée avec succès"
             )
         else:
             await query.message.edit_text(
-                f"Some error occurred!!",
+                f"𝖴𝗇𝖾 𝖾𝗋𝗋𝖾𝗎𝗋 𝗌’𝖾𝗌𝗍 𝗉𝗋𝗈𝖽𝗎𝗂𝗍𝖾!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
         return await query.answer(MSG_ALRT)
@@ -579,7 +579,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         groupids = await all_connections(str(userid))
         if groupids is None:
             await query.message.edit_text(
-                "There are no active connections!! Connect to some groups first.",
+                "TIl n’y a pas de connexions actives !! Connectez-ᴍᴏɪ d’abord à certains groupes.",
             )
             return await query.answer(MSG_ALRT)
         buttons = []
@@ -600,7 +600,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 pass
         if buttons:
             await query.message.edit_text(
-                "Your connected group details ;\n\n",
+                "Détails de votre groupe connecté ;\n\n",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
     elif "gfilteralert" in query.data:
