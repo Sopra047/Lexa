@@ -807,7 +807,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "tinfo":
         await query.answer(
-            "▣Conseıl▣\n\n★ Tᥲρᥱz ᥣ’orthogrᥲρhᥱ ᥴorrᥱᥴtᥱ (ɢᴏᴏɢʟᴇ)\n\n★ Sι voᥙs ᥒ’obtᥱᥒᥱz ρᥲs votrᥱ fιᥴhιᥱr dᥲᥒs ᥣᥲ ρᥲgᥱ, ᥣ’ᥱ́tᥲρᥱ sᥙιvᥲᥒtᥱ ᥴoᥒsιstᥱ ᥲ̀ ᥴᥣιqᥙᥱr sᥙr ᥣᥱ boᥙtoᥒ sᥙιvᥲᥒt.\n\n★ ᴄᴏɴᴛɪɴᴜᴇ ᴛʜɪs ᴍᴇᴛʜᴏᴅ ᴛᴏ ɢᴇᴛᴛɪɴɢ ʏᴏᴜ ғɪʟᴇ\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @SharClub",
+            "▣Conseıl▣\n\n★ Tᥲρᥱz ᥣ’orthogrᥲρhᥱ ᥴorrᥱᥴtᥱ (ɢᴏᴏɢʟᴇ)\n\n★ Sι voᥙs ᥒ’obtᥱᥒᥱz ρᥲs votrᥱ fιᥴhιᥱr dᥲᥒs ᥣᥲ ρᥲgᥱ, ᥣ’ᥱ́tᥲρᥱ sᥙιvᥲᥒtᥱ ᥴoᥒsιstᥱ ᥲ̀ ᥴᥣιqᥙᥱr sᥙr ᥣᥱ boᥙtoᥒ sᥙιvᥲᥒt.\n\n★ Coᥒtιᥒᥙᥱz ᥴᥱttᥱ mᥱ́thodᥱ ρoᥙr obtᥱᥒιr votrᥱ fιᥴhιᥱr\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @SharClub",
             show_alert=True)
 
     elif query.data == "fmal":
@@ -916,13 +916,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
-            InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='source')
+            InlineKeyboardButton('📺 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club'),
+            InlineKeyboardButton('🔎 Ᏼꭼꮮꮮꭼ Ꭺꮮꮖꮯꭼ', url='https://t.me/Belalicebot')
         ], [
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('ᴅɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='disc')
+            InlineKeyboardButton('🧑‍💻 ɪηғᴏ ɗєᴠ', callback_data='source'),
+            InlineKeyboardButton('💝 𝖥𝖺𝗂𝗋𝖾 𝗎𝗇 𝖣𝗈𝗇 💝', callback_data='manuelfilter')
         ], [
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('🏠 Accυeιl', callback_data='start'),
+            InlineKeyboardButton('🔐 Ferмer', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
