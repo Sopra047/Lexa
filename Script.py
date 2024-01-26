@@ -293,8 +293,8 @@ Name - {}
 """
     SUR_TXT = """
 <b>
-𝙷𝙴𝙻𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 
+SALUT {},
+Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fournir des films et séries, il suffit de m’ɑjouter ɑ̀ votre groupe et d’en profiter 
 </b>
 """
 
@@ -311,7 +311,7 @@ Name - {}
 ©{message.chat.title}</b>
 """
 
-    CUSTOM_FILE_CAPTION = """<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : {file_name}
+    CUSTOM_FILE_CAPTION = """<b>📂 Nom du fıchıer : {file_name}
 
 </b>"""
 
@@ -345,9 +345,9 @@ FORMAT DE DEMANDE DE FILM
 ➠ ᴄᴏᴘɪᴇᴢ ʟᴇ ɴᴏᴍ ᴄᴏʀʀᴇᴄᴛ
 ➠ ᴄᴏʟʟᴇʀ ᴅᴀɴs ʟᴇ ɢʀᴏᴜᴘᴇ 
 
-ᴇxᴀᴍᴘʟᴇ : ᴋᴀɴᴛᴀʀᴀ 2022 
+Exemple : Freelɑnce 2023
 
-🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ' : ( ! , . / )"""
+🚯 N·ᴜᴛɪʟɪsᴇʀ ᴘᴀs ➠ ' : ( ! , . / )"""
 
     I_CUD_NT = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ."""
 
