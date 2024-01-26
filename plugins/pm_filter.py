@@ -258,7 +258,7 @@ async def next_page(bot, query):
 async def languages_cb_handler(client: Client, query: CallbackQuery):
     if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
         return await query.answer(
-            f"⚠️ Sᥲᥣᥙt {query.from_user.first_name},\nC'est n'est pɑs votre requête 😤,\nEffectuez ɑussi votre demɑnde...",
+            f"⚠️ Sᥲᥣᥙt {query.from_user.first_name},\nCe n’est pɑs votre requête 😤,\nEffectuez ɑussi votre demɑnde...",
             show_alert=True,
         )
 
@@ -284,7 +284,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
     )
     req = query.from_user.id
     offset = 0
-    btn.append([InlineKeyboardButton(text="↺ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ​↻", callback_data=f"next_{req}_{key}_{offset}")])
+    btn.append([InlineKeyboardButton(text="↺ Rᴇᴛᴏᴜʀ ᴀᴜx ғɪᴄʜɪᴇʀs ​↻", callback_data=f"next_{req}_{key}_{offset}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
 
@@ -299,7 +299,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     message = query.message
     if int(req) not in [query.message.reply_to_message.from_user.id, 0]:
         return await query.answer(
-            f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+            f"⚠️ Sᥲᥣᥙt {query.from_user.first_name},\nCe n’est pɑs votre requête 😤,\nEffectuez ɑussi votre demɑnde...",
             show_alert=True,
         )
 
@@ -308,7 +308,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     files, offset, _ = await get_search_results(search, max_results=10)
     files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("🚫 𝗔𝘂𝗰𝘂𝗻 𝗳𝗶𝗰𝗵𝗶𝗲𝗿 𝗻'𝗮 𝗲́𝘁𝗲́ 𝘁𝗿𝗼𝘂𝘃𝗲́ 🚫", show_alert=1)
         return
 
     settings = await get_settings(message.chat.id)
@@ -378,7 +378,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
      
 
-    btn.insert(0, [InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Fɪʟᴇs Tᴏ PM !", callback_data=f"send_fall#files#{key}#{offset}")])
+    btn.insert(0, [InlineKeyboardButton("! Envoyer tous les fichiers en PM !", callback_data=f"send_fall#files#{key}#{offset}")])
     offset = 0
 
     btn.append([
@@ -440,11 +440,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat = await client.get_chat(grpid)
                     title = chat.title
                 except:
-                    await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
+                    await query.message.edit_text("𝖠𝗌𝗌𝗎𝗋𝖾𝗓-𝗏𝗈𝗎𝗌 𝗊𝗎𝖾 𝗃𝖾 𝗌𝗎𝗂𝗌 𝗉𝗋𝖾́𝗌𝖾𝗇𝗍 𝖽𝖺𝗇𝗌 𝗏𝗈𝗍𝗋𝖾 𝗀𝗋𝗈𝗎𝗉𝖾!!", quote=True)
                     return await query.answer(MSG_ALRT)
             else:
                 await query.message.edit_text(
-                    "I'm not connected to any groups!\nCheck /connections or connect to any groups",
+                    "𝖩𝖾 𝗇𝖾 𝗌𝗎𝗂𝗌 𝖼𝗈𝗇𝗇𝖾𝖼𝗍𝖾́ 𝖺̀ 𝖺𝗎𝖼𝗎𝗇 𝗀𝗋𝗈𝗎𝗉𝖾!\n𝖵𝖾́𝗋𝗂𝖿𝗂𝖾𝗋 /connections 𝗈𝗎 𝖼𝗈𝗇𝗇𝖾𝖼𝗍𝖾𝗓-𝗆𝗈𝗂 𝖺̀ 𝗇’𝗂𝗆𝗉𝗈𝗋𝗍𝖾 𝗊𝗎𝖾𝗅 𝗀𝗋𝗈𝗎𝗉𝖾",
                     quote=True
                 )
                 return await query.answer(MSG_ALRT)
@@ -460,7 +460,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
             await del_all(query.message, grp_id, title)
         else:
-            await query.answer("You need to be Group Owner or an Auth User to do that!", show_alert=True)
+            await query.answer("Vous devez être propriétɑire du groupe ou utilisɑteur Auth pour ce fɑire. -_- !", show_alert=True)
     elif query.data == "delallcancel":
         userid = query.from_user.id
         chat_type = query.message.chat.type
@@ -499,8 +499,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
-             InlineKeyboardButton("DELETE", callback_data=f"deletecb:{group_id}")],
-            [InlineKeyboardButton("BACK", callback_data="backcb")]
+             InlineKeyboardButton("SUPRIMER", callback_data=f"deletecb:{group_id}")],
+            [InlineKeyboardButton("RETOUR", callback_data="backcb")]
         ])
 
         await query.message.edit_text(
@@ -528,7 +528,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
-            await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
+            await query.message.edit_text('𝖴𝗇𝖾 𝖾𝗋𝗋𝖾𝗎𝗋 𝗌’𝖾𝗌𝗍 𝗉𝗋𝗈𝖽𝗎𝗂𝗍𝖾!!', parse_mode=enums.ParseMode.MARKDOWN)
         return await query.answer(MSG_ALRT)
     elif "disconnect" in query.data:
         await query.answer()
