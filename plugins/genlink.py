@@ -67,7 +67,7 @@ async def gen_link_batch(bot, message):
     try:
         chat_id = (await bot.get_chat(f_chat_id)).id
     except ChannelInvalid:
-        return await message.reply('Il peut s’ɑgir d’un cɑnɑl ou groupe privé. Nomme-moi d'ɑbord ɑdministrɑtrice lɑ̀-bɑs.')
+        return await message.reply('Il peut s’ɑgir d’un cɑnɑl ou groupe privé. Nomme-moi d’ɑbord ɑdministrɑtrice lɑ̀-bɑs.')
     except (UsernameInvalid, UsernameNotModified):
         return await message.reply('Lien spécifié non valide.')
     except Exception as e:
