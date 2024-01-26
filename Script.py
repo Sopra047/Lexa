@@ -265,13 +265,13 @@ This module only works for my admins
 𝙵𝙾𝚁 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙴 𝙼𝙾𝙳𝚄𝙻𝙴 𝙹𝚄𝚂𝚃 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝚃𝙴𝚇𝚃 𝙰𝙽𝙳 𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙸𝚃 𝚆𝙸𝚃𝙷 /carbon 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝚃𝙷𝙴 𝙱𝙾𝚃 𝚆𝙸𝙻𝙻 𝚁𝙴𝙿𝙻𝚈 𝚆𝙸𝚃𝙷 𝚃𝙷𝙴 𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝙼𝙰𝙶𝙴"""
 
     LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
+𝖦𝗋𝗈𝗎𝗉𝖾 = {}(<code>{}</code>)
+𝖬𝖾𝗆𝖻𝗋𝖾𝗌 𝖳𝗈𝗍𝖺𝗅 = <code>{}</code>
+𝖠𝗃𝗈𝗎𝗍𝖾𝗋 𝗉𝖺𝗋 - {}
 """
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
-Name - {}
+𝖭𝗈𝗆 - {}
 """
     FILE_MSG = """
 <b>Yo 👋 {} </b>😍
@@ -287,7 +287,7 @@ Name - {}
 
 <code>{}</code>
 
-<b>En rɑison des droits d'ɑuteur, le fichier serɑ supprimé d'ici dɑns 10 minutes, ɑlors téléchɑrgez-le ɑprès l'ɑvoir déplɑcé d'ici vers un ɑutre endroit ou sɑuvegɑrdez-le dɑns votre cloud ☁️ !</b>
+<b>En rɑison des droits d'ɑuteur, le fichier serɑ supprimé d’ici dɑns 10 minutes, ɑlors téléchɑrgez-le ɑprès l’ɑvoir déplɑcé d’ici vers un ɑutre endroit ou sɑuvegɑrdez-le dɑns votre cloud ☁️ !</b>
 
 <b>© Powered by {}</b>
 """
@@ -321,9 +321,9 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fournir des films et se�
 ⏰Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code></b>"""
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️"""
+    MELCOW_ENG = """<b>Sɑlut {} 😍, Bienvenue ɑ̀  {} Groupe ❤️"""
 
-    ALRT_TXT = """ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ꜰᴏʀ ʏᴏʏ ꜱɪʀ"""
+    ALRT_TXT = """Cᴇ ɴ’ᴇsᴛ ᴘᴀs ᴘᴏᴜʀ ᴠᴏᴜs ʙᴏss"""
 
     OLD_ALRT_TXT = """𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧 """
 
