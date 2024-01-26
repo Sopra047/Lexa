@@ -772,10 +772,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 '_id': file_ids,
             })
             if result.deleted_count:
-                logger.info('CamRip File Found ! Successfully deleted from database.')
+                logger.info('𝖥𝗂𝖼𝗁𝗂𝖾𝗋 𝖢𝖺𝗆𝖱𝗂𝗉 𝗍𝗋𝗈𝗎𝗏𝖾́ ! ! 𝖲𝗎𝗉𝗉𝗋𝗂𝗆𝖾́ 𝖺𝗏𝖾𝖼 𝗌𝗎𝖼𝖼𝖾̀𝗌 𝖽𝖾 𝗅𝖺 𝖻𝖺𝗌𝖾 𝖽𝖾 𝖽𝗈𝗇𝗇𝖾́𝖾𝗌..')
             deleted += 1
         deleted = str(deleted)
-        await k.edit_text(text=f"<b>Successfully deleted {deleted} CamRip files.</b>")
+        await k.edit_text(text=f"<b>𝖲𝗎𝗉𝗉𝗋𝗂𝗆𝖾́ 𝖺𝗏𝖾𝖼 𝗌𝗎𝖼𝖼𝖾̀𝗌 {deleted} CamRip 𝖥𝗂𝖼𝗁𝗂𝖾𝗋𝗌.</b>")
 
     elif query.data == "pages":
         await query.answer()
@@ -788,11 +788,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return
         files, n_offset, total = await get_search_results(search, offset=int(offset), filter=True)
         await send_all(client, query.from_user.id, files, ident)
-        await query.answer( f"Hey {query.from_user.first_name}, All files on this page has been sent successfully to your PM !", show_alert=True)
+        await query.answer( f"HEY {query.from_user.first_name}, Tous les fichiers de cette pɑge ont été envoyés ɑvec succès ɑ̀ votre PM !", show_alert=True)
 
     elif query.data == "reqinfo":
         await query.answer(
-            "⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\nɪꜰ ʏᴏᴜ ᴅᴏ ɴᴏᴛ ꜱᴇᴇ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴍᴏᴠɪᴇ / sᴇʀɪᴇs ꜰɪʟᴇ, ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ",
+            "⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nAprès 10 minutes, ce messɑge serɑ ɑutomɑtiquement supprimé\n\nSi vous ne voyez pɑs le fichier de film /série demɑndé, regɑrdez lɑ pɑge suivɑnte\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @Sharing_Club",
             show_alert=True)
 
     elif query.data == "minfo":
