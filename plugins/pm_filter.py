@@ -977,7 +977,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "manuelfilter":
         buttons = [[
-            InlineKeyboardButton('⏮ RETOUR', callback_data='about''),
+            InlineKeyboardButton('⏮ RETOUR', callback_data='about'),
             InlineKeyboardButton('💝 Doɴ ❤️‍🩹', url='https://t.me/InfoSharClub')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
