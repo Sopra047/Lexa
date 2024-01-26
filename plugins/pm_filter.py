@@ -258,7 +258,7 @@ async def next_page(bot, query):
 async def languages_cb_handler(client: Client, query: CallbackQuery):
     if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
         return await query.answer(
-            f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+            f"⚠️ Sᥲᥣᥙt {query.from_user.first_name},\nC'est n'est pɑs votre requête 😤,\nEffectuez ɑussi votre demɑnde...",
             show_alert=True,
         )
 
@@ -278,7 +278,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
         0,
         [
             InlineKeyboardButton(
-                text="☟  ꜱᴇʟᴇᴄᴛ ʏᴏᴜʀ ʟᴀɴɢᴜᴀɢᴇꜱ  ☟", callback_data="selectlang"
+                text="☟  Sélectionnez votɾe lɑngue  ☟", callback_data="selectlang"
             )
         ],
     )
