@@ -656,7 +656,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     return
                 else:
                     await query.answer(
-                        f"Hᴇʏ {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
+                        f"HEY {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
                         show_alert=True)
             elif settings['botpm']:
                 if clicked == typed:
@@ -664,7 +664,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     return
                 else:
                     await query.answer(
-                        f"Hᴇʏ {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
+                        f"HEY {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
                         show_alert=True)
             else:
                 if clicked == typed:
@@ -691,9 +691,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
-                                    InlineKeyboardButton('📥 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖫𝗂𝗇𝗄 📥 ', url=file_send.link)
+                                    InlineKeyboardButton('📥 Lɪᴇɴ ᴛᴇ́ʟᴇ́ᴄʜᴀʀɢᴇᴍᴇɴᴛ 📥 ', url=file_send.link)
                                 ], [
-                                InlineKeyboardButton("⚠️ 𝖢𝖺𝗇'𝗍 𝖠𝖼𝖼𝖾𝗌𝗌 ❓ 𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾 ⚠️", url=(FILE_FORWARD))
+                                InlineKeyboardButton("⚠️ 𝖠𝖼𝖼𝖾̀𝗌 𝖨𝗆𝗉𝗈𝗌𝗌𝗂𝖻𝗅𝖾❓ 𝖢𝗅𝗂𝗊𝗎𝖾𝗓-𝗂𝖼𝗂 ⚠️", url=(FILE_FORWARD))
                             ]
                             ]
                         )
@@ -704,7 +704,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         await file_send.delete()
                 else:
                     await query.answer(
-                        f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !",
+                        f"Hᴇʏ {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
                         show_alert=True)
                 await query.answer('Cʜᴇᴄᴋ PM, I ʜᴀᴠᴇ sᴇɴᴛ ғɪʟᴇs ɪɴ PM', show_alert=True)
         except UserIsBlocked:
