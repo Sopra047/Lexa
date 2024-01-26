@@ -898,7 +898,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "spc":
         buttons = [[
-            InlineKeyboardButton('Log', url="https://t.me/botuptest"),
+            InlineKeyboardButton('Log', url="https://t.me/SharVision"),
             ], [
                 InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ"ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
                 InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/SharingClub_bot'),
@@ -939,13 +939,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "spu":
         buttons = [[
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/HORRIDduo'),
-            InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='https://t.me/HORRIDduo'),
+            InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ"ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
+            InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/SharingClub_bot'),
             ], [
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/XBOTSUPPORTS'),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/botuptest'),
+            InlineKeyboardButton('🖼 Vσiɾ Pσsteɾs', url='https://t.me/Sharliste'),
+            InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
             ], [
             InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
+            InlineKeyboardButton('🔮 Stɑtistique', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
