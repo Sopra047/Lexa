@@ -274,20 +274,20 @@ ID - <code>{}</code>
 Name - {}
 """
     FILE_MSG = """
-<b>Hai 👋 {} </b>😍
+<b>Yo 👋 {} </b>😍
 
-<b>📫 Your File is Ready</b>
+<b>📫 Votɾe fichieɾ est pɾêt</b>
 
-<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>{}</code>              
+<b>📂 Nᴏᴍ </b> : <code>{}</code>              
 
-<b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{}</b>
+<b>⚙️ Tᴀɪʟʟᴇ </b> : <b>{}</b>
 """
     CHANNEL_CAP = """
-<b>Hai 👋 {}</b> 😍
+<b>Yo 👋 {}</b> 😍
 
 <code>{}</code>
 
-<b>Dᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ᴛʜᴇ ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ғʀᴏᴍ ʜᴇʀᴇ ɪɴ 10 ᴍɪɴᴜᴛᴇs sᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀғᴛᴇʀ ᴍᴏᴠɪɴɢ ғʀᴏᴍ ʜᴇʀᴇ ᴛᴏ sᴏᴍᴇᴡʜᴇʀᴇ ᴇʟsᴇ!</b>
+<b>En rɑison des droits d'ɑuteur, le fichier serɑ supprimé d'ici dɑns 10 minutes, ɑlors téléchɑrgez-le ɑprès l'ɑvoir déplɑcé d'ici vers un ɑutre endroit ou sɑuvegɑrdez-le dɑns votre cloud ☁️ !</b>
 
 <b>© Powered by {}</b>
 """
