@@ -33,7 +33,7 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='You have to subscribe my channel to use the bot',
+                           switch_pm_text='ᴀʙᴏɴɴᴇ﹣ᴛᴏɪ ᴀ̀ ᴍᴀ ᴄʜᴀɪɴᴇ ᴘᴏᴜʀ ᴍ·ᴜᴛɪʟɪsᴇʀ',
                            switch_pm_parameter="subscribe")
         return
 
@@ -74,7 +74,7 @@ async def answer(bot, query):
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Results - {total}"
+        switch_pm_text = f"{emoji.FILE_FOLDER} Résultats - {total}"
         if string:
             switch_pm_text += f" for {string}"
         try:
@@ -89,7 +89,7 @@ async def answer(bot, query):
         except Exception as e:
             logging.exception(str(e))
     else:
-        switch_pm_text = f'{emoji.CROSS_MARK} No results'
+        switch_pm_text = f'{emoji.CROSS_MARK} Aᴜᴄᴜɴ ʀᴇ́sᴜʟᴛᴀᴛ'
         if string:
             switch_pm_text += f' for "{string}"'
 
@@ -103,7 +103,7 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('♻️Cheɾcheɾ ɑ̀ nouveɑu♻️', switch_inline_query_current_chat=query)
         ]
         ]
     return InlineKeyboardMarkup(buttons)
