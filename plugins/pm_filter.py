@@ -945,7 +945,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🖼 Vσiɾ Pσsteɾs', url='https://t.me/Sharliste'),
             InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
             ], [
-            InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
+            InlineKeyboardButton("⟸ ʀᴇᴛᴏᴜʀ", callback_data="start"),
             InlineKeyboardButton('🔮 Stɑtistique', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1216,8 +1216,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
+            InlineKeyboardButton('⏮ RETOUR', callback_data='start'),
+            InlineKeyboardButton('♻️AᥴtᥙᥲꙆɩ⳽ᥱɾ', callback_data='rfrsh')
         ]]
         await client.edit_message_media(
             query.message.chat.id,
@@ -1238,7 +1238,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "rfrsh":
-        await query.answer("𝙁𝙚𝙩𝙘𝙝𝙞𝙣𝙜 𝙈𝙤𝙣𝙜𝙤𝘿𝙗 𝘿𝙖𝙩𝙖𝘽𝙖𝙨𝙚")
+        await query.answer("Actualisation...")
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='stats'),
             InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
