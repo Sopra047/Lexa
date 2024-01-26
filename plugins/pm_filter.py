@@ -797,17 +797,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "minfo":
         await query.answer(
-            "⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nFᴏʀᴍᴀᴛ ᴅᴇ ᴅᴇᴍᴀɴᴅᴇ ᴅᴇ ғɪʟᴍ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nAʟʟᴇᴢ sᴜʀ Gᴏᴏɢʟᴇ ➠ Tᴀᴘᴇᴢ ʟᴇ ɴᴏᴍ ᴅᴜ ғɪʟᴍ ➠ Cᴏᴘɪᴇᴢ ʟᴇ ɴᴏᴍ ᴄᴏʀʀᴇᴄᴛ ➠ Cᴏʟʟᴇᴢ ᴅᴀɴs ᴄᴇ Gʀᴏᴜᴘᴇ\n\nᴇxᴀᴍᴘʟᴇ : ᴀᴠᴀᴛᴀʀ: ᴛʜᴇ ᴡᴀʏ ᴏғ ᴡᴀᴛᴇʀ\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ",
+            "⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nFᴏʀᴍᴀᴛ ᴅᴇ ᴅᴇᴍᴀɴᴅᴇ ᴅᴇ ғɪʟᴍ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nAʟʟᴇᴢ sᴜʀ Gᴏᴏɢʟᴇ ➠ Tᴀᴘᴇᴢ ʟᴇ ɴᴏᴍ ᴅᴜ ғɪʟᴍ ➠ Cᴏᴘɪᴇᴢ ʟᴇ ɴᴏᴍ ᴄᴏʀʀᴇᴄᴛ ➠ Cᴏʟʟᴇᴢ ᴅᴀɴs ᴄᴇ Gʀᴏᴜᴘᴇ\n\nExemple : Avɑtɑr\n\n🚯 N’utiliser pɑs ➠ ':(!,./)\n\n @Sharing_Club",
             show_alert=True)
 
     elif query.data == "sinfo":
         await query.answer(
-            "⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ ᴄɪɴᴇᴍᴀʟᴀ.ᴄᴏᴍ",
+            "⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nFᴏʀᴍᴀᴛ ᴅᴇ ᴅᴇᴍᴀɴᴅᴇ sᴇ́ʀɪᴇ \n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nAʟʟᴇᴢ sᴜʀ Gᴏᴏɢʟᴇ ➠ Tᴀᴘᴇᴢ ʟᴇ ɴᴏᴍ ᴅᴇ sᴇ́ʀɪᴇ ➠ Cᴏᴘɪᴇᴢ ʟᴇ ɴᴏᴍ ᴄᴏʀʀᴇᴄᴛ ➠ Cᴏʟʟᴇᴢ ᴅᴀɴs ᴄᴇ Gʀᴏᴜᴘᴇ\n\nExemple : Arrow S01\n\n🚯 N’utiliser pɑs ➠ ':(!,./)\n\n @Sharing_Club",
             show_alert=True)
 
     elif query.data == "tinfo":
         await query.answer(
-            "▣ ᴛɪᴘs ▣\n\n★ ᴛʏᴘᴇ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ (ɢᴏᴏɢʟᴇ)\n\n★ ɪғ ʏᴏᴜ ɴᴏᴛ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇ ɪɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ᴛʜᴇ ɴᴇxᴛ sᴛᴇᴘ ɪs ᴄʟɪᴄᴋ ɴᴇxᴛ ʙᴜᴛᴛᴏɴ.\n\n★ ᴄᴏɴᴛɪɴᴜᴇ ᴛʜɪs ᴍᴇᴛʜᴏᴅ ᴛᴏ ɢᴇᴛᴛɪɴɢ ʏᴏᴜ ғɪʟᴇ\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄɪɴᴇᴍᴀʟᴀ. ᴄᴏᴍ",
+            "▣Conseıl▣\n\n★ Tᥲρᥱz ᥣ’orthogrᥲρhᥱ ᥴorrᥱᥴtᥱ (ɢᴏᴏɢʟᴇ)\n\n★ Sι voᥙs ᥒ’obtᥱᥒᥱz ρᥲs votrᥱ fιᥴhιᥱr dᥲᥒs ᥣᥲ ρᥲgᥱ, ᥣ’ᥱ́tᥲρᥱ sᥙιvᥲᥒtᥱ ᥴoᥒsιstᥱ ᥲ̀ ᥴᥣιqᥙᥱr sᥙr ᥣᥱ boᥙtoᥒ sᥙιvᥲᥒt.\n\n★ ᴄᴏɴᴛɪɴᴜᴇ ᴛʜɪs ᴍᴇᴛʜᴏᴅ ᴛᴏ ɢᴇᴛᴛɪɴɢ ʏᴏᴜ ғɪʟᴇ\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @SharClub",
             show_alert=True)
 
     elif query.data == "fmal":
