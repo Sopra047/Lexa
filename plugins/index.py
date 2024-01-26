@@ -18,28 +18,28 @@ lock = asyncio.Lock()
 async def index_files(bot, query):
     if query.data.startswith('index_cancel'):
         temp.CANCEL = True
-        return await query.answer("Cancelling Indexing")
+        return await query.answer("Aʀʀᴇ̂ᴛ ᴅᴇ ʟ’ɪɴᴅᴇxᴀᴛɪᴏɴ😉")
     _, raju, chat, lst_msg_id, from_user = query.data.split("#")
     if raju == 'reject':
         await query.message.delete()
         await bot.send_message(int(from_user),
-                               f'Your Submission for indexing {chat} has been decliened by our moderators.',
+                               f'Nᥱ trᥲᥒsfᥱ́rᥱr ρᥣᥙs dᥱ fιᥴhιᥱrs 📂 vᥱᥒᥲᥒt dᥱ {chat} ou de n*ımporte quel répertoıre sous peıne d*être bαnnı.\nMeѕѕαɢe de SυperMαɴ',
                                reply_to_message_id=int(lst_msg_id))
         return
 
     if lock.locked():
-        return await query.answer('Wait until previous process complete.', show_alert=True)
+        return await query.answer('Attendez, laissez-moi terminer le premier', show_alert=True)
     msg = query.message
 
-    await query.answer('Processing...⏳', show_alert=True)
+    await query.answer('Traitement...⏳', show_alert=True)
     if int(from_user) not in ADMINS:
         await bot.send_message(int(from_user),
-                               f'Your Submission for indexing {chat} has been accepted by our moderators and will be added soon.',
+                               f'Votre soumission pour indexation {chat} a été accepté par nos modérateurs😀 et sera bientôt ajouté.✔️',
                                reply_to_message_id=int(lst_msg_id))
     await msg.edit(
-        "Starting Indexing",
+        "Indexation démarrée🤖",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
+            [[InlineKeyboardButton('ANNULER', callback_data='index_cancel')]]
         )
     )
     try:
