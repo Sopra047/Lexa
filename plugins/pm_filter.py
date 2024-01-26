@@ -706,9 +706,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     await query.answer(
                         f"Hᴇʏ {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
                         show_alert=True)
-                await query.answer('Cʜᴇᴄᴋ PM, I ʜᴀᴠᴇ sᴇɴᴛ ғɪʟᴇs ɪɴ PM', show_alert=True)
+                await query.answer('Vérifiez PM, j’ɑi envoyé les fichiers en PM', show_alert=True)
         except UserIsBlocked:
-            await query.answer('𝐔𝐧𝐛𝐥𝐨𝐜𝐤 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐦𝐚𝐡𝐧 !', show_alert=True)
+            await query.answer('𝖣𝖾́𝖻𝗅𝗈𝗊𝗎𝖾𝗋 𝗅𝖾 𝖻𝗈𝗍 𝖲𝗎𝗉𝖾𝗋 𝖬𝖺𝗇 😑 !', show_alert=True)
         except PeerIdInvalid:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
@@ -716,12 +716,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("checksub"):
         if (AUTH_CHANNEL or REQ_CHANNEL) and not await is_subscribed(client, query):
             await query.answer(
-                "𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒", show_alert=True)
+                "J’ɑime votre intelligence, mɑis ne soyez pɑs trop intelligent 😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('No such file exist.')
+            return await query.answer('🚫 𝗳𝗶𝗰𝗵𝗶𝗲𝗿 𝗻𝗼𝗻 𝘁𝗿𝗼𝘂𝘃𝗲́')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -744,7 +744,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "predvd":
-        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting PreDVDs... Please wait...</b>")
+        k = await client.send_message(chat_id=query.message.chat.id, text="<b>𝖲𝗎𝗉𝗉𝗋𝖾𝗌𝗌𝗂𝗈𝗇 𝖯𝗋𝖾𝖣𝖵𝖣𝗌... 𝖵𝖾𝗎𝗂𝗅𝗅𝖾𝗓 𝗉𝖺𝗍𝗂𝖾𝗇𝗍𝖾𝗋...</b>")
         files, next_offset, total = await get_bad_files(
             'predvd',
             offset=0)
@@ -755,13 +755,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 '_id': file_ids,
             })
             if result.deleted_count:
-                logger.info('PreDVD File Found ! Successfully deleted from database.')
+                logger.info('𝖥𝗂𝖼𝗁𝗂𝖾𝗋 𝖯𝗋𝖾𝖣𝖵𝖣 𝗍𝗋𝗈𝗎𝗏𝖾́ ! 𝖲𝗎𝗉𝗉𝗋𝗂𝗆𝖾́ 𝖺𝗏𝖾𝖼 𝗌𝗎𝖼𝖼𝖾̀𝗌 𝖽𝖾 𝗅𝖺 𝖻𝖺𝗌𝖾 𝖽𝖾 𝖽𝗈𝗇𝗇𝖾́𝖾𝗌.')
             deleted += 1
         deleted = str(deleted)
-        await k.edit_text(text=f"<b>Successfully deleted {deleted} PreDVD files.</b>")
+        await k.edit_text(text=f"<b>𝖲𝗎𝗉𝗉𝗋𝗂𝗆𝖾́ 𝖺𝗏𝖾𝖼 𝗌𝗎𝖼𝖼𝖾̀𝗌 {deleted} PreDVD 𝖥𝗂𝖼𝗁𝗂𝖾𝗋𝗌.</b>")
 
     elif query.data == "camrip":
-        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting CamRips... Please wait...</b>")
+        k = await client.send_message(chat_id=query.message.chat.id, text="<b>𝖲𝗎𝗉𝗉𝗋𝖾𝗌𝗌𝗂𝗈𝗇 𝖽𝖾 𝖢𝖺𝗆𝖱𝗂𝗉𝗌... 𝖵𝖾𝗎𝗂𝗅𝗅𝖾𝗓 𝗉𝖺𝗍𝗂𝖾𝗇𝗍𝖾𝗋...</b>")
         files, next_offset, total = await get_bad_files(
             'camrip',
             offset=0)
