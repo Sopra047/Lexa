@@ -25,7 +25,7 @@ async def add_filter(grp_id, text, reply_text, btn, file, alert):
     try:
         mycol.update_one({'text': str(text)},  {"$set": data}, upsert=True)
     except:
-        logger.exception('Une erreur s’est produite!', exc_info=True)
+        logger.exception('𝖴𝗇𝖾 𝖾𝗋𝗋𝖾𝗎𝗋 𝗌’𝖾𝗌𝗍 𝗉𝗋𝗈𝖽𝗎𝗂𝗍𝖾!', exc_info=True)
              
      
 async def find_filter(group_id, name):
@@ -69,25 +69,25 @@ async def delete_filter(message, text, group_id):
     if query == 1:
         mycol.delete_one(myquery)
         await message.reply_text(
-            f"'`{text}`'  Supprimé. Je ne répondrai plus à ce filtre.",
+            f"'`{text}`'  𝖲𝗎𝗉𝗉𝗋𝗂𝗆𝖾́. 𝖩𝖾 𝗇𝖾 𝗋𝖾́𝗉𝗈𝗇𝖽𝗋𝖺𝗂 𝗉𝗅𝗎𝗌 𝖺̀ 𝖼𝖾 𝖿𝗂𝗅𝗍𝗋𝖾.",
             quote=True,
             parse_mode=enums.ParseMode.MARKDOWN
         )
     else:
-        await message.reply_text("Impossible de trouver ce filtre!", quote=True)
+        await message.reply_text("𝖨𝗆𝗉𝗈𝗌𝗌𝗂𝖻𝗅𝖾 𝖽𝖾 𝗍𝗋𝗈𝗎𝗏𝖾𝗋 𝖼𝖾 𝖿𝗂𝗅𝗍𝗋𝖾!", quote=True)
 
 
 async def del_all(message, group_id, title):
     if str(group_id) not in mydb.list_collection_names():
-        await message.edit_text(f"Rien à supprimer dans {title}!")
+        await message.edit_text(f"𝖱𝗂𝖾𝗇 𝖺̀ 𝗌𝗎𝗉𝗉𝗋𝗂𝗆𝖾𝗋 𝖽𝖺𝗇𝗌 {title}!")
         return
 
     mycol = mydb[str(group_id)]
     try:
         mycol.drop()
-        await message.edit_text(f"Tous les filtres de {title} ont été supprimé")
+        await message.edit_text(f"Tous les filtres de {title} 𝗈𝗇𝗍 𝖾́𝗍𝖾́ 𝗌𝗎𝗉𝗉𝗋𝗂𝗆𝖾́")
     except:
-        await message.edit_text("Impossible de supprimer tous les filtres du groupe!")
+        await message.edit_text("𝖨𝗆𝗉𝗈𝗌𝗌𝗂𝖻𝗅𝖾 𝖽𝖾 𝗌𝗎𝗉𝗉𝗋𝗂𝗆𝖾𝗋 𝗍𝗈𝗎𝗌 𝗅𝖾𝗌 𝖿𝗂𝗅𝗍𝗋𝖾𝗌 𝖽𝗎 𝗀𝗋𝗈𝗎𝗉𝖾!")
         return
 
 
