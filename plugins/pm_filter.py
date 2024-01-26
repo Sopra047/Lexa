@@ -308,7 +308,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     files, offset, _ = await get_search_results(search, max_results=10)
     files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
     if not files:
-        await query.answer("🚫 𝗔𝘂𝗰𝘂𝗻 𝗳𝗶𝗰𝗵𝗶𝗲𝗿 𝗻'𝗮 𝗲́𝘁𝗲́ 𝘁𝗿𝗼𝘂𝘃𝗲́ 🚫", show_alert=1)
+        await query.answer("🚫 𝗔𝘂𝗰𝘂𝗻 𝗳𝗶𝗰𝗵𝗶𝗲𝗿 𝗻’𝗮 𝗲́𝘁𝗲́ 𝘁𝗿𝗼𝘂𝘃𝗲́ 🚫", show_alert=1)
         return
 
     settings = await get_settings(message.chat.id)
@@ -544,7 +544,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if mkinact:
             await query.message.edit_text(
-                f"Disconnected from **{title}**",
+                f"𝖣𝖾́𝖼𝗈𝗇𝗇𝖾𝖼𝗍𝖾𝗋 𝖽𝖾 **{title}**",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
@@ -632,7 +632,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             typed = clicked  # if failed, uses the clicked user's ID as requested user ID
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('No such file exist.')
+            return await query.answer('🚫 𝗳𝗶𝗰𝗵𝗶𝗲𝗿 𝗻𝗼𝗻 𝘁𝗿𝗼𝘂𝘃𝗲́ 🚫')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -656,7 +656,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     return
                 else:
                     await query.answer(
-                        f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !",
+                        f"Hᴇʏ {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
                         show_alert=True)
             elif settings['botpm']:
                 if clicked == typed:
@@ -664,7 +664,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     return
                 else:
                     await query.answer(
-                        f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !",
+                        f"Hᴇʏ {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
                         show_alert=True)
             else:
                 if clicked == typed:
@@ -680,7 +680,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                     InlineKeyboardButton(f'🇮🇳 Tᴀᴍ', 'ftam'),
                                     InlineKeyboardButton(f'🇮🇳 Hɪɴ', 'fhin')
                                 ], [
-                                InlineKeyboardButton("📍 ᴄʜᴀɴɴᴇʟ 📍", url=(MAIN_CHANNEL))
+                                InlineKeyboardButton("📍 𝙲𝙰𝙽𝙰𝙻 📍", url=(MAIN_CHANNEL))
                             ]
                             ]
                         )
