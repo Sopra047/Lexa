@@ -1029,7 +1029,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "admin":
         buttons = [[
-            InlineKeyboardButton('⏮RETOUR', callback_data="spu")
+            InlineKeyboardButton('⏮RETOUR', callback_data="spc")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
