@@ -225,21 +225,21 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("ƁAƇƘ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📒ᕈΔGE {math.ceil(int(offset) / 7) + 1} / {math.ceil(total / 7)}",
+            [InlineKeyboardButton("⏪𝐑𝐞𝐭𝐨𝐮𝐫", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📄𝐏𝐚𝐠𝐞𝐬 {math.ceil(int(offset) / 7) + 1} / {math.ceil(total / 7)}",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton(f"📒ᕈΔGE {math.ceil(int(offset) / 7) + 1} / {math.ceil(total / 7)}", callback_data="pages"),
-             InlineKeyboardButton("ПΣXƬ", callback_data=f"next_{req}_{key}_{n_offset}")])
+            [InlineKeyboardButton(f"📄𝐏𝐚𝐠𝐞𝐬 {math.ceil(int(offset) / 7) + 1} / {math.ceil(total / 7)}", callback_data="pages"),
+             InlineKeyboardButton("𝐒𝐮𝐢𝐯𝐚𝐧𝐭⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("ƁAƇƘ", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📒ᕈΔGE {math.ceil(int(offset) / 7) + 1} / {math.ceil(total / 7)}",
+                InlineKeyboardButton("⏪𝐑𝐞𝐭𝐨𝐮𝐫", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"📄𝐏𝐚𝐠𝐞𝐬 {math.ceil(int(offset) / 7) + 1} / {math.ceil(total / 7)}",
                                      callback_data="pages"),
-                InlineKeyboardButton("ПΣXƬ", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("𝐒𝐮𝐢𝐯𝐚𝐧𝐭⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
