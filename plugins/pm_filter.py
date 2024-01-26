@@ -900,13 +900,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Log', url="https://t.me/botuptest"),
             ], [
-                InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/bjuhkgh'),
-                InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='https://tm/myre'),
+                InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ"ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
+                InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/SharingClub_bot'),
             ], [
-                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/XBOTSUPPORTS'),
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/botuptest'),
+                InlineKeyboardButton('🖼 Vσiɾ Pσsteɾs', url='https://t.me/Sharliste'),
+                InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
             ], [
-                InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
+                InlineKeyboardButton('🏠 𝐀𝐜𝐜𝐮𝐞𝐢𝐥', callback_data='start'),
+                InlineKeyboardButton('🔮 Stɑtistique', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
