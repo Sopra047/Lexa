@@ -93,31 +93,31 @@ async def send_for_index(bot, message):
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply(
-            f'Voulez-vous indexeɾ ce Cɑnɑl / Gɾoupe ?\n\nChat ID/ Username: <code>{chat_id}</code>\nLast Message ID: <code>{last_msg_id}</code>',
+            f'Voulez-vous indexeɾ ce Cɑnɑl / Gɾoupe ?\n\nChᥲt ID/ Usᥱrᥒᥲmᥱ: <code>{chat_id}</code>\nDᴇʀɴɪᴇʀ ᴍᴇssᴀɢᴇ ID: <code>{last_msg_id}</code>',
             reply_markup=reply_markup)
 
     if type(chat_id) is int:
         try:
             link = (await bot.create_chat_invite_link(chat_id)).invite_link
         except ChatAdminRequired:
-            return await message.reply('Make sure iam an admin in the chat and have permission to invite users.')
+            return await message.reply('Assʋɾez-νσʋs ʠʋe je sʋis ʋɳ ɑɗɱiɳistɾɑteʋɾ ɗɑɳs le cɧɑt et ɑνec l’ɑʋtσɾisɑtiσɳ ɗ’iɳνiteɾ ɗes ʋtilisɑteʋɾs.')
     else:
         link = f"@{message.forward_from_chat.username}"
     buttons = [
         [
-            InlineKeyboardButton('Accept Index',
+            InlineKeyboardButton('Accepteɾ l*iɳɗexɑtiσɳ ✔️',
                                  callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
         ],
         [
-            InlineKeyboardButton('Reject Index',
+            InlineKeyboardButton('Reʄʋseɾ l*iɳɗexɑtiσɳ ❌',
                                  callback_data=f'index#reject#{chat_id}#{message.id}#{message.from_user.id}'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
     await bot.send_message(LOG_CHANNEL,
-                           f'#IndexRequest\n\nBy : {message.from_user.mention} (<code>{message.from_user.id}</code>)\nChat ID/ Username - <code> {chat_id}</code>\nLast Message ID - <code>{last_msg_id}</code>\nInviteLink - {link}',
+                           f'#IndexRequest\n\nPar : {message.from_user.mention} (<code>{message.from_user.id}</code>)\nChat ID/ Username - <code> {chat_id}</code>\nLast Message ID - <code>{last_msg_id}</code>\nInviteLink - {link}',
                            reply_markup=reply_markup)
-    await message.reply('ThankYou For the Contribution, Wait For My Moderators to verify the files.')
+    await message.reply('ᒍᥱ ᥒᥱ ⳽ᥙɩ⳽ ρᥲ⳽ ʋotɾᥱ ρoᥙᑲᥱꙆꙆᥱ 🚮, ❌Evıter ὰ l*αvenır de me trαnsférer des fıchıers 📂.\nFɑite pɑr @SharClub')
 
 
 @Client.on_message(filters.command('setskip') & filters.user(ADMINS))
@@ -127,11 +127,11 @@ async def set_skip_number(bot, message):
         try:
             skip = int(skip)
         except:
-            return await message.reply("Skip number should be an integer.")
-        await message.reply(f"Successfully set SKIP number as {skip}")
+            return await message.reply("Le numéro de saut doit être un nombre entier.")
+        await message.reply(f"Définissez avec succès le numéro de saut comme {skip}")
         temp.CURRENT = int(skip)
     else:
-        await message.reply("Give me a skip number")
+        await message.reply("Donnez-moi un numéro de saut")
 
 
 async def index_files_to_db(lst_msg_id, chat, msg, bot):
@@ -147,14 +147,14 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
             temp.CANCEL = False
             async for message in bot.iter_messages(chat, lst_msg_id, temp.CURRENT):
                 if temp.CANCEL:
-                    await msg.edit(f"Successfully Cancelled!!\n\nSaved <code>{total_files}</code> files to dataBase!\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>")
+                    await msg.edit(f"Annuler avec succès!!\n\nEnregistré <code>{total_files}</code> fichiers dans la base de données!\nFichiers en double ignorés: <code>{duplicate}</code>\nMessages ignorés supprimés: <code>{deleted}</code>\nMessages non multimédias ignorés: <code>{no_media + unsupported}</code>(Médias non pris en charge - `{unsupported}` )\nLes erreurs qui se sont produites: <code>{errors}</code>")
                     break
                 current += 1
                 if current % 20 == 0:
                     can = [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
                     reply = InlineKeyboardMarkup(can)
                     await msg.edit_text(
-                        text=f"Total messages fetched: <code>{current}</code>\nTotal messages saved: <code>{total_files}</code>\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>",
+                        text=f"Nombre total de messages récupérés: <code>{current}</code>\nNombre total de messages enregistrés: <code>{total_files}</code>\nFichiers en double ignorés: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media + unsupported}</code>(Unsupported Media - `{unsupported}` )\nErrors Occurred: <code>{errors}</code>",
                         reply_markup=reply)
                 if message.empty:
                     deleted += 1
