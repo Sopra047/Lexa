@@ -208,13 +208,13 @@ async def next_page(bot, query):
             ]
     btn.insert(0,
                [
-                   InlineKeyboardButton(f'⭕ᴊᴏɪɴ ғᴏʀ ɴᴇᴡ ᴍᴏᴠɪᴇs⭕', url='https://t.me/MALLU_MOVIES_PROK'),
+                   InlineKeyboardButton(f'⭕ʀᴇᴊᴏɪɴᴛ ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs⭕', url='https://t.me/Group_SharClub'),
                ]
                )
     btn.insert(1,
                [
-                   InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                   InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
+                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', 'minfo'),
+                   InlineKeyboardButton("🌐 Lᴀɴɢᴜᴇs 🌏", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
                ]
               )
     if 0 < offset <= 10:
