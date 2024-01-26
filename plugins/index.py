@@ -55,7 +55,7 @@ async def send_for_index(bot, message):
         regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
         match = regex.match(message.text)
         if not match:
-            return await message.reply('Invalid link')
+            return await message.reply('Lien non valide')
         chat_id = match.group(4)
         last_msg_id = int(match.group(5))
         if chat_id.isnumeric():
@@ -68,32 +68,32 @@ async def send_for_index(bot, message):
     try:
         await bot.get_chat(chat_id)
     except ChannelInvalid:
-        return await message.reply('This may be a private channel / group. Make me an admin over there to index the files.')
+        return await message.reply('Il peut s’agir d’un canal / groupe privé😔. Faites de moi un administratrice là-bas pour indexer les fichiers.😀\nBesoins de fichiers Contactez VisionTeam Support\n@VisionsT')
     except (UsernameInvalid, UsernameNotModified):
-        return await message.reply('Invalid Link specified.')
+        return await message.reply('Lien spécifié non vɑlide.')
     except Exception as e:
         logger.exception(e)
         return await message.reply(f'Errors - {e}')
     try:
         k = await bot.get_messages(chat_id, last_msg_id)
     except:
-        return await message.reply('Make Sure That Iam An Admin In The Channel, if channel is private')
+        return await message.reply('Assurez-vous que je suıs αdmınıstrαtrıce dαns le cαnαl, sı le cαnαl est prıvé')
     if k.empty:
-        return await message.reply('This may be group and iam not a admin of the group.')
+        return await message.reply('𝖨𝗅 𝗉𝖾𝗎𝗍 𝗌’𝖺𝗀𝗂𝗋 𝖽’𝗎𝗇 𝗀𝗋𝗈𝗎𝗉𝖾 𝖾𝗍 𝗃𝖾 𝗇𝖾 𝗌𝗎𝗂𝗌 𝗉𝖺𝗌 𝗎𝗇 𝖺𝖽𝗆𝗂𝗇𝗂𝗌𝗍𝗋𝖺𝗍𝖾𝗎𝗋 𝖽𝗎 𝗀𝗋𝗈𝗎𝗉𝖾.')
 
     if message.from_user.id in ADMINS:
         buttons = [
             [
-                InlineKeyboardButton('Yes',
+                InlineKeyboardButton('✔️Ꭺꮯꮯꭼꮲꭲꭼꭱ✔️',
                                      callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
             ],
             [
-                InlineKeyboardButton('close', callback_data='close_data'),
+                InlineKeyboardButton('❌Aɴɴυler❌', callback_data='close_data'),
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply(
-            f'Do you Want To Index This Channel/ Group ?\n\nChat ID/ Username: <code>{chat_id}</code>\nLast Message ID: <code>{last_msg_id}</code>',
+            f'Voulez-vous indexeɾ ce Cɑnɑl / Gɾoupe ?\n\nChat ID/ Username: <code>{chat_id}</code>\nLast Message ID: <code>{last_msg_id}</code>',
             reply_markup=reply_markup)
 
     if type(chat_id) is int:
