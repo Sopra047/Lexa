@@ -325,11 +325,11 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fournir des films et se�
 
     ALRT_TXT = """Cᴇ ɴ’ᴇsᴛ ᴘᴀs ᴘᴏᴜʀ ᴠᴏᴜs ʙᴏss"""
 
-    OLD_ALRT_TXT = """𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧 """
+    OLD_ALRT_TXT = """Vous utilisez l’un de mes ɑnciens messɑges, merci d’envoyer une nouvelle requête"""
 
-    TOP_ALRT_MSG = """♻️ ᴄʜᴇᴄᴋɪɴɢ ꜰɪʟᴇ ᴏɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ... ♻️"""
+    TOP_ALRT_MSG = """♻️ 𝖵𝖾́𝗋𝗂𝖿𝗂𝖼𝖺𝗍𝗂𝗈𝗇 𝖽𝗎 𝖿𝗂𝖼𝗁𝗂𝖾𝗋 𝖽𝖺𝗇𝗌 𝗆𝖺 𝖻𝖺𝗌𝖾 𝖽𝖾 𝖽𝗈𝗇𝗇𝖾́𝖾𝗌... ♻️"""
 
-    MVE_NT_FND = """<b>ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ʏᴇᴛ  ʀᴇʟᴇᴀꜱᴇᴅ ᴏʀ ᴀᴅᴅᴇᴅ ᴛᴏ ᴅᴀᴛᴀʙᴀꜱᴇ</b> """
+    MVE_NT_FND = """<b>Cᴇ ғɪʟᴍ ɴ’ᴇsᴛ ᴘᴀs ᴇɴᴄᴏʀᴇ sᴏʀᴛɪ ᴏᴜ ᴀᴊᴏᴜᴛᴇ́ ᴀ̀ ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs</b> """
 
     NORSLTS = """★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 𝗜𝗗 <b>: {}</b>
@@ -353,14 +353,14 @@ Exemple : Freelɑnce 2023
 
     CUDNT_FND = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
 
-    REPRT_MSG = """ Reported To Admin"""
+    REPRT_MSG = """ Signɑler ɑ̀ l’ɑdministrɑteur"""
 
-    CON_TXT = """<b><u>ᴄᴏᴜɴᴛʀʏ ɪɴғᴏ</b></u>
+    CON_TXT = """<b><u>Infos 𝖯ɑys</b></u>
 
-<b>Tʜɪs ᴍᴏᴅᴜʟᴇ ɪs ᴛᴏ ғɪɴᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴄᴏᴜɴᴛʀɪᴇs</b>
+<b>𝖢𝖾 𝗆𝗈𝖽𝗎𝗅𝖾 𝗉𝖾𝗋𝗆𝖾𝗍 𝖽𝖾 𝗍𝗋𝗈𝗎𝗏𝖾𝗋 𝖽𝖾𝗌 𝗂𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇𝗌 𝗌𝗎𝗋 𝗅𝖾𝗌 𝗉𝖺𝗒𝗌</b>
 
-• /country [𝖼𝗈𝗎𝗇𝗍𝗋𝗒 𝗇𝖺𝗆𝖾] 
-𝖤𝗑𝖺𝗆𝗉𝗅𝖾 :- <code>/country India</code>"""
+• /country [𝖭𝗈𝗆 𝖽𝗎 𝗉𝖺𝗒𝗌] 
+Exᴇᴍᴘʟᴇ :- <code>/country 𝖥𝗋𝖺𝗇𝖼𝖾</code>"""
 
     OPNAI_TXT = """ᴏᴘᴇɴᴀɪ ɪꜱ ᴀ ᴀɪ ꜱʏꜱᴛᴇᴍ ᴛʜᴀᴛ ᴡɪʟʟ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ꜰɪɴᴅ ᴀɴꜱᴡᴇʀ ᴏꜰ ʏᴏᴜʀ Qᴜᴇꜱᴛɪᴏɴ ᴀɴᴅ ɪᴛ ᴡɪʟʟ ᴏɴʟʏ ᴡᴏʀᴋ ᴏɴ ʙᴏᴛ ᴘᴍ.
 
