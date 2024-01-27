@@ -1,5 +1,4 @@
 from pyrogram import Client, filters, types as t
-from config import Config
 from plugins.Utils import identifyPlatform,DownloadMedia,getContentType
 
 
