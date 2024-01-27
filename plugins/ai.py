@@ -1,5 +1,5 @@
 from pyrogram import Client, filters, types as t
-from Utils import getText,ChatCompletion,getMedia,geminiVision
+from plugins.Utils import getText,ChatCompletion,getMedia,geminiVision
 
 @Client.on_message(filters.command(["gpt","bard","llama","mistral","palm","gemini"]))
 async def chatbots(_: Client,m: t.Message):
