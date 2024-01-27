@@ -135,25 +135,25 @@ async def disable_chat(bot, message):
 @Client.on_message(filters.command('enable') & filters.user(ADMINS))
 async def re_enable_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Give me a chat id')
+        return await message.reply('Donne-moi ID de chɑt')
     chat = message.command[1]
     try:
         chat_ = int(chat)
     except:
-        return await message.reply('Give Me A Valid Chat ID')
+        return await message.reply('Donne-moi un ID de chɑt vɑlide')
     sts = await db.get_chat(int(chat))
     if not sts:
-        return await message.reply("Chat Not Found In DB !")
+        return await message.reply("Chɑt intɾouvɑble dɑns lɑ bɑse de données !")
     if not sts.get('is_disabled'):
-        return await message.reply('This chat is not yet disabled.')
+        return await message.reply('Ce chɑt n’est pɑs encoɾe désɑctivé.')
     await db.re_enable_chat(int(chat_))
     temp.BANNED_CHATS.remove(int(chat_))
-    await message.reply("Chat Successfully re-enabled")
+    await message.reply("Chɑt ɾéɑctivé ɑvec succès")
 
 
 @Client.on_message(filters.command('stats') & filters.incoming)
 async def get_ststs(bot, message):
-    rju = await message.reply('Fetching stats..')
+    rju = await message.reply('Récupéɾɑtion des stɑtistiques...')
     total_users = await db.total_users_count()
     totl_chats = await db.total_chat_count()
     files = await Media.count_documents()
@@ -170,16 +170,16 @@ async def get_ststs(bot, message):
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Give me a chat id')
+        return await message.reply('Donne-moi ID de chat')
     chat = message.command[1]
     try:
         chat = int(chat)
     except:
-        return await message.reply('Give Me A Valid Chat ID')
+        return await message.reply('Donne-moi un ID de chɑt vɑlide')
     try:
         link = await bot.create_chat_invite_link(chat)
     except ChatAdminRequired:
-        return await message.reply("Invite Link Generation Failed, Iam Not Having Sufficient Rights")
+        return await message.reply("Échec de lɑ généɾɑtion du lien d’invitɑtion, je n’ɑi pɑs suffisɑmment de dɾoits")
     except Exception as e:
         return await message.reply(f'Error {e}')
     await message.reply(f'Here is your Invite Link {link.invite_link}')
@@ -188,14 +188,14 @@ async def gen_invite(bot, message):
 async def ban_a_user(bot, message):
     # https://t.me/GetTGLink/4185
     if len(message.command) == 1:
-        return await message.reply('Give me a user id / username')
+        return await message.reply('Donnez-moi un id / nom d’utilisɑteuɾ')
     r = message.text.split(None)
     if len(r) > 2:
         reason = message.text.split(None, 2)[2]
         chat = message.text.split(None, 2)[1]
     else:
         chat = message.command[1]
-        reason = "No reason Provided"
+        reason = "Aucune ɾɑison fouɾnie"
     try:
         chat = int(chat)
     except:
@@ -203,9 +203,9 @@ async def ban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("This is an invalid user, make sure ia have met him before.")
+        return await message.reply("Ceci est un utilisɑteuɾ invɑlide, ɑssuɾez-vous que je l'ɑi déjɑ̀ ɾencontɾé.")
     except IndexError:
-        return await message.reply("This might be a channel, make sure its a user.")
+        return await message.reply("Il peut s’ɑgiɾ d’un cɑnɑl, ɑssuɾez-vous qu’il s’ɑgit d’un utilisɑteuɾ.")
     except Exception as e:
         return await message.reply(f'Error - {e}')
     else:
