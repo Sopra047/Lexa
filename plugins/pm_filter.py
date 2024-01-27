@@ -1513,7 +1513,7 @@ async def auto_filter(client, msg, spoll=False):
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(
-                    text=f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Rᴇ́sᴜʟᴛᴀᴛs ᴏɴᴛ ᴇ́ᴛᴇ́s ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ’ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ’ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ’ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ’ɪᴄɪ..</b>",
+                    text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Rᴇ́sᴜʟᴛᴀᴛs ᴏɴᴛ ᴇ́ᴛᴇ́s ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ’ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ’ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ’ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ’ɪᴄɪ...</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [[
                             InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/Group_SharClub')
@@ -1541,7 +1541,7 @@ async def auto_filter(client, msg, spoll=False):
         except Exception as e:
             if message.chat.id == SUPPORT_CHAT_ID:
                 await message.reply_text(
-                    text=f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ‌ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...</b>",
+                    text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ’ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ’ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ’ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ’ɪᴄɪ...</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [[
                             InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/Group_SharClub')
@@ -1567,7 +1567,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         if message.chat.id == SUPPORT_CHAT_ID:
             await message.reply_text(
-                text=f"<b>Hᴇʏ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ‌ᴜᴇʀʏ {search}. Kɪɴᴅʟʏ ᴜsᴇ ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ᴏʀ ᴍᴀᴋᴇ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴀᴅᴅ ᴍᴇ ᴀs ᴀᴅᴍɪɴ ᴛᴏ ɢᴇᴛ ᴍᴏᴠɪᴇ ғɪʟᴇs. Tʜɪs ɪs ᴀ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...</b>",
+                text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ·ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ·ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ·ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ·ɪᴄɪ...</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/Group_SharClub')
@@ -1641,7 +1641,7 @@ async def advantage_spell_chok(client, msg):
         ]
         for k, movie_name in enumerate(movielist)
     ]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="𝗙𝗲𝗿𝗺𝗲𝗿", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(reqstr.mention)),
