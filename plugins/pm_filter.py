@@ -1018,7 +1018,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('⏮ RETOUR', callback_data='help'),
+            InlineKeyboardButton('⏮ RETOUR', callback_data='spu'),
             InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1029,7 +1029,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "admin":
         buttons = [[
-            InlineKeyboardButton('⏮RETOUR', callback_data="spu")
+            InlineKeyboardButton('⏮RETOUR', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
