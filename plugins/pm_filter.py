@@ -945,7 +945,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🖼 Vσiɾ Pσsteɾs', url='https://t.me/Sharliste'),
             InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
             ], [
-            InlineKeyboardButton("⟸ ʀᴇᴛᴏᴜʀ", callback_data="start"),
+            InlineKeyboardButton("⏮ RETOUR", callback_data="start"),
             InlineKeyboardButton('🔮 Stɑtistique', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1019,7 +1019,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('⏮ RETOUR', callback_data='spu'),
-            InlineKeyboardButton('👮‍♂ ꭺꭰꮇꮖɴ 👨‍💻', callback_data='admin')
+            InlineKeyboardButton('👮‍♂ ꮓꮻɴꭼ ꭺꭰꮇꮖɴ 👨‍💻', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1036,7 +1036,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if query.from_user.id in ADMINS:
             await query.message.edit_text(text=script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
-            await query.answer("👊⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nIᴛꜱ ᴏɴʟʏ ғᴏʀ ᴍʏ ADMINS👊", show_alert=True)
+            await query.answer("👊⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nC'est uniquement pouɾ mes ɑdministɾɑteuɾs👊", show_alert=True)
                     
     elif query.data == "song":
         buttons = [[
@@ -1426,13 +1426,13 @@ async def auto_filter(client, msg, spoll=False):
     key = f"{message.chat.id}-{message.id}"
     btn.insert(0,
                [
-                   InlineKeyboardButton(f'⭕ᴊᴏɪɴ ғᴏʀ ɴᴇᴡ ᴍᴏᴠɪᴇs⭕', url='https://t.me/MALLU_MOVIES_PROK'),
+                   InlineKeyboardButton(f'⭕ʀᴇᴊᴏɪɴᴛ ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs⭕', url='https://t.me/Group_SharClub'),
                ]
                )
     btn.insert(1,
                [
-                   InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                   InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
+                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', 'minfo'),
+                   InlineKeyboardButton("🌐 Lᴀɴɢᴜᴇs 🌏​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
                ]
               )
     if offset != "":
@@ -1440,12 +1440,12 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"📒ᕈΔGE 1/{math.ceil(int(total_results) / 7)}", callback_data="pages"),
-             InlineKeyboardButton(text="ПΣXƬ", callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"📄𝐏𝐚𝐠𝐞 1/{math.ceil(int(total_results) / 7)}", callback_data="pages"),
+             InlineKeyboardButton(text="𝐒𝐮𝐢𝐯𝐚𝐧𝐭⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄", callback_data="pages")]
+            [InlineKeyboardButton(text="PAS DE PAGE SUPPLEMENTAIRE", callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
