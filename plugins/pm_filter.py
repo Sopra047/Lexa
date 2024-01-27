@@ -33,7 +33,7 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
-LANGUAGES = ["malayalam", "tamil", "english", "hindi", "telugu", "French"]
+LANGUAGES = ["english", "French", "malayalam", "hindi"]
 
 
 @Client.on_message(filters.command('autofilter') & filters.user(ADMINS))
