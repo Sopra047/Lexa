@@ -845,19 +845,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[  
             InlineKeyboardButton('ᴏᴘᴇɴᴀɪ', callback_data='opnai'),
         ], [
-            InlineKeyboardButton('🎼 Cʜᴀɴsᴏɴ 🎧', callback_data='song'),
-            InlineKeyboardButton('🎬 Vɪᴅᴇᴏ 🎞', callback_data='video')
+            InlineKeyboardButton('🎼 ᴄʜᴀɴsᴏɴ 🎧', callback_data='song'),
+            InlineKeyboardButton('🎬 ᴠɪᴅᴇᴏ 🎞', callback_data='video')
         ], [
-            InlineKeyboardButton('🎚 S. Vᴏᴄᴀʟ 🎛', callback_data='tts'),
-            InlineKeyboardButton('ᴛɢʀᴀᴘʜ', callback_data='tele')
+            InlineKeyboardButton('🎚 ᴛᴛs ᴠᴏᴄᴀʟ 🎛', callback_data='tts'),
+            InlineKeyboardButton('🖼 ᴛɢʀᴀᴘʜ ☁️', callback_data='tele')
         ], [
-            InlineKeyboardButton('ɢᴀᴍᴇs', callback_data='fun')
+            InlineKeyboardButton('⚽️ ɢᴀᴍᴇs 🎲', callback_data='fun')
         ], [
-            InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='json'),
-            InlineKeyboardButton('sᴛɪᴄᴋɪᴅ', callback_data='sticker')
+            InlineKeyboardButton('📟 ᴊsᴏɴᴇ ', callback_data='json'),
+            InlineKeyboardButton('☃️ sᴛɪᴄᴋɪᴅ 🦄', callback_data='sticker')
         ], [
-            InlineKeyboardButton('ғᴏɴᴛ', callback_data='font'),
-            InlineKeyboardButton('ɢᴛʀᴀɴs', callback_data='gtrans')
+            InlineKeyboardButton('🛅 ᴘᴏʟɪᴄᴇ 🖊', callback_data='font'),
+            InlineKeyboardButton('🔠 ɢᴛʀᴀɴs 📚', callback_data='gtrans')
         ], [
             InlineKeyboardButton('ꭱꭼꭲꮻꮜꭱ', callback_data='start')
         ]]
