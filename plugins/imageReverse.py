@@ -1,6 +1,6 @@
 import traceback
 from pyrogram import Client, filters, types as t
-from Utils import ReverseImageSearch,getFile,uploadToTelegraph
+from plugins.Utils import ReverseImageSearch,getFile,uploadToTelegraph
 from bot import TelegraphClient
 
 @Client.on_message(filters.command(["pp","reverse","sauce"]))
