@@ -208,7 +208,7 @@ async def next_page(bot, query):
             ]
     btn.insert(0,
                [
-                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴᴛ ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/Group_SharClub'),
+                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴs ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/Group_SharClub'),
                ]
                )
     btn.insert(1,
