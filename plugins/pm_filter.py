@@ -825,9 +825,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('📚 Aiɗes', callback_data="spu"),
                     InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('🥰 Vᴏɪʀ ʟᴇs Nᴏᴜᴠᴇᴀᴜᴛᴇ́s ᴀᴠᴇᴄ Mᴏɪ 🦋', callback_data='help') 
+                    InlineKeyboardButton('🥰 Voiɾ Mes Nouvelles Cɑpɑcités 🦋', callback_data='help') 
                     ],[
-                    InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
+                    InlineKeyboardButton('🔒 Fermer Menu', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
