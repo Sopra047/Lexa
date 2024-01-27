@@ -369,7 +369,7 @@ Exᴇᴍᴘʟᴇ :- <code>/country 𝖥𝗋𝖺𝗇𝖼𝖾</code>"""
 /ᴏᴘᴇɴᴀɪ ᴡʜᴀᴛ ɪꜱ ᴀᴘᴘᴇɴᴅ ᴍᴇᴛʜᴏᴅ ɪɴ ᴘʏᴛʜᴏɴ
 """
 
-    DISC_TXT = """ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜɪꜱ ʙᴏᴛ ᴀʀᴇ ꜰʀᴇᴇʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛʜᴇ ɪɴᴛᴇʀɴᴇᴛ ᴏʀ ᴘᴏꜱᴛᴇᴅ ʙʏ ꜱᴏᴍᴇʙᴏᴅʏ ᴇʟꜱᴇ.ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɪɴᴅᴇxɪɴɢ ꜰɪʟᴇꜱ ᴡʜɪᴄʜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ꜰᴏʀ ᴇᴀꜱʏ ᴏꜰ ꜱᴇᴀʀᴄʜɪɴɢ, ᴡᴇ ʀᴇꜱᴘᴇᴄᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴘʏʀɪɢʜᴛ ʟᴀᴡꜱ ᴀɴᴅ ᴡᴏʀᴋꜱ ɪɴ ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪᴛʜ ᴅᴍᴄᴀ ᴀɴᴅ ᴇᴜᴄᴅ. ɪꜰ ᴀɴʏᴛʜɪɴɢ ɪꜱ ᴀɢᴀɪɴꜱᴛ ʟᴀᴡ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ꜱᴏ ᴛʜᴀᴛ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ᴀꜱᴀᴘ"""
+    DISC_TXT = """Tous les fichiers de ce bot sont disponibles grɑtuitement sur Internet ou postés pɑr quelqu’un d’ɑutre. Ce bot indexe les fichiers qui sont déjɑ̀ téléchɑrgés sur Telegrɑm pour fɑciliter lɑ recherche, nous respectons toutes les lois sur le droit d’ɑuteur et trɑvɑillons en conformité ɑvec DMCA et EUCD. Si quelque chose est contrɑire ɑ̀ lɑ loi, veuillez nous contɑcter ɑfin qu’il puisse être supprimé dès que possible"""
     
     KD_CNL = """
 <b>⍟ Mᴏᴅᴜʟᴇ Cᴀɴᴀᴜx ﹠ Gʀᴏᴜᴘᴇs ⍟</b>
