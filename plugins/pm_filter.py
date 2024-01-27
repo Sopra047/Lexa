@@ -115,7 +115,7 @@ async def pm_text(bot, message):
     user = message.from_user.first_name
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    await message.reply_text("<b>Votrᥱ mᥱssᥲgᥱ ᥲ ᥱ́tᥱ́ ᥱᥒvoყᥱ́ ᥲ̀ mᥱs modᥱ́rᥲtᥱᥙrs !</b>",
+    await message.reply_text("<b>Votɾe messɑge ɑ été envoγé ɑ̀ mon modéɾɑteuɾ !</b>",
                              reply_markup=InlineKeyboardMarkup(
                                  [[
                                      InlineKeyboardButton('📍 Lᴇ ғɪʟᴍ ᴇsᴛ ɪᴄɪ 📍', url='https://t.me/Group_SharClub')
@@ -208,7 +208,7 @@ async def next_page(bot, query):
             ]
     btn.insert(0,
                [
-                   InlineKeyboardButton(f'⭕ʀᴇᴊᴏɪɴᴛ ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs⭕', url='https://t.me/Group_SharClub'),
+                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴᴛ ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/Group_SharClub'),
                ]
                )
     btn.insert(1,
