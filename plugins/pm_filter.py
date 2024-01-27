@@ -1567,7 +1567,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         if message.chat.id == SUPPORT_CHAT_ID:
             await message.reply_text(
-                text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ·ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ·ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ·ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ·ɪᴄɪ...</b>",
+                text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ·ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ·ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ·ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ’ɪᴄɪ...</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/Group_SharClub')
