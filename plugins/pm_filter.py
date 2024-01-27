@@ -848,8 +848,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
             InlineKeyboardButton('ᴀᴜᴛᴏ ғɪʟᴛᴇʀ', callback_data='autofilter')
         ],[        
-            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra'),
-            InlineKeyboardButton('sᴏɴɢ', callback_data='song'),
+            InlineKeyboardButton('🎼 Cʜᴀɴsᴏɴ 🎧', callback_data='song'),
             InlineKeyboardButton('ᴛᴛs', callback_data='tts')
         ], [
             InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video'),
