@@ -849,7 +849,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎚 S. Vᴏᴄᴀʟ 🎛', callback_data='tts'),
             InlineKeyboardButton('ᴛɢʀᴀᴘʜ', callback_data='tele')
         ], [
-            InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona'),
             InlineKeyboardButton('ɢᴀᴍᴇs', callback_data='fun')
         ], [
             InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='json'),
@@ -858,7 +857,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ғᴏɴᴛ', callback_data='font'),
             InlineKeyboardButton('ɢᴛʀᴀɴs', callback_data='gtrans')
         ], [
-            InlineKeyboardButton('ᴄᴏᴜɴᴛʀʏ', callback_data='country'),
             InlineKeyboardButton('ᴏᴘᴇɴᴀɪ', callback_data='opnai'),
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
