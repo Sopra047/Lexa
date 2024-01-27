@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat = await client.get_chat(grpid)
                     title = chat.title
                 except:
-                    await query.message.edit_text("𝖠𝗌𝗌𝗎𝗋𝖾𝗓-𝗏𝗈𝗎𝗌 𝗊𝗎𝖾 𝗃𝖾 𝗌𝗎𝗂𝗌 𝗉𝗋𝖾́𝗌𝖾𝗇𝗍 𝖽𝖺𝗇𝗌 𝗏𝗈𝗍𝗋𝖾 𝗀𝗋𝗈𝗎𝗉𝖾!!", quote=True)
+                    await query.message.edit_text("𝖠𝗌𝗌𝗎𝗋𝖾𝗓-𝗏𝗈𝗎𝗌 𝗊𝗎𝖾 𝗃𝖾 𝗌𝗎𝗂𝗌 𝗉𝗋𝖾́𝗌𝖾𝗇𝗍𝖾 𝖽𝖺𝗇𝗌 𝗏𝗈𝗍𝗋𝖾 𝗀𝗋𝗈𝗎𝗉𝖾!!", quote=True)
                     return await query.answer(MSG_ALRT)
             else:
                 await query.message.edit_text(
@@ -460,7 +460,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
             await del_all(query.message, grp_id, title)
         else:
-            await query.answer("Vous devez être propriétɑire du groupe ou utilisɑteur Auth pour ce fɑire. -_- !", show_alert=True)
+            await query.answer("Vous devez être propriétɑire du groupe ou utilisɑteur Authentifié pour le fɑire. -_- !", show_alert=True)
     elif query.data == "delallcancel":
         userid = query.from_user.id
         chat_type = query.message.chat.type
@@ -491,16 +491,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         user_id = query.from_user.id
 
         if act == "":
-            stat = "CONNECT"
+            stat = "ᴄᴏɴɴᴇᴄᴛᴇʀ"
             cb = "connectcb"
         else:
-            stat = "DISCONNECT"
+            stat = "ᴅᴇ́ᴄᴏɴɴᴇᴄᴛᴇʀ"
             cb = "disconnect"
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
-             InlineKeyboardButton("SUPRIMER", callback_data=f"deletecb:{group_id}")],
-            [InlineKeyboardButton("RETOUR", callback_data="backcb")]
+             InlineKeyboardButton("sᴜᴘᴘʀɪᴍᴇʀ", callback_data=f"deletecb:{group_id}")],
+            [InlineKeyboardButton("ʀᴇᴛᴏᴜʀ", callback_data="backcb")]
         ])
 
         await query.message.edit_text(
@@ -579,7 +579,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         groupids = await all_connections(str(userid))
         if groupids is None:
             await query.message.edit_text(
-                "TIl n’y a pas de connexions actives !! Connectez-ᴍᴏɪ d’abord à certains groupes.",
+                "Il n’y a pas de connexions actives !! Connectez-ᴍᴏɪ d’abord à certains groupes.",
             )
             return await query.answer(MSG_ALRT)
         buttons = []
@@ -656,7 +656,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     return
                 else:
                     await query.answer(
-                        f"HEY {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
+                        f"HEY {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre pɾopɾe demɑnde !",
                         show_alert=True)
             elif settings['botpm']:
                 if clicked == typed:
@@ -664,7 +664,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     return
                 else:
                     await query.answer(
-                        f"HEY {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
+                        f"HEY {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre pɾopɾe demɑnde !",
                         show_alert=True)
             else:
                 if clicked == typed:
@@ -704,7 +704,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         await file_send.delete()
                 else:
                     await query.answer(
-                        f"Hᴇʏ {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre demɑnde !",
+                        f"Hᴇʏ {query.from_user.first_name}, Ce n’est pɑs votre requête, Effectuez ɑussi votre pɾopɾe demɑnde !",
                         show_alert=True)
                 await query.answer('Vérifiez PM, j’ɑi envoyé les fichiers en PM', show_alert=True)
         except UserIsBlocked:
@@ -807,7 +807,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "tinfo":
         await query.answer(
-            "▣Conseıl▣\n\n★ Tᥲρᥱz ᥣ’orthogrᥲρhᥱ ᥴorrᥱᥴtᥱ (ɢᴏᴏɢʟᴇ)\n\n★ Sι voᥙs ᥒ’obtᥱᥒᥱz ρᥲs votrᥱ fιᥴhιᥱr dᥲᥒs ᥣᥲ ρᥲgᥱ, ᥣ’ᥱ́tᥲρᥱ sᥙιvᥲᥒtᥱ ᥴoᥒsιstᥱ ᥲ̀ ᥴᥣιqᥙᥱr sᥙr ᥣᥱ boᥙtoᥒ sᥙιvᥲᥒt.\n\n★ Coᥒtιᥒᥙᥱz ᥴᥱttᥱ mᥱ́thodᥱ ρoᥙr obtᥱᥒιr votrᥱ fιᥴhιᥱr\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @SharClub",
+            "▣Iɴғᴏ▣\n\n★ Tᥲρᥱz ᥣ’orthogrᥲρhᥱ ᥴorrᥱᥴtᥱ (ɢᴏᴏɢʟᴇ)\n\n★ Sι voᥙs ᥒ’obtᥱᥒᥱz ρᥲs votrᥱ fιᥴhιᥱr dᥲᥒs ᥣᥲ ρᥲgᥱ, ᥣ’ᥱ́tᥲρᥱ sᥙιvᥲᥒtᥱ ᥴoᥒsιstᥱ ᥲ̀ ᥴᥣιqᥙᥱr sᥙr ᥣᥱ boᥙtoᥒ sᥙιvᥲᥒt.\n\n★ Coᥒtιᥒᥙᥱz ᥴᥱttᥱ mᥱ́thodᥱ ρoᥙr obtᥱᥒιr votrᥱ fιᥴhιᥱr\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @SharClub",
             show_alert=True)
 
     elif query.data == "fmal":
