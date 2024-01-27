@@ -1,5 +1,5 @@
 from pyrogram import Client, filters, types as t
-from Utils import getText,paginate_models,ImageGeneration
+from plugins.Utils import getText,paginate_models,ImageGeneration
 from bot import Models
 Database = {}
 
