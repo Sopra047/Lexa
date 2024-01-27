@@ -349,9 +349,9 @@ Exemple : Freelɑnce 2023
 
 🚯 N·ᴜᴛɪʟɪsᴇʀ ᴘᴀs ➠ ' : ( ! , . / )"""
 
-    I_CUD_NT = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ."""
+    I_CUD_NT = """Sᴀʟᴜᴛ {} Je n'ɑi ɾien tɾouvé ɑ̀ ce sujet, véɾifiez votɾe oɾthogɾɑphe."""
 
-    CUDNT_FND = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
+    CUDNT_FND = """Sᴀʟᴜᴛ {} Je n’ɑi rien trouvé ɑ̀ ce sujet, vouliez-vous dire l’un de ces ..."""
 
     REPRT_MSG = """ Signɑler ɑ̀ l’ɑdministrɑteur"""
 
