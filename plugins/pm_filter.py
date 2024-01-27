@@ -842,14 +842,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer(MSG_ALRT)
     elif query.data == "help":
-        buttons = [[
-            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛ', callback_data='coct')
-        ], 
-        ], [        
+        buttons = [[  
             InlineKeyboardButton('🎼 Cʜᴀɴsᴏɴ 🎧', callback_data='song'),
-            InlineKeyboardButton('ᴠɪᴅᴇᴏ', callback_data='video')
+            InlineKeyboardButton('🎬 Vɪᴅᴇᴏ 🎞', callback_data='video')
         ], [
-            InlineKeyboardButton('ᴛᴛs', callback_data='tts'),
+            InlineKeyboardButton('Sʏɴᴛʜᴇ̀sᴇ Vᴏᴄᴀʟᴇ', callback_data='tts'),
             InlineKeyboardButton('ᴛɢʀᴀᴘʜ', callback_data='tele')
         ], [
             InlineKeyboardButton('ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook'),
