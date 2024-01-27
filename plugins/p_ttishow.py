@@ -27,7 +27,7 @@ async def save_group(bot, message):
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
-                text='<b>CHAT NOT ALLOWED 🐞\n\nMy admins has restricted me from working here ! If you want to know more about it contact support..</b>',
+                text='<b>CHAT NON AUTORISÉ 🐞\n\nMon Créateur m’a empêché de travailler ici ! Si vous voulez en savoir plus à ce sujet contactez support...</b>',
                 reply_markup=reply_markup,
             )
 
@@ -38,12 +38,12 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url=(MAIN_CHANNEL))
+            InlineKeyboardButton('📚 Aiɗes'', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('📢 Nσυνεllεѕ', url=(MAIN_CHANNEL))
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
+            text=f"<b>Meɾci de m’ɑvoiɾ ɑjouté ɑ̀ {message.chat.title} ❣️\n\nSi vous ɑvez des questions et des doutes suɾ mon utilisɑtion contɑctez-nous..</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
@@ -59,8 +59,8 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=S_GROUP),
-                                                                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=MAIN_CHANNEL)
+                                                                           InlineKeyboardButton('Gʀᴏᴜᴘᴇ ᴅ·ᴀɪᴅᴇ', url=S_GROUP),
+                                                                           InlineKeyboardButton('📢 Nσυνεllεѕ', url=MAIN_CHANNEL)
                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
@@ -73,7 +73,7 @@ async def save_group(bot, message):
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Give me a chat id')
+        return await message.reply('Donne-moi ton ID de chɑt')
     chat = message.command[1]
     try:
         chat = int(chat)
@@ -86,7 +86,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b>',
+            text='<b>Sɑlut les ɑmis, \nMon Cɾéɑteuɾ m’ɑ dit de quitteɾ le gɾoupe ɑloɾs j’γ vɑis! Si vous souhɑitez m’ɑjouteɾ ɑ̀ nouveɑu, contɑctez le gɾoupe de suppoɾt.</b>',
             reply_markup=reply_markup,
         )
 
@@ -98,7 +98,7 @@ async def leave_a_chat(bot, message):
 @Client.on_message(filters.command('disable') & filters.user(ADMINS))
 async def disable_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Give me a chat id')
+        return await message.reply('Donne-moi ton ID de chɑt')
     r = message.text.split(None)
     if len(r) > 2:
         reason = message.text.split(None, 2)[2]
@@ -109,15 +109,15 @@ async def disable_chat(bot, message):
     try:
         chat_ = int(chat)
     except:
-        return await message.reply('Give Me A Valid Chat ID')
+        return await message.reply('Donne-moi un ID de chɑt vɑlide')
     cha_t = await db.get_chat(int(chat_))
     if not cha_t:
-        return await message.reply("Chat Not Found In DB")
+        return await message.reply("Chɑt intɾouvɑble dɑns lɑ bɑse de données")
     if cha_t['is_disabled']:
-        return await message.reply(f"This chat is already disabled:\nReason-<code> {cha_t['reason']} </code>")
+        return await message.reply(f"Ce chɑt est déjɑ̀ désɑctivé:\nRɑison-<code> {cha_t['reason']} </code>")
     await db.disable_chat(int(chat_), reason)
     temp.BANNED_CHATS.append(int(chat_))
-    await message.reply('Chat Successfully Disabled')
+    await message.reply('Chɑt désɑctivé ɑvec succès')
     try:
         buttons = [[
             InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
@@ -125,7 +125,7 @@ async def disable_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group so i go! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Sɑlut les ɑmis, \nMon Cɾéɑteuɾ m’ɑ dit de quitteɾ le gɾoupe ɑloɾs j’γ vɑis! Si vous souhɑitez m’ɑjouteɾ ɑ̀ nouveɑu, contɑctez le gɾoupe de suppoɾt.</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
