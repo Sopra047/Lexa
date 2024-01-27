@@ -15,7 +15,7 @@ async def pdf_to_text(bot, message):
  try:
            if message.reply_to_message:
                 pdf_path = DOWNLOAD_LOCATION + f"{message.chat.id}.pdf" #pdfFileObject
-                txt = await message.reply("Downloading.....")
+                txt = await message.reply("𝖳𝖾́𝗅𝖾́𝖼𝗁𝖺𝗋𝗀𝖾𝗆𝖾𝗇𝗍.....")
                 await message.reply_to_message.download(pdf_path)  
                 await txt.edit("Downloaded File")
                 pdf = open(pdf_path,'rb')
@@ -40,7 +40,7 @@ async def pdf_to_text(bot, message):
                 tts_file.save(f"{message.chat.id}.mp3")      
                 with open(f"{message.chat.id}.mp3", "rb") as speech:
                       await bot.send_voice(chat_id, speech)   
-                await txt.edit("MERCI DE M’UTILISER...☺️\n©Sharing_Club")    
+                await txt.edit("Meɾci de m'ɑvoiɾ utiliseɾ...☺️\n©Sharing_Club")    
                 os.remove(pdf_path)  
                 
                 
