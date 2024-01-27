@@ -849,15 +849,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎚 S. Vᴏᴄᴀʟ 🎛', callback_data='tts'),
             InlineKeyboardButton('ᴛɢʀᴀᴘʜ', callback_data='tele')
         ], [
-            InlineKeyboardButton('ᴀᴜᴅʙᴏᴏᴋ', callback_data='abook'),
             InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona'),
             InlineKeyboardButton('ɢᴀᴍᴇs', callback_data='fun')
         ], [
-            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
             InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='json'),
             InlineKeyboardButton('sᴛɪᴄᴋɪᴅ', callback_data='sticker')
-        ], [
-            InlineKeyboardButton('ᴡʜᴏɪs', callback_data='whois'),
         ], [
             InlineKeyboardButton('ғᴏɴᴛ', callback_data='font'),
             InlineKeyboardButton('ɢᴛʀᴀɴs', callback_data='gtrans')
