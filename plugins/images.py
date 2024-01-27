@@ -1,5 +1,5 @@
 from pyrogram import Client, filters, types as t,errors
-from Utils import getText,SearchImages,getImageContent
+from plugins.Utils import getText,SearchImages,getImageContent
 import traceback,random,datetime,os,io
 
 @Client.on_message(filters.command(["img","image","imagesearch"]))
