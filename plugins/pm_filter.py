@@ -843,7 +843,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(MSG_ALRT)
     elif query.data == "help":
         buttons = [[  
-            InlineKeyboardButton('ᴏᴘᴇɴᴀɪ', callback_data='opnai'),
+            InlineKeyboardButton('🗣 ᴏᴘᴇɴᴀɪ 👩‍💻', callback_data='opnai'),
         ], [
             InlineKeyboardButton('🎼 ᴄʜᴀɴsᴏɴ 🎧', callback_data='song'),
             InlineKeyboardButton('🎬 ᴠɪᴅᴇᴏ 🎞', callback_data='video')
@@ -853,7 +853,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('⚽️ ɢᴀᴍᴇs 🎲', callback_data='fun')
         ], [
-            InlineKeyboardButton('📟 ᴊsᴏɴᴇ ', callback_data='json'),
+            InlineKeyboardButton('📟 ᴊsᴏɴᴇ 🕹', callback_data='json'),
             InlineKeyboardButton('☃️ sᴛɪᴄᴋɪᴅ 🦄', callback_data='sticker')
         ], [
             InlineKeyboardButton('🛅 ᴘᴏʟɪᴄᴇ 🖊', callback_data='font'),
@@ -1411,7 +1411,7 @@ async def auto_filter(client, msg, spoll=False):
     key = f"{message.chat.id}-{message.id}"
     btn.insert(0,
                [
-                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴᴛ ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/Group_SharClub'),
+                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴs ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/Group_SharClub'),
                ]
                )
     btn.insert(1,
