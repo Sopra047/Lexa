@@ -891,6 +891,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('🖼 Pσsteɾs Séɾies', url='https://t.me/Sharliste'),
                 InlineKeyboardButton('🎬 Pσsteɾs Filɱs', url='https://t.me/FilmsListe'),
             ], [
+                InlineKeyboardButton('↪️ Vσs Reqʋête Filɱ & Séɾie ↩️', url='https://t.me/Group_SharClub'),    
+            ], [
                 InlineKeyboardButton('📺 Pσsteɾs Sɑɠɑ', url='https://t.me/Filmlistes'),
                 InlineKeyboardButton('🗂 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club'),
         
@@ -965,7 +967,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('Repo', url='https://github.com/Naruto46i/NARUTO-AUTO-FILTER-V-1/tree/main'),
             InlineKeyboardButton('⏮ RETOUR', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1240,8 +1241,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Actualisation...")
         buttons = [[
-            InlineKeyboardButton('ꭱꭼꭲꮻꮜꭱ', callback_data='stats'),
-            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
+            InlineKeyboardButton('⏮ RETOUR', callback_data='stats'),
+            InlineKeyboardButton('♻️AᥴtᥙᥲꙆɩ⳽ᥱɾ', callback_data='rfrsh')
         ]]
         await client.edit_message_media(
             query.message.chat.id,
