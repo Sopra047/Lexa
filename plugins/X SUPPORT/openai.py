@@ -31,11 +31,11 @@ async def ask_question(client, message):
                 )          
                 ai_response = response.choices[0].message.content.strip()
                 await s.delete()
-                await send_message_in_chunks(client, message.chat.id, f"Hey {message.from_user.mention}\n\nǫᴜᴇʀʏ {text}\n\nResult👇\n\n{response.choices[0].message.content}")
-                await send_message_in_chunks(client, LOG_CHANNEL, f"#ask {message.from_user.mention} **ᴡɪᴛʜ ᴜsᴇʀ ɪᴅ -** {user_id}.\n🔍 **ᴀsᴋᴇᴅ ᴍᴇ ᴛʜɪs ǫᴜᴇʀʏ...**👇\n\n🔻 **ǫᴜᴇʀʏ:** `{text}`\n\n🔻 **ʜᴇʀᴇ ɪs ᴀɴsᴡᴇʀ ɪ ʀᴇsᴘᴏɴᴅᴇᴅ:**\n🖍️ {ai_response}\n\n\n🔻 **ᴜsᴇʀ ɪᴅ :-** {user_id} \n🔻 **ᴜsᴇʀ ɴᴀᴍᴇ :-** {message.from_user.mention}")
+                await send_message_in_chunks(client, message.chat.id, f"HEY {message.from_user.mention}\n\nǫᴜᴇʀʏ {text}\n\nRᥱ́ρoᥒ⳽ᥱ👇\n\n{response.choices[0].message.content}")
+                await send_message_in_chunks(client, LOG_CHANNEL, f"#ask {message.from_user.mention} **Avec ID utilisɑteuɾ -** {user_id}.\n🔍 **M'ɑ posé cette question...**👇\n\n🔻 **Question:** `{text}`\n\n🔻 **Voici lɑ ɾéponse que j’ɑi donnée:**\n🖍️ {ai_response}\n\n\n🔻 **Identifiɑnt :-** {user_id} \n🔻 **Nom d’utilisɑteuɾ :-** {message.from_user.mention}")
                 
             except Exception as error:
                 print(error)
-                await message.reply_text(f"**An error occurred:**\n\n**{error}**\n\n")
+                await message.reply_text(f"**Une eɾɾeuɾ s’est pɾoduite:**\n\n**{error}**\n\n")
     else:
         return
