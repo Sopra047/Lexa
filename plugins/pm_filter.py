@@ -886,12 +886,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Log', url="https://t.me/SharVision"),
             ], [
                 InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ"ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
-                InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/SharingClub_bot'),
+                InlineKeyboardButton('🎬Gɾσʋpe Visiσɳ', url='https://t.me/VisionsT'),
             ], [
                 InlineKeyboardButton('🖼 Pσsteɾs Séɾies', url='https://t.me/Sharliste'),
-                InlineKeyboardButton('📺 Pσsteɾs Filɱs', url='https://t.me/Sharing_Club'),
+                InlineKeyboardButton('📺 Pσsteɾs Filɱs', url='https://t.me/FilmsListe'),
             ], [
-                InlineKeyboardButton('🖼 Pσsteɾs Sɑɠɑ', url='https://t.me/Sharliste'),
+                InlineKeyboardButton('🖼 Pσsteɾs Sɑɠɑ', url='https://t.me/Filmlistes'),
                 InlineKeyboardButton('📺 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club'),
         
             ], [
@@ -930,14 +930,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "spu":
         buttons = [[
-            InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ"ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
-            InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/SharingClub_bot'),
+                InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ"ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
+                InlineKeyboardButton('🎬Gɾσʋpe Visiσɳ', url='https://t.me/VisionsT'),
             ], [
-            InlineKeyboardButton('🖼 Vσiɾ Pσsteɾs', url='https://t.me/Sharliste'),
-            InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
+                InlineKeyboardButton('🖼 Pσsteɾs Séɾies', url='https://t.me/Sharliste'),
+                InlineKeyboardButton('📺 Pσsteɾs Filɱs', url='https://t.me/FilmsListe'),
             ], [
-            InlineKeyboardButton("⏮ RETOUR", callback_data="start"),
-            InlineKeyboardButton('📺 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club')
+                InlineKeyboardButton('🖼 Pσsteɾs Sɑɠɑ', url='https://t.me/Filmlistes'),
+                InlineKeyboardButton('📺 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club'),
+        
+            ], [
+                InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/SharingClub_bot'),
+                InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
+            ], [
+                InlineKeyboardButton('⏮ RETOUR', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
