@@ -11,7 +11,7 @@ async def send_message_in_chunks(client, chat_id, text):
         await client.send_message(chat_id, text[i:i+max_length])
 
 
-@Client.on_message(filters.command("ask"))
+@Client.on_message(filters.command("openai"))
 async def ask_question(client, message):
     if AI == True: 
         user_id = message.from_user.id
