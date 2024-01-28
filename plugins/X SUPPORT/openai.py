@@ -31,7 +31,7 @@ async def ask_question(client, message):
                 )          
                 ai_response = response.choices[0].message.content.strip()
                 await s.delete()
-                await send_message_in_chunks(client, message.chat.id, f"HEY {message.from_user.mention}\n\nǫᴜᴇʀʏ {text}\n\nRᥱ́ρoᥒ⳽ᥱ👇\n\n{response.choices[0].message.content}")
+                await send_message_in_chunks(client, message.chat.id, f"HEY {message.from_user.mention}\n\nQuestion: {text}\n\nRᥱ́ρoᥒ⳽ᥱ👇\n\n{response.choices[0].message.content}\n\n📌 Remɑɾque : En tɑnt que IA, Je peux commettɾe des eɾɾeuɾs. Pensez ɑ̀ véɾifieɾ les infoɾmɑtions impoɾtɑntes.")
                 await send_message_in_chunks(client, LOG_CHANNEL, f"#ask {message.from_user.mention} **Avec ID utilisɑteuɾ -** {user_id}.\n🔍 **M'ɑ posé cette question...**👇\n\n🔻 **Question:** `{text}`\n\n🔻 **Voici lɑ ɾéponse que j’ɑi donnée:**\n🖍️ {ai_response}\n\n\n🔻 **Identifiɑnt :-** {user_id} \n🔻 **Nom d’utilisɑteuɾ :-** {message.from_user.mention}")
                 
             except Exception as error:
