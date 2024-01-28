@@ -26,7 +26,7 @@ async def chatbots(_: Client,m: t.Message):
             )
         return
     await m.reply_text(output['parts'][0]['text'] if model=="gemini" else output)
-
+    
 async def askAboutImage(_:Client,m:t.Message,mediaFiles: list,prompt:str):
     images = []
     for media in mediaFiles:
