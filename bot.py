@@ -61,6 +61,11 @@ class Bot(Client):
     async def stop(self, *args):
         await super().stop()
         logging.info("𝖫𝖾 𝖻𝗈𝗍 𝗌’𝖾𝗌𝗍 𝖺𝗋𝗋𝖾̂𝗍𝖾́. 𝖠𝗎 𝗋𝖾𝗏𝗈𝗂𝗋.")
+
+    if Models is None:
+        LOGGER.error("Models are empty!")
+        sys.exit(1)
+        
     
     async def iter_messages(
         self,
