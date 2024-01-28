@@ -1293,41 +1293,41 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton('ᴍᴏᴅᴇ ᴅ·ᴇɴᴠᴏɪ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('Bot PM' if settings["botpm"] else 'Channel',
+                    InlineKeyboardButton('ʙᴏᴛ ᴘᴍ' if settings["botpm"] else 'ᴍᴀɴᴜᴇʟ',
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('File Secure',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ Yes' if settings["file_secure"] else '❌ No',
+                    InlineKeyboardButton('✅ Oᴜɪ' if settings["file_secure"] else '❌ Nᴏɴ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('IMDB', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ Yes' if settings["imdb"] else '❌ No',
+                    InlineKeyboardButton('✅ Oᴜɪ' if settings["imdb"] else '❌ Nᴏɴ',
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('sᴜɢɢᴇsᴛɪᴏɴ',
+                    InlineKeyboardButton('sᴜɢɢᴇsᴛ ᴏʀᴛʜᴏ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ Yes' if settings["spell_check"] else '❌ No',
+                    InlineKeyboardButton('✅ Oᴜɪ' if settings["spell_check"] else '❌ Nᴏɴ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('Bɪᴇɴᴠᴇɴᴜᴇ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ Yes' if settings["welcome"] else '❌ No',
+                    InlineKeyboardButton('✅ Oᴜɪ' if settings["welcome"] else '❌ Nᴏɴ',
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏᴅᴇsᴛʀᴜᴄᴛɪᴏɴ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('10 ᴍɪɴ' if settings["auto_delete"] else 'OFF',
+                    InlineKeyboardButton('10 ᴍɪɴ' if settings["auto_delete"] else 'ᴅᴇ́sᴀᴄᴛɪᴠᴇ́',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('ShortLink',
+                    InlineKeyboardButton('ʟɪᴇɴ ᴄᴏᴜʀᴛ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✅ ON' if settings["is_shortlink"] else '❌ OFF',
+                    InlineKeyboardButton('✅ ᴀᴄᴛɪᴠᴇ́' if settings["is_shortlink"] else '❌ ᴅᴇ́sᴀᴄᴛɪᴠᴇ́',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
                 ],
                 [
