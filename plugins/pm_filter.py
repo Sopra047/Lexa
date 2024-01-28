@@ -931,7 +931,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
             ], [
             InlineKeyboardButton("⏮ RETOUR", callback_data="start"),
-            InlineKeyboardButton('🔮 Stɑtistique', callback_data='stats')
+            InlineKeyboardButton('📺 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1202,7 +1202,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('⏮ RETOUR', callback_data='start'),
+            InlineKeyboardButton('⏮ RETOUR', callback_data='spu'),
             InlineKeyboardButton('♻️AᥴtᥙᥲꙆɩ⳽ᥱɾ', callback_data='rfrsh')
         ]]
         await client.edit_message_media(
