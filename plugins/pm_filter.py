@@ -892,7 +892,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
             ], [
                 InlineKeyboardButton('🏠 𝐀𝐜𝐜𝐮𝐞𝐢𝐥', callback_data='start'),
-                InlineKeyboardButton('🔮 Stɑtistique', callback_data='stats')
+                InlineKeyboardButton('📺 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -902,7 +902,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('📺 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club'),
+            InlineKeyboardButton('🔮 Stɑtistique', callback_data='stats'),
             InlineKeyboardButton('🔎 Ᏼꭼꮮꮮꭼ Ꭺꮮꮖꮯꭼ', url='https://t.me/Belalicebot')
         ], [
             InlineKeyboardButton('🧑‍💻 ɪηғᴏ ɗєᴠ', callback_data='source'),
