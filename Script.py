@@ -207,9 +207,9 @@ Group Support
 <b>Everyone can use this command , if spaming happens bot will automatically ban you from the group.</b>"""
 
     WHOIS_TXT = """<b>WHOIS MODULE</b>
-Note:- <b>Give a user details</b>
+Note:- <b>Dᴏɴɴᴇʀ ᴅᴇs ᴅᴇ́ᴛᴀɪʟs sᴜʀ ᴜɴ ᴜᴛɪʟɪsᴀᴛᴇᴜʀ</b>
 
-•/whois :-give a user full details 📑"""
+•/whois :-Doᥒᥒᥱr ᥲ̀ ᥙᥒ ᥙtιᥣιsᥲtᥱᥙr toᥙs ᥣᥱs dᥱ́tᥲιᥣsoᥒᥒᥱr ᥲ̀ ᥙᥒ ᥙtιᥣιsᥲtᥱᥙr toᥙs ᥣᥱs dᥱ́tᥲιᥣs 📑"""
 
     URLSHORT_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
 <i><b>𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚜𝚑𝚘𝚛𝚝 𝚊 𝚞𝚛𝚕 </i></b>
@@ -220,20 +220,19 @@ Note:- <b>Give a user details</b>
 
     FUN_TXT = """<b>Gᴀᴍᴇs</b> 
 
-<b>⚡ 𝙹𝚄𝚂𝚃 𝚂𝙾𝙼𝙴 𝙺𝙸𝙽𝙳 𝙾𝙵 𝙵𝚄𝙽 𝚃𝙷𝙸𝙽𝙶'𝚂 ⚡</b>
+<b>⚡ Jᥙstᥱ ᥙᥒ gᥱᥒrᥱ dᥱ ᥴhosᥱs ⚡</b>
 
-𝟣. /dice - 𝚁𝙾𝙻𝙴 𝚃𝙷𝙴 𝙳𝙸𝙲𝙴 
-𝟤. /Throw 𝗈𝗋 /Dart - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙳𝙰𝚁𝚃 
-3. /Runs - 𝚂𝙾𝙼𝙴 𝚁𝙰𝙽𝙳𝙾𝙼 𝙳𝙸𝙰𝙻𝙾𝙶𝚄𝙴𝚂 
-4. /Goal or /Shoot - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙰 𝙶𝙾𝙰𝙻 𝙾𝚁 𝚂𝙷𝙾𝙾𝚃
-5. /luck or /cownd - 𝚂𝙿𝙸𝙽 𝙰𝙽𝙳 𝚃𝚁𝚈 𝚈𝙾𝚄𝚁 𝙻𝚄𝙲𝙺"""
+𝟣. /dice - Lᴀɴᴄᴇᴢ ʟᴇs ᴅᴇ́s 
+𝟤. /Throw 𝗈𝗋 /Dart - Fᴀɪʀᴇ ᴜɴᴇ ғʟᴇ́ᴄʜᴇᴛᴛᴇ
+3. /Goal or /Shoot - Pᴏᴜʀ ᴍᴀʀϙᴜᴇʀ ᴜɴ ʙᴜᴛ ᴏᴜ ᴛɪʀᴇʀ
+4. /luck or /cownd - Tᴏᴜʀɴᴇ ᴇᴛ ᴛᴇɴᴛᴇ ᴛᴀ ᴄʜᴀɴᴄᴇ"""
 
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
-This module only works for my admins
+Ce module ne fonctionne que pouɾ mes ɑdministɾɑteuɾs
 
-<b>Commands and Usage:</b>
+<b>Commᥲᥒdᥱs ᥱt ᥙtιᥣιsᥲtιoᥒ:</b>
 • /logs - <code>To get the rescent errors</code>
 • /stats - <code>To get status of files in db.</code>
 • /delete - <code>To delete a specific file from db.</code>
@@ -294,7 +293,7 @@ ID - <code>{}</code>
     SUR_TXT = """
 <b>
 SALUT {},
-Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fournir des films et séries, il suffit de m’ɑjouter ɑ̀ votre groupe et d’en profiter 
+Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et séɾies; Pouɾ en pɾofiteɾ, il suffit de ɾejoindɾe mes gɾoupes et cɑnɑux. 
 </b>
 """
 
