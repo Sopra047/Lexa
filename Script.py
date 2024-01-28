@@ -2,17 +2,17 @@ class script(object):
     START_TXT = """Sᴀʟᴜᴛ🖐  {},
 Mᴏɴ Nᴏᴍ ᴇsᴛ <a href=https://t.me/{}>{}</a>, Jᴇ ᴘᴇᴜx ᴛᴇ ғᴏᴜʀɴɪʀ ᴅᴇs ғɪʟᴍs ᴇᴛ ᴅᴇs sᴇ́ʀɪᴇs﹐ ɪʟ sᴜғғɪᴛ ᴊᴜsᴛᴇ ᴅᴇ ʀᴇᴊᴏɪɴᴅʀᴇ ᴍᴇs ᴄᴀɴᴀᴜx ᴇᴛ ᴅᴇ ᴘʀᴏғɪᴛᴇʀ 😍"""
     HELP_TXT = """ {}
-Je ѕυιѕ Kαтɴιce de Sнαrιɴɢ Clυв!
-✯ Reтroυvez ɢrα̂ce ὰ мoι leѕ ғιcнιerѕ ѕυpprιмer deѕ cαɴαυх oғғιcιelѕ de Sнαrιɴɢ Clυв.
+Je ѕυιѕ la Belle Alice de Sнαrιɴɢ Clυв!
+✯ Reтroυvez ɢrα̂ce ὰ мoι leѕ ғιcнιerѕ deѕ cαɴαυх oғғιcιelѕ de Sнαrιɴɢ Clυв.
 
-✯ Les liens pour ɑccéder ɑ̀ chɑque fichier spécifique se trouve ici <a href=https://t.me/Serielist><b>Ꮲꮻꮪꭲꭼꭱꮪ Ꮯꮋꭺɴɴꭼꮮ</b></a>
+✯ Les liens pour ɑccéder ɑ̀ chɑque fichier de série se trouve ici <a href=https://t.me/Sharliste><b>Ꮲꮻꮪꭲꭼꭱꮪ Ꮯꮋꭺɴɴꭼꮮ</b></a>
 
-✯ Ecrire simplement dɑns <a href=https://t.me/Shar_Group><b>Ꮪꮋꭺꭱ.Ꮯꮮꮜᏼ</b></a> le nom du Film ou lɑ Série dont tu ɑs besoin et lɑisse lɑ mɑgie s'opérer 👌
+✯ Ecrire simplement dɑns <a href=https://t.me/Group_SharClub><b>Ꮪꮋꭺꭱ.Ꮯꮮꮜᏼ</b></a> le nom du Film ou lɑ Série dont tu ɑs besoin et lɑisse lɑ mɑgie s'opérer 👌
 
 ✯ <b>Les cσƞteƞʋs pσɾƞσs🔞</b> sont strictement interdits et font l’objet d’une interdiction permɑnente.
 
 ✯ Ŋ.B : Vσʋs ɗeνez ɾejσiƞɗɾe <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞelle</b></a> pσʋɾ ɱ'ʋtiliseɾ. 
-Voтre Kαтɴιce © 🥰😘"""
+Belle Alice 2.0 © 🥰😘"""
 
     # ⚠️ Please don't change our credits 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 & 𝙳𝙴𝚅 👇🏻
 
@@ -99,16 +99,9 @@ En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort vis
 • /disconnect  - <code>se déconnecter d’un chat</code>
 • /connections - <code>Listes de toutes vos connexions</code>"""
 
-    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+    EXTRAMOD_TXT = """ <b>𝖡𝗂𝖾𝗇𝗍𝗈̂𝗍 𝖽𝗂𝗌𝗉𝗈𝗇𝗂𝖻𝗅𝖾...</b>
 
-<b>NOTE:</b>
-these are the extra features of Elsa
-
-<b>Commands and Usage:</b>
-• /id - <code>get id of a specified user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+𝖤́𝖼𝗁𝖺𝗇𝗀𝖾𝗓 𝖽𝗂𝗋𝖾𝖼𝗍𝖾𝗆𝖾𝗇𝗍 𝖺𝗏𝖾𝖼 𝖲𝗎𝗉𝖾𝗋 𝖬𝖺𝗇, 𝗅’𝗎𝗇𝗂𝗊𝗎𝖾 𝖼𝗋𝖾́𝖺𝗍𝖾𝗎𝗋 𝖽𝖾 𝖲𝗁𝖺𝗋𝗂𝗇𝗀 𝖢𝗅𝗎𝖻 𝖾𝗍 𝖽𝖾 𝖼𝖾𝗌 𝖻𝗈𝗍𝗌."""
 
     SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
 
