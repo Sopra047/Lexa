@@ -132,13 +132,18 @@ Ce Module Peɾmet de liɾe en sγnthèse vocɑle un messɑge texte.
 • 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
 • 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂"""
 
-    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
-Do as you wish with telegra.ph module!
-</b>USAGE:</b>
-✒️ /telegraph - Send me Picture or Vide Under (5MB)
+    TELE_TXT = """<b>▫Telegraph▪️</b>
+    
+Fɑites ce que vous voulez ɑvec le module telegr.ph !
+
+</b>Uᴛɪʟɪsᴀᴛɪᴏɴ:</b>
+
+✒️ /telegraph - Envoγez-moi une photo ou une vidéo de moins de (5MB)
+
 <b>NOTE:</b>
-• This Command Is Available in goups and pms
-• This Command Can be used by everyone"""
+
+• Cette commɑnde est disponible dɑns les gɾoupes et les ᴘᴍ
+• Cette commɑnde peut êtɾe utilisée pɑɾ tout le monde"""
 
     CORONA_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖢𝗈𝗏𝗂𝖽
 𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚔𝚗𝚘𝚠 𝚍𝚊𝚒𝚕𝚢 𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚊𝚋𝚘𝚞𝚝 𝚌𝚘𝚟𝚒𝚍 
@@ -167,13 +172,13 @@ Helps you to know your ping 🚶🏼‍♂️
 • This commands can be used buy everyone in the groups and bots pm
 • Share us for more features"""
 
-    STICKER_TXT = """<b>𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.</b>
-• 𝐔𝐒𝐀𝐆𝐄
-To Get Sticker ID
+    STICKER_TXT = """<b>ᴏʙᴛᴇɴɪʀ ʟ’ɪᴅ ᴅᴇ ʟ’ᴀᴜᴛᴏᴄᴏʟʟᴀɴᴛ</b>
 
-  ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+Vous pouvez utiliseɾ ce module pouɾ tɾouveɾ n’impoɾte quel identifiɑnt d’ɑutocollɑnts
+  
+  ⭕ Cᴏᴍᴍᴇɴᴛ ᴜᴛɪʟɪsᴇʀ
 
-◉ Reply To Any Sticker [/stickerid]"""
+◉ Répondez ɑ̀ n’impoɾte quel ɑutocollɑnt [/stickerid]"""
 
     FONT_TXT = """<b>Sᴛʏʟᴇ ᴅᴇ Pᴏʟɪᴄᴇ</b>
 
@@ -185,11 +190,11 @@ To Get Sticker ID
         
 """
     JSON_TXT = """<b>JSON:</b>
-Bot returns json for all replied messages with /json or /js
-<b>Features:</b>
-Message Editting JSON
-Pm Support
-Group Support
+Le ɾobot ɾenvoie json pouɾ tous les messɑges ɾépondus ɑvec /json ou /js
+<b>Fᴏɴᴄᴛɪᴏɴɴᴀʟɪᴛᴇ́s:</b>
+Modificɑtion des messɑges JSON
+Assistɑnce pɑɾ PM
+Gɾoupe de Suppoɾt
 <b>Note:</b>
 <b>Tout le monde peut utiliseɾ cette commɑnde, si du spɑm se pɾoduit, le ɾobot vous bɑnniɾɑ ɑutomɑtiquement du gɾoupe..</b>"""
 
