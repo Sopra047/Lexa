@@ -286,13 +286,10 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et s
 
     IMDB_TEMPLATE_TXT = """
 <b>🔖 Tɪᴛʀᴇ :<a href={url}>{title}</a>
-
 🎭 Gᴇɴʀᴇ : {genres}
-🎖 Nᴏᴛᴀᴛɪᴏɴ : <a href={url}/ratings>{rating}</a> / 10 (Bᥲsᥱ́ sᥙr ᥣ’ᥱ́vᥲᥣᥙᥲtιoᥒ dᥱ {votes} ᥙtιᥣιsᥲtᥱᥙrs.)
-
+🎖 Nᴏᴛᴀᴛɪᴏɴ : <a href={url}/ratings>{rating}</a> / 10
 📆 Aɴɴᴇ́ᴇ : {release_date}
-🗞 Lᴀɴɢᴜᴀɢᴇ : {languages}
-🌎 Pᴀʏs : {countries}
+🌎 Lᴀɴɢᴜᴀɢᴇ : {languages}
 
 ©{message.chat.title}</b>
 """
