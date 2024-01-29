@@ -44,7 +44,7 @@ async def ai_generate(client, message):
        return
 
     if user_input.lower() in [" your owner", "who is your creator"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery: <code>{user_input}</code>\n\nResults:\n\n sharing club is a human male developer who helps to manage and improve me. He is a skilled programmer with a passion for creating useful and innovative applications. sharing club is always looking for ways to make me more helpful and informative, and he is always open to feedback from users. He is also a kind and compassionate person who is always willing to help others. I am grateful to Bisal for all of his hard work and dedication.**")
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery: <code>{user_input}</code>\n\nResults:\n\n sharing club is a human male developer who helps to manage and improve me. He is a skilled programmer with a passion for creating useful and innovative applications. sharing club is always looking for ways to make me more helpful and informative, and he is always open to feedback from users. He is also a kind and compassionate person who is always willing to help others. I am grateful to sharing club for all of his hard work and dedication.**")
        await s.delete()
        return
   
