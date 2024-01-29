@@ -297,7 +297,7 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et s
 """
 
     CUSTOM_FILE_CAPTION = """<b>📂 Nom du fıchıer : {file_name}
-
+🟢 Ŋσʋνeɑʋtés ➡️ @Sharing_Club
 </b>"""
 
     RESTART_TXT = """
