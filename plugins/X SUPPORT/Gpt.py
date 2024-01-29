@@ -43,4 +43,4 @@ async def ai_res(message ,query):
                     ),
                     disable_web_page_preview=True,
                 )
-                await client.send_message(LOG_CHANNEL, text=f"#ask {userMention}\n\nAsked to Ai : {query}\n\nAi Res: {api_response}",          
+                await client.send_message(AI_LOGS, text=f"#ask Rᴇϙᴜᴇ̂ᴛᴇ ᴅᴇ {message.from_user.mention}")
