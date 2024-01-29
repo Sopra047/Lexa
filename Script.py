@@ -104,17 +104,14 @@ Voᥙs ρoᥙvᥱz ᥙtιᥣιsᥱr ᥴᥱttᥱ foᥒᥴtιoᥒᥒᥲᥣιtᥱ́
 
 <b>Fonctionne dɑns un Gɾoupe et en PM</b>"""
 
-    VIDEO_TXT = """<b>ᴛᴇ́ʟᴇ́ᴄʜᴀʀɢᴇʀ ᴅᴇs ᴠɪᴅᴇ́ᴏs ᴅᴇ YᴏᴜTᴜʙᴇ</b>
-    
-Cᴇ Mᴏᴅᴜʟᴇ ᴠᴏᴜs ᴀɪᴅᴇʀᴀ ᴀ̀ ᴛᴇ́ʟᴇ́ᴄʜᴀʀɢᴇʀ ᴅᴇs ᴠɪᴅᴇ́ᴏs ᴀ̀ ᴘᴀʀᴛɪʀ ᴅᴇ YᴏᴜTᴜʙᴇ.
-    
-• 𝘜𝘴𝘢𝘨𝘦
-𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
-𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/example...)
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
+    VIDEO_TXT = """<b>ᴛᴇ́ʟᴇ́ᴄʜᴀʀɢᴇʀ ᴅᴇs ᴠɪᴅᴇ́ᴏs YᴏᴜTᴜʙᴇ</b>
+Aᴠᴇᴄ ᴄᴇ ᴍᴏᴅᴜʟᴇ ᴠᴏᴜs ᴘᴏᴜᴠᴇᴢ ᴛᴇ́ʟᴇ́ᴄʜᴀʀɢᴇʀ ɴ’ɪᴍᴘᴏʀᴛᴇ ϙᴜᴇʟʟᴇ ᴠɪᴅᴇ́ᴏ ᴀ̀ ᴘᴀʀᴛɪʀ ᴅᴇ YᴏᴜTᴜʙᴇ
+
+<b>Mᴏᴅᴇ ᴅ’ᴇᴍᴘʟᴏɪ</b>
+• Tɑpez /video ou /mp4 suivi du nom de lɑ vidéo ou de l'ɑdɾesse uɾl 
+• ᴇxᴇᴍᴘʟᴇ:
 <code>/mp4 https://youtu.be/example...</code>
-<code>/video https://youtu.be/example...</code>"""
+<code>/video Zaho ft la fouine </code>"""
 
     TTS_TXT = """Help: <b> TTS 🎤 module:</b>
 Translate text to speech
