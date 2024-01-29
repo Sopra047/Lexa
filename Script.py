@@ -4,7 +4,7 @@ Mᴏɴ Nᴏᴍ ᴇsᴛ <a href=https://t.me/{}>{}</a>, Jᴇ ᴘᴇᴜx ᴛᴇ ғ
     HELP_TXT = """ {}
 Je ѕυιѕ la Belle Alice de Sнαrιɴɢ Clυв!
 ✯ Retɾouvez ɑ̀ tɾɑveɾs ce menu quelques-unes de mes nouvelles compétences.
-✯ P.S : Rejσiƍƞez <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞelle</b></a> 🥰😘."""
+✯ P.S : Rejσiƍƞez <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞelle</b></a> 🥰"""
 
     # ⚠️ Please don't change our credits 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 & 𝙳𝙴𝚅 👇🏻
 
@@ -100,7 +100,7 @@ En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort vis
 Modᥙᥣᥱ dᥱ tᥱ́ᥣᥱ́ᥴhᥲrgᥱmᥱᥒt dᥱ ᥴhᥲᥒsoᥒs, ρoᥙr ᥴᥱᥙx qᥙι ᥲιmᥱᥒt ᥣᥲ mᥙsιqᥙᥱ. 
 Voᥙs ρoᥙvᥱz ᥙtιᥣιsᥱr ᥴᥱttᥱ foᥒᥴtιoᥒᥒᥲᥣιtᥱ́ ρoᥙr tᥱ́ᥣᥱ́ᥴhᥲrgᥱr ᥒ’ιmρortᥱ qᥙᥱᥣᥣᥱ ᥴhᥲᥒsoᥒ ᥲvᥱᥴ ᥙᥒᥱ vιtᥱssᥱ sᥙρᥱr rᥲριdᥱ.
 
-<b>Cᴏᴍᴍᴀɴᴅᴇs</b> : /song ɴᴏᴍ ᴅᴇ ʟᴀ ᴄʜᴀɴsᴏɴ
+<b>Cᴏᴍᴍᴀɴᴅᴇ</b> : /song ɴᴏᴍ ᴅᴇ ʟᴀ ᴄʜᴀɴsᴏɴ
 
 <b>Fonctionne dɑns un Gɾoupe et en PM</b>"""
 
@@ -173,14 +173,15 @@ To Get Sticker ID
 
 ◉ Reply To Any Sticker [/stickerid]"""
 
-    FONT_TXT = """⚙️ 𝐔𝐒𝐀𝐆𝐄
+    FONT_TXT = """<b>Sᴛʏʟᴇ ᴅᴇ Pᴏʟɪᴄᴇ</b>
 
-𝐘𝐎𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐓𝐇𝐈𝐒 𝐌𝐎𝐃𝐔𝐋𝐄 𝐓𝐎 𝐂𝐇𝐀𝐍𝐆𝐄 𝐅𝐎𝐍𝐓 𝐒𝐓𝐘𝐋𝐄 
+ᴠᴏᴜs ᴘᴏᴜᴠᴇᴢ ᴜᴛɪʟɪsᴇʀ ᴄᴇ ᴍᴏᴅᴜʟᴇ ᴘᴏᴜʀ ᴠᴏs ᴍᴏᴅɪғɪᴄᴀᴛɪᴏɴs ᴅᴇ sᴛʏʟᴇ ᴅᴇ ᴘᴏʟɪᴄᴇ 
 
-<b>COMMAND</b> : /font your text (optional)
-        <b> Eg:- /font Hello</b>
-
- <i>This feature added by @HORRIDduo"""
+<b>Cᴏᴍᴍᴀɴᴅᴇs</b> : /font votɾe texte
+        
+        <b> Exᴇᴍᴘʟᴇ:- /font Belle</b>
+        
+"""
     JSON_TXT = """<b>JSON:</b>
 Bot returns json for all replied messages with /json or /js
 <b>Features:</b>
