@@ -301,10 +301,10 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et s
 </b>"""
 
     RESTART_TXT = """
-<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
+<b>Bᴏᴛ Rᴇᴅᴇ́ᴍᴀʀʀᴇ́ !
 📅 Dᴀᴛᴇ : <code>{}</code>
-⏰Tɪᴍᴇ : <code>{}</code>
-🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code></b>"""
+⏰Hᴇᴜʀᴇ : <code>{}</code>
+🌐Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code></b>"""
 
     MELCOW_ENG = """<b>Sɑlut {} 😍, Bienvenue ɑ̀  {} Groupe ❤️"""
 
@@ -360,8 +360,7 @@ Exᴇᴍᴘʟᴇ :- <code>/country 𝖥𝗋𝖺𝗇𝖼𝖾</code>"""
 <b>⍟ Mᴏᴅᴜʟᴇ Cᴀɴᴀᴜx ﹠ Gʀᴏᴜᴘᴇs ⍟</b>
 
 <b>🎬 Mᴇɪʟʟᴇᴜʀ Gʀᴏᴜᴘᴇ ᴅᴇ Dᴇᴍᴀɴᴅᴇ ᴅᴇ Fɪʟᴍ.
-🚦 Fɪʟᴍs ﹠ Sᴇ́ʀɪᴇs ᴅᴀɴs Pʟᴜsɪᴇᴜʀs Lᴀɴɢᴜᴇs.
-🗣️ Bᴏᴛ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘᴇ.
-📢 Cᴀɴᴀʟ Mɪsᴇ ᴀ̀ Jᴏᴜʀ Bᴏᴛ.</b>
+📢 Cᴀɴᴀᴜx Fɪʟᴍs ﹠ Sᴇ́ʀɪᴇs ᴅᴀɴs Pʟᴜsɪᴇᴜʀs Lᴀɴɢᴜᴇs.
+🗣️ Bᴏᴛ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘᴇ.</b>
 """
 
