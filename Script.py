@@ -4,7 +4,6 @@ Mᴏɴ Nᴏᴍ ᴇsᴛ <a href=https://t.me/{}>{}</a>, Jᴇ ᴘᴇᴜx ᴛᴇ ғ
     HELP_TXT = """ {}
 Je ѕυιѕ la Belle Alice de Sнαrιɴɢ Clυв!
 ✯ Retɾouvez ɑ̀ tɾɑveɾs ce menu quelques-unes de mes nouvelles compétences.
-
 ✯ Ŋ.B : Vσʋs ɗeνez ɾejσiƞɗɾe <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞelle</b></a> pσʋɾ ɱ'ʋtiliseɾ 🥰😘."""
 
     # ⚠️ Please don't change our credits 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 & 𝙳𝙴𝚅 👇🏻
