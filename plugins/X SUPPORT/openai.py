@@ -31,11 +31,11 @@ async def ask_question(client, message):
                 )          
                 ai_response = response.choices[0].message.content.strip()
                 await s.delete()
-                await send_message_in_chunks(client, message.chat.id, f"HEY {message.from_user.mention}\n\nQuestion: {text}\n\nRᥱ́ρoᥒ⳽ᥱ👇\n\n{response.choices[0].message.content}\n\n📌 Remɑɾque : En tɑnt que IA, Je peux commettɾe des eɾɾeuɾs. Pensez ɑ̀ véɾifieɾ les infoɾmɑtions impoɾtɑntes.")
+                await send_message_in_chunks(client, message.chat.id, f"HEY {message.from_user.mention}\n\nQuestion: {text}\n\nRᥱ́ρoᥒ⳽ᥱ👇\n\n{response.choices[0].message.content}\n\n🙃𝑁.𝐵 : 𝐿'𝐼𝐴 𝑝𝑒𝑢𝑥 𝑐𝑜𝑚𝑚𝑒𝑡𝑡𝑟𝑒 𝑑𝑒𝑠 𝑒𝑟𝑟𝑒𝑢𝑟𝑠. 𝑃𝑒𝑛𝑠𝑒𝑧 à 𝑣é𝑟𝑖𝑓𝑖𝑒𝑟 𝑙𝑒𝑠 𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛𝑠 𝑖𝑚𝑝𝑜𝑟𝑡𝑎𝑛𝑡𝑒𝑠.")
                 await send_message_in_chunks(client, LOG_CHANNEL, f"#ask {message.from_user.mention} **Avec ID utilisɑteuɾ -** {user_id}.\n🔍 **M'ɑ posé cette question...**👇\n\n🔻 **Question:** `{text}`\n\n🔻 **Voici lɑ ɾéponse que j’ɑi donnée:**\n🖍️ {ai_response}\n\n\n🔻 **Identifiɑnt :-** {user_id} \n🔻 **Nom d’utilisɑteuɾ :-** {message.from_user.mention}")
                 
             except Exception as error:
                 print(error)
-                await message.reply_text(f"**Une eɾɾeuɾ s’est pɾoduite:**\n\n**{error}**\n\n")
+                await message.reply_text(f"**Veuillez écɾiɾe votɾe question juste ɑpɾès lɑ commɑnde Ex: /openɑi Comment ɾesteɾ  en bonne sɑnté ?**\n\n**{error}**\n\n")
     else:
         return
