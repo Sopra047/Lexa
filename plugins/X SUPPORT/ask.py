@@ -51,7 +51,7 @@ async def ai_generate(client, message):
    prompt_parts = [user_input]
    response = model.generate_content(prompt_parts)
    await message.reply_text(text=f"🙋 Demandeur: {message.from_user.mention}\n\n🤦 Question: {user_input}\n\n📝 Réponse:\n\n{response.text}\n\n🤗𝑁.𝐵 : 𝐿’𝐼𝐴 𝑝𝑒𝑢𝑥 𝑐𝑜𝑚𝑚𝑒𝑡𝑡𝑟𝑒 𝑑𝑒𝑠 𝑒𝑟𝑟𝑒𝑢𝑟𝑠. 𝑃𝑒𝑛𝑠𝑒𝑧 à 𝑣é𝑟𝑖𝑓𝑖𝑒𝑟 𝑙𝑒𝑠 𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛𝑠 𝑖𝑚𝑝𝑜𝑟𝑡𝑎𝑛𝑡𝑒𝑠.")         
-   await client.send_message(LOG_CHANNEL, text=f"#ask Rᴇϙᴜᴇ̂ᴛᴇ ᴅᴇ {message.from_user.mention}\nQuestion: {user_input}")
+   await client.send_message(AI_LOGS, text=f"#ask Rᴇϙᴜᴇ̂ᴛᴇ ᴅᴇ {message.from_user.mention}\nQuestion: {user_input}")
 
 @Client.on_message(filters.command("ask"))
 async def ai_generate_private(client, message):
