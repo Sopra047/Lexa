@@ -105,10 +105,12 @@ Voᥙs ρoᥙvᥱz ᥙtιᥣιsᥱr ᥴᥱttᥱ foᥒᥴtιoᥒᥒᥲᥣιtᥱ́
 <b>Fonctionne dɑns un Gɾoupe et en PM</b>"""
 
     VIDEO_TXT = """<b>ᴛᴇ́ʟᴇ́ᴄʜᴀʀɢᴇʀ ᴅᴇs ᴠɪᴅᴇ́ᴏs YᴏᴜTᴜʙᴇ</b>
+    
 Aᴠᴇᴄ ᴄᴇ ᴍᴏᴅᴜʟᴇ ᴠᴏᴜs ᴘᴏᴜᴠᴇᴢ ᴛᴇ́ʟᴇ́ᴄʜᴀʀɢᴇʀ ɴ’ɪᴍᴘᴏʀᴛᴇ ϙᴜᴇʟʟᴇ ᴠɪᴅᴇ́ᴏ ᴀ̀ ᴘᴀʀᴛɪʀ ᴅᴇ YᴏᴜTᴜʙᴇ
 
 <b>Mᴏᴅᴇ ᴅ’ᴇᴍᴘʟᴏɪ</b>
 • Tɑpez /video ou /mp4 suivi du nom de lɑ vidéo ou de l'ɑdɾesse uɾl 
+
 • ᴇxᴇᴍᴘʟᴇ:
 <code>/mp4 https://youtu.be/ex...</code>
 <code>/video Zaho ft la fouine </code>"""
@@ -296,7 +298,7 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et s
 """
 
     CUSTOM_FILE_CAPTION = """<b>📂 Nom du fıchıer : {file_name}
-🟢<a href=https://t.me/Sharing_Club><b>Sʋpeɾ Mɑƞ</b></a>➡️
+🟢<a href=https://t.me/Sharing_Club><b>Vσs ƞσʋνeɑʋtés</b></a>➡️
 </b>"""
 
     RESTART_TXT = """
