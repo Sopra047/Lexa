@@ -213,7 +213,7 @@ async def next_page(bot, query):
                )
     btn.insert(1,
                [
-                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', 'minfo'),
+                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', url='https://t.me/Sharing_Club'),
                    InlineKeyboardButton("🌐 Lᴀɴɢᴜᴇs 🌏", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
                ]
               )
@@ -825,7 +825,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('📚 Aiɗes', callback_data="spu"),
                     InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('🥰 Voiɾ Mes Nouvelles Cɑpɑcités 🦋', callback_data='help') 
+                    InlineKeyboardButton('🦋 Voiɾ Mes Nouvelles Cɑpɑcités 🦋', callback_data='help') 
                     ],[
                     InlineKeyboardButton('🔒 Fermer Menu', callback_data='close_data')
         ]]
@@ -1166,7 +1166,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "urlshort":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('ꭱꭼꭲꮻꮜꭱ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1431,7 +1431,7 @@ async def auto_filter(client, msg, spoll=False):
                )
     btn.insert(1,
                [
-                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', 'minfo'),
+                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', url='https://t.me/Sharing_Club'),
                    InlineKeyboardButton("🌐 Lᴀɴɢᴜᴇs 🌏​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
                ]
               )
