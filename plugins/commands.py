@@ -50,7 +50,7 @@ async def start(client, message):
                     InlineKeyboardButton('📚 Aiɗes', callback_data="spu"),
                     InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about'),
                   ],[
-                    InlineKeyboardButton('🥰 Voιr Mᥱs Noᥙvᥱᥣᥣᥱs Cᥲρᥲᥴιtᥱ́s 🦋', callback_data='help') 
+                    InlineKeyboardButton('🦋 Voιr Mᥱs Noᥙvᥱᥣᥣᥱs Cᥲρᥲᥴιtᥱ́s 🦋', callback_data='help') 
                     ],[
                     InlineKeyboardButton('🔒 Ferмer ', callback_data='close_data')
         ]]
@@ -415,21 +415,21 @@ async def settings(client, message):
         buttons = [
             [
                 InlineKeyboardButton(
-                    'Filter Button',
+                    'Bᴏᴜᴛᴏɴ ғɪʟᴛʀᴇ',
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    'Single' if settings["button"] else 'Double',
+                    'sɪᴍᴘʟᴇ' if settings["button"] else 'ᴅᴏᴜʙʟᴇ',
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Redirect To',
+                    'ᴍᴏᴅᴇ ᴅ·ᴇɴᴠᴏɪ',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    'Bot PM' if settings["botpm"] else 'Channel',
+                    'ʙᴏᴛ ᴘᴍ' if settings["botpm"] else 'ᴍᴀɴᴜᴇʟ',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
             ],
@@ -439,7 +439,7 @@ async def settings(client, message):
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["file_secure"] else '❌ No',
+                    '✅ Oᴜɪ' if settings["file_secure"] else '❌ Nᴏɴ',
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
             ],
@@ -449,47 +449,47 @@ async def settings(client, message):
                     callback_data=f'setgs#imdb#{settings["imdb"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["imdb"] else '❌ No',
+                    '✅ Oᴜɪ' if settings["imdb"] else '❌ Nᴏɴ',
                     callback_data=f'setgs#imdb#{settings["imdb"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Spell Check',
+                    'sᴜɢɢᴇsᴛ ᴏʀᴛʜᴏ',
                     callback_data=f'setgs#spell_check#{settings["spell_check"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["spell_check"] else '❌ No',
+                    '✅ Oᴜɪ' if settings["spell_check"] else '❌ Nᴏɴ',
                     callback_data=f'setgs#spell_check#{settings["spell_check"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Welcome',
+                    'Bɪᴇɴᴠᴇɴᴜᴇ',
                     callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["welcome"] else '❌ No',
+                    '✅ Oᴜɪ' if settings["welcome"] else '❌ Nᴏɴ',
                     callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Auto Delete',
+                    'ᴀᴜᴛᴏᴅᴇsᴛʀᴜᴄᴛɪᴏɴ',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '10 Mins' if settings["auto_delete"] else 'OFF',
+                    '10 ᴍɪɴ' if settings["auto_delete"] else 'ᴅᴇ́sᴀᴄᴛɪᴠᴇ́',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'ShortLink',
+                    'ʟɪᴇɴ ᴄᴏᴜʀᴛ',
                     callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ ON' if settings["is_shortlink"] else '❌ OFF',
+                    '✅ ᴀᴄᴛɪᴠᴇ́' if settings["is_shortlink"] else '❌ ᴅᴇ́sᴀᴄᴛɪᴠᴇ́',
                     callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
                 ),
             ],
