@@ -22,7 +22,7 @@ async def ai_generate(client, message):
 
     if user_input.lower() in ["who is your owner", "what is your owner name"]:  # Fixed indentation here
         buttons = [[
-            InlineKeyboardButton("developer", url="https://t.me/SharingClub_bot")
+            InlineKeyboardButton("eveloper", url="https://t.me/SharingClub_bot")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(text=f"**ʜᴇʏ {message.from_user.mention}\nQuery: {user_input}\n\nResults:\n\n my owner name is @SharingClub_bot contact @InfoSharClub he is inteligent also my creator", reply_markup=reply_markup)
@@ -107,7 +107,7 @@ async def ai_generate(client, message):
 
     prompt_parts = [user_input]
     response = model.generate_content(prompt_parts)
-    await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\n\n🤦 Question: {user_input}\n\n📝 Réponse:\n\n{response.text}")         
+    await message.reply_text(text=f"HEY {message.from_user.mention}\n\n🧐 Question: {user_input}\n\n🗣 Réponse:\n{response.text}")         
     await client.send_message(AI_LOGS, text=f"#google_ai Rᴇϙᴜᴇ̂ᴛᴇ ᴅᴇ {message.from_user.mention}\nQuestion: {user_input}")
     await s.delete()
 
