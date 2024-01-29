@@ -110,7 +110,7 @@ Aᴠᴇᴄ ᴄᴇ ᴍᴏᴅᴜʟᴇ ᴠᴏᴜs ᴘᴏᴜᴠᴇᴢ ᴛᴇ́ʟᴇ�
 <b>Mᴏᴅᴇ ᴅ’ᴇᴍᴘʟᴏɪ</b>
 • Tɑpez /video ou /mp4 suivi du nom de lɑ vidéo ou de l'ɑdɾesse uɾl 
 • ᴇxᴇᴍᴘʟᴇ:
-<code>/mp4 https://youtu.be/example...</code>
+<code>/mp4 https://youtu.be/ex...</code>
 <code>/video Zaho ft la fouine </code>"""
 
     TTS_TXT = """Help: <b> TTS 🎤 module:</b>
