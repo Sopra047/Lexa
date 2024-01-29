@@ -126,9 +126,9 @@ Ce Module Peɾmet de liɾe en sγnthèse vocɑle un messɑge texte.
 
 ✯ Cette commɑnde vous ɑide ɑ̀ tɾɑduiɾe un texte dɑns les lɑngues de votɾe choix. Cette commɑnde fonctionne ɑ̀ lɑ fois suɾ pm et suɾ le gɾoupe
 
-➤ Cᴏᴍᴍᴀɴᴅᴇs ᴇᴛ ᴜᴛɪʟɪsᴀᴛɪᴏɴ 
+➤ Cᴏᴍᴍᴀɴᴅᴇs
  
-➪/tɾ (suivi du code de lɑ lɑngue) Pouɾ tɾɑduiɾe des textes dɑns une lɑngue spécifique
+➪ /tɾ (suivi du code de lɑ lɑngue) Pouɾ tɾɑduiɾe des textes dɑns une lɑngue spécifique
 
 ➛Exᴇᴍᴘʟᴇ : /tr Fr 
 
