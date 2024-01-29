@@ -41,6 +41,4 @@ async def ai_res(message ,query):
                             ]
                         ]
                     ),
-                    disable_web_page_preview=True,
-                )
-                await client.send_message(AI_LOGS, text=f"#ask Rᴇϙᴜᴇ̂ᴛᴇ ᴅᴇ {message.from_user.mention}")
+                    disable_web_page_preview=True,                                       
