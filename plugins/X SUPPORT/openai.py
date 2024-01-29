@@ -36,6 +36,6 @@ async def ask_question(client, message):
                 
             except Exception as error:
                 print(error)
-                await message.reply_text(f"Veuillez écɾiɾe votɾe question juste ɑpɾès lɑ commɑnde Ex: /openɑi Comment ɾesteɾ  en bonne sɑnté ?")
+                await message.reply_text(f"Oui oui veuillez écɾiɾe votɾe question juste ɑpɾès lɑ commɑnde Ex: /openɑi Comment ɾesteɾ  en bonne sɑnté ?")
                 await s.delete()
  
