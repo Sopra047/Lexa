@@ -3,16 +3,9 @@ class script(object):
 Mᴏɴ Nᴏᴍ ᴇsᴛ <a href=https://t.me/{}>{}</a>, Jᴇ ᴘᴇᴜx ᴛᴇ ғᴏᴜʀɴɪʀ ᴅᴇs ғɪʟᴍs ᴇᴛ ᴅᴇs sᴇ́ʀɪᴇs﹐ ɪʟ sᴜғғɪᴛ ᴊᴜsᴛᴇ ᴅᴇ ʀᴇᴊᴏɪɴᴅʀᴇ ᴍᴇs ᴄᴀɴᴀᴜx ᴇᴛ ᴅᴇ ᴘʀᴏғɪᴛᴇʀ 😍"""
     HELP_TXT = """ {}
 Je ѕυιѕ la Belle Alice de Sнαrιɴɢ Clυв!
-✯ Reтroυvez ɢrα̂ce ὰ мoι leѕ ғιcнιerѕ deѕ cαɴαυх oғғιcιelѕ de Sнαrιɴɢ Clυв.
+✯ Retɾouvez ɑ̀ tɾɑveɾs ce menu quelques-unes de mes nouvelles compétences.
 
-✯ Les liens pour ɑccéder ɑ̀ chɑque fichier de série se trouve ici <a href=https://t.me/Sharliste><b>Ꮲꮻꮪꭲꭼꭱꮪ Ꮯꮋꭺɴɴꭼꮮ</b></a>
-
-✯ Ecrire simplement dɑns <a href=https://t.me/Group_SharClub><b>Ꮪꮋꭺꭱ.Ꮯꮮꮜᏼ</b></a> le nom du Film ou lɑ Série dont tu ɑs besoin et lɑisse lɑ mɑgie s'opérer 👌
-
-✯ <b>Les cσƞteƞʋs pσɾƞσs🔞</b> sont strictement interdits et font l’objet d’une interdiction permɑnente.
-
-✯ Ŋ.B : Vσʋs ɗeνez ɾejσiƞɗɾe <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞelle</b></a> pσʋɾ ɱ'ʋtiliseɾ. 
-Belle Alice 2.0 © 🥰😘"""
+✯ Ŋ.B : Vσʋs ɗeνez ɾejσiƞɗɾe <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞelle</b></a> pσʋɾ ɱ'ʋtiliseɾ 🥰😘."""
 
     # ⚠️ Please don't change our credits 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 & 𝙳𝙴𝚅 👇🏻
 
