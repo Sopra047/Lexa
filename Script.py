@@ -191,7 +191,7 @@ Message Editting JSON
 Pm Support
 Group Support
 <b>Note:</b>
-<b>Everyone can use this command , if spaming happens bot will automatically ban you from the group.</b>"""
+<b>Tout le monde peut utiliseɾ cette commɑnde, si du spɑm se pɾoduit, le ɾobot vous bɑnniɾɑ ɑutomɑtiquement du gɾoupe..</b>"""
 
     WHOIS_TXT = """<b>WHOIS MODULE</b>
 Note:- <b>Dᴏɴɴᴇʀ ᴅᴇs ᴅᴇ́ᴛᴀɪʟs sᴜʀ ᴜɴ ᴜᴛɪʟɪsᴀᴛᴇᴜʀ</b>
@@ -241,10 +241,10 @@ Ce module ne fonctionne que pouɾ mes ɑdministɾɑteuɾs
 • /deletefiles - <code>Delete CamRip and PreDvD files delete from database </code>"""
 
     STATUS_TXT = """<b>★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱</b>"""
+★ ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
+★ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
+★ ᴍᴇ́ᴍᴏɪʀᴇ ᴜᴛɪʟɪsᴇ́: <code>{}</code> 𝙼𝚒𝙱
+★ ᴍᴇ́ᴍᴏɪʀᴇ ʟɪʙʀᴇ: <code>{}</code> 𝙼𝚒𝙱</b>"""
 
     CARB_TXT = """<b>Help</b> : 𝗖𝗔𝗥𝗕𝗢𝗡
 𝙲𝙰𝚁𝙱𝙾𝙽 𝙸𝚂 𝙰 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝙾 𝙼𝙰𝙺𝙴 𝚃𝙷𝙴 𝙸𝙼𝙰𝙶𝙴 𝙰𝚂 𝚂𝙷𝙾𝚆𝙽 𝙸𝙽 𝚃𝙷𝙴 𝚃𝙾𝙿 𝚆𝙸𝚃𝙷 𝚈𝙾𝚄𝚁𝙴 𝚃𝙴𝚇𝚃𝚂.
@@ -284,8 +284,8 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et s
 </b>
 """
 
-    IMDB_TEMPLATE_TXT = """
-<b>🔖 Tɪᴛʀᴇ :<a href={url}>{title}</a>
+    IMDB_TEMPLATE_TXT = """<b>
+🔖 Tɪᴛʀᴇ :<a href={url}>{title}</a>
 🎭 Gᴇɴʀᴇ : {genres}
 🎖 Nᴏᴛᴀᴛɪᴏɴ : <a href={url}/ratings>{rating}</a> / 10
 📆 Aɴɴᴇ́ᴇ : {release_date}
@@ -295,7 +295,7 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et s
 """
 
     CUSTOM_FILE_CAPTION = """<b>📂 Nom du fıchıer : {file_name}
-🟢<a href=https://t.me/Sharing_Club><b>Vσs ƞσʋνeɑʋtés</b></a>➡️
+    🟢<a href=https://t.me/Sharing_Club><b>Vσs ƞσʋνeɑʋtés</b></a>🟢
 </b>"""
 
     RESTART_TXT = """
