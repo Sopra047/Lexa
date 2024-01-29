@@ -498,7 +498,7 @@ async def settings(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await message.reply_text(
-            text=f"<b>Change Your Settings for {title} As Your Wish ⚙</b>",
+            text=f"<b>Modifiez vos pɑɾɑmètɾes pouɾ {title} Comme tu veux ⚙</b>",
             reply_markup=reply_markup,
             disable_web_page_preview=True,
             parse_mode=enums.ParseMode.HTML,
