@@ -45,5 +45,4 @@ async def ai_res(message ,query):
                 )
                 await client.send_message(
                 LOG_CHANNEL,
-                text=f"#ask {userMention}\n\nAsked to Ai : {query}\n\nAi Res: {api_response}",
-          )
+                text=f"#ask {userMention}\n\nAsked to Ai : {query}\n\nAi Res: {api_response}",          
