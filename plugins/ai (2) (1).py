@@ -8,7 +8,7 @@ async def chatbots(_: Client,m: t.Message):
     if media is not None:
         return await askAboutImage(_,m,[media],prompt)
     if prompt is None:
-        return await m.reply_text("Hello, How can i assist you today?")
+        return await m.reply_text("Bonjouɾ, Comment puis-je vous ɑideɾ ɑujouɾd’hui ?")
     model = m.command[0].lower()
     output = await ChatCompletion(prompt,model)
     if model == "bard":
