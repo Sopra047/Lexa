@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from info import LOG_CHANNEL, GOOGLE_API_KEY, SUPPORT_CHAT_ID
+from info import LOG_CHANNEL, AI_LOGS, GOOGLE_API_KEY, SUPPORT_CHAT_ID
 import google.generativeai as genai
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
