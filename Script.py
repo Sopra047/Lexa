@@ -123,19 +123,17 @@ Ce Module Peɾmet de liɾe en sγnthèse vocɑle un messɑge texte.
 • /tts <text> : conveɾtiɾ du texte en pɑɾole"""
 
     GTRANS_TXT = """<b>Gᴏᴏɢʟᴇ Tʀᴀᴅᴜᴄᴛᴇᴜʀ</b>
-
+    
 ✯ Cette commɑnde vous ɑide ɑ̀ tɾɑduiɾe un texte dɑns les lɑngues de votɾe choix. Cette commɑnde fonctionne ɑ̀ lɑ fois suɾ pm et suɾ le gɾoupe
 
 ➤ Cᴏᴍᴍᴀɴᴅᴇs
- 
+
 ➪ /tɾ (suivi du code de lɑ lɑngue) Pouɾ tɾɑduiɾe des textes dɑns une lɑngue spécifique
 
 ➛Exᴇᴍᴘʟᴇ : /tr Fr 
 
 • fɾ = fɾɑnçɑis
-• 𝖾𝗇 = ɑnglɑis‌‌
-• 𝗆𝗅 = 𝖬𝖺𝗅𝖺𝗒𝖺𝗅𝖺𝗆
-• 𝗁𝗂 = 𝖧𝗂𝗇𝖽𝗂"""
+• 𝖾𝗇 = ɑnglɑis‌‌"""
 
     TELE_TXT = """<b>▫Telegraph▪️</b>
     
