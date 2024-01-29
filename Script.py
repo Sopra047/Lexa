@@ -113,10 +113,11 @@ Aᴠᴇᴄ ᴄᴇ ᴍᴏᴅᴜʟᴇ ᴠᴏᴜs ᴘᴏᴜᴠᴇᴢ ᴛᴇ́ʟᴇ�
 <code>/mp4 https://youtu.be/ex...</code>
 <code>/video Zaho ft la fouine </code>"""
 
-    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
-Translate text to speech
-<b>Commands and Usage:</b>
-• /tts <text> : convert text to speech"""
+    TTS_TXT = """<b>TTS Sʏɴᴛʜᴇ̀sᴇ Vᴏᴄᴀʟᴇ</b>
+Ce Module Peɾmet de liɾe en sγnthèse vocɑle un messɑge texte.
+
+<b>Commandes et utilisation:</b>
+• /tts <text> : conveɾtiɾ du texte en pɑɾole"""
 
     GTRANS_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖦𝗈𝗈𝗀𝗅𝖾 𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾𝗋
 𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚝𝚛𝚊𝚗𝚜𝚕𝚊𝚝𝚎 𝚊 𝚝𝚎𝚡𝚝 𝚝𝚘 𝖺𝗇𝗒 𝚕𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜 𝚢𝚘𝚞 𝚠𝚊𝚗𝚝. 𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚠𝚘𝚛𝚔𝚜 𝚘𝚗 𝚋𝚘𝚝𝚑 𝚙𝚖 𝚊𝚗𝚍 𝚐𝚛𝚘𝚞𝚙 ✯
