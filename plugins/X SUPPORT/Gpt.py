@@ -17,29 +17,4 @@ async def ai_res(message ,query):
             response_json = res.json()  
             api_response = response_json.get('response')  
             if len(query) <= 280:
-                await message.reply_text(text=f"<b>hey {userMention}\nʏᴏᴜʀ ǫᴜᴇʀʏ : <code>{cut_query_str}</code>\n\n{BOT_NAME} :\n{api_response}</b>")
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton(
-                                    "MOVIE", url=f"https://t.me/fndnfmfkrk"
-                                )
-                            ]
-                        ]
-                    ),
-                    disable_web_page_preview=True,                                       
-
-                    )
-            else:
-                cut_query_str = query[:77]
-                await message.reply_text(text=f"<b>hey {userMention}\nʏᴏᴜʀ ǫᴜᴇʀʏ : <code>{cut_query_str}</code>\n\n{BOT_NAME} :\n{api_response}</b>")
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton(
-                                    "MOVIE", url=f"https://t.me/fndnfmfkrk"
-                                )
-                            ]
-                        ]
-                    ),
-                    disable_web_page_preview=True,                                       
+                await message.reply_text(text=f"<b>hey {userMention}\nʏᴏᴜʀ ǫᴜᴇʀʏ : <code>{cut_query_str}</code>\n\n{BOT_NAME} :\n{api_response}</b>")                    
