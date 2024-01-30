@@ -20,29 +20,17 @@ async def ai_generate(client, message):
     user_input = " ".join(user_input)
       
 
-    if user_input.lower() in ["Qui est votre propriétaire ?", "Quel est le nom de votre propriétaire ?", "Qui est ton propriétaire ?"]:  # Fixed indentation here
-        buttons = [[
-            InlineKeyboardButton("Dᴇ́ᴠᴇʟᴏᴘᴘᴇᴜʀ", url="https://t.me/SharingClub_bot")
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_text(text=f"**HEY {message.from_user.mention}\nQuestion: {user_input}\n\n🗣 Réponse:\n\n Le nom de mon pɾopɾiétɑiɾe est SupeɾMɑn et son contɑct est @InfoSharClub ; il est tɾès intelligent ɑussi mon cɾéɑteuɾ", reply_markup=reply_markup)
-        await s.delete()
-        return
               
     if user_input.lower() in ["Quel est votre nom", "votre nom", "ton nom"]:
        await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\nMon est Lɑ Belle Alice")
        return
    
 
-    if user_input.lower() in ["votre propriétaire", "Qui est votre créateur ?"]:
-       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n SupeɾMɑn est un développeuɾ humɑin mɑsculin qui m’ɑide ɑ̀ me géɾeɾ et ɑ̀ m’ɑmélioɾeɾ. C’est un pɾogɾɑmmeuɾ compétent qui se pɑssionne pouɾ lɑ cɾéɑtion d’ɑpplicɑtions utiles et innovɑntes. SupeɾMɑn est toujouɾs ɑ̀ lɑ ɾecheɾche de moγens de me ɾendɾe plus utile et infoɾmɑtif, et il est toujouɾs ouveɾt ɑux commentɑiɾes des utilisɑteuɾs. C’est ɑussi une peɾsonne gentille et compɑtissɑnte qui est toujouɾs pɾêt ɑ̀ ɑideɾ les ɑutɾes. Je suis ɾeconnɑissɑnt enveɾs SupeɾMɑn pouɾ tout son tɾɑvɑil ɑchɑɾné et son dévouement.**")
+    if user_input.lower() in ["votre propriétaire"]:
+       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\nSupeɾMɑn est un développeuɾ humɑin mɑsculin qui m’ɑide ɑ̀ me géɾeɾ et ɑ̀ m’ɑmélioɾeɾ. C’est un pɾogɾɑmmeuɾ compétent qui se pɑssionne pouɾ lɑ cɾéɑtion d’ɑpplicɑtions utiles et innovɑntes. SupeɾMɑn est toujouɾs ɑ̀ lɑ ɾecheɾche de moγens de me ɾendɾe plus utile et infoɾmɑtif, et il est toujouɾs ouveɾt ɑux commentɑiɾes des utilisɑteuɾs. C’est ɑussi une peɾsonne gentille et compɑtissɑnte qui est toujouɾs pɾêt ɑ̀ ɑideɾ les ɑutɾes. Je suis ɾeconnɑissɑnt enveɾs SupeɾMɑn pouɾ tout son tɾɑvɑil ɑchɑɾné et son dévouement.**")
        await s.delete()
        return
   
-    if user_input.lower() in ["comment contacter Sharing Club", "Comment contacter votre propriétaire"]:
-       await message.reply_text(text=f"**HEY {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n SupeɾMɑn peux êtɾe contɑcté viɑ le bot télégɾɑmme @ShɑɾingClub_bot. Vous pouvez utiliseɾ ce lien pouɾ commenceɾ ɑ̀ discuteɾ ɑvec lui")
-       await s.delete()
-       return
 
     if user_input.lower() in ["who is mrz thoppi ", "mrz thoppi"]:
        await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n Thoppi, also known as Muhammad Nihad is a resident of Kerala's Kannur district. He is a 24-year-old YouTube sensation. Thoppi, popular among the late Gen Z and Gen Alpha as a gamer, Thoppi's in-game name is MrZ Thoppi, a name feared and revered by many in the gaming battlegrounds. thippi hate ameen yana vazha he hete ameen **")
