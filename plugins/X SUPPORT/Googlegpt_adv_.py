@@ -21,7 +21,7 @@ async def ai_generate(client, message):
       
 
               
-    if user_input.lower() in ["Quel est votre nom", "votre nom", "ton nom"]:
+    if user_input.lower() in ["votre nom", "ton nom"]:
        await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\nMon est Lɑ Belle Alice")
        return
    
@@ -34,11 +34,6 @@ async def ai_generate(client, message):
 
     if user_input.lower() in ["who is mrz thoppi ", "mrz thoppi"]:
        await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n Thoppi, also known as Muhammad Nihad is a resident of Kerala's Kannur district. He is a 24-year-old YouTube sensation. Thoppi, popular among the late Gen Z and Gen Alpha as a gamer, Thoppi's in-game name is MrZ Thoppi, a name feared and revered by many in the gaming battlegrounds. thippi hate ameen yana vazha he hete ameen **")
-       await s.delete()
-       return
-
-    if user_input.lower() in ["Qui êtes vous", "Qui est-tu"]:
-       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n Je suis lɑ Belle Alice développeɾ pɑɾ Shɑɾing Club.")
        await s.delete()
        return
 
