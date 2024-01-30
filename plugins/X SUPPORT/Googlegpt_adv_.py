@@ -20,56 +20,56 @@ async def ai_generate(client, message):
     user_input = " ".join(user_input)
       
 
-    if user_input.lower() in ["who is your owner", "what is your owner name"]:  # Fixed indentation here
+    if user_input.lower() in ["Qui est votre propriétaire ?", "Quel est le nom de votre propriétaire ?"]:  # Fixed indentation here
         buttons = [[
-            InlineKeyboardButton("eveloper", url="https://t.me/SharingClub_bot")
+            InlineKeyboardButton("Dᴇ́ᴠᴇʟᴏᴘᴘᴇᴜʀ", url="https://t.me/SharingClub_bot")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_text(text=f"**ʜᴇʏ {message.from_user.mention}\nQuery: {user_input}\n\nResults:\n\n my owner name is @SharingClub_bot contact @InfoSharClub he is inteligent also my creator", reply_markup=reply_markup)
+        await message.reply_text(text=f"**ʜᴇʏ {message.from_user.mention}\nQuestion: {user_input}\n\n🗣 Réponse:\n\n my owner name is @SharingClub_bot contact @InfoSharClub he is inteligent also my creator", reply_markup=reply_markup)
         await s.delete()
         return
               
-    if user_input.lower() in ["what is your name", "your name"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery:{user_input}\n\nResults:\n\nMY NAME IS TEST BOT")
+    if user_input.lower() in ["Quel est votre nom", "votre nom", "ton nom"]:
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\nMon est Lɑ Belle Alice")
        return
    
     if user_input.lower() in ["what is fuck", "fuck Malayalam"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery: {user_input}\n\nResults:\n\n error error not allowed 🚫 BAD WORDS 🚫😔")
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: {user_input}\n\n🗣 Réponse:\n\n error error not allowed 🚫 BAD WORDS 🚫😔")
        await s.delete()
        return  
     
     if user_input.lower() in ["hi", "hello"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery:{user_input}\n\nResults:\n\n Hello! How can I help you today?")
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n Hello! How can I help you today?")
        await s.delete()
        return
 
     if user_input.lower() in [" your owner", "who is your creator"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery: <code>{user_input}</code>\n\nResults:\n\n sharing club is a human male developer who helps to manage and improve me. He is a skilled programmer with a passion for creating useful and innovative applications. sharing club is always looking for ways to make me more helpful and informative, and he is always open to feedback from users. He is also a kind and compassionate person who is always willing to help others. I am grateful to sharing club for all of his hard work and dedication.**")
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n sharing club is a human male developer who helps to manage and improve me. He is a skilled programmer with a passion for creating useful and innovative applications. sharing club is always looking for ways to make me more helpful and informative, and he is always open to feedback from users. He is also a kind and compassionate person who is always willing to help others. I am grateful to sharing club for all of his hard work and dedication.**")
        await s.delete()
        return
   
     if user_input.lower() in ["how to contact sharing vlub", "how to contact your owner"]:
-       await message.reply_text(text=f"**ʜᴇʏ {message.from_user.mention}\nQuery:{user_input}\n\nResults:\n\n sharing can be contacted by telegram.His telegram(username) is @SharingClub_bot.Youcanusethislinktostartchatwithhim:https://t.me/SharingClub_bot")
+       await message.reply_text(text=f"**ʜᴇʏ {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n sharing can be contacted by telegram.His telegram(username) is @SharingClub_bot.Youcanusethislinktostartchatwithhim:https://t.me/SharingClub_bot")
        await s.delete()
        return
    
     if user_input.lower() in ["malayalam", "you know malayalam"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery:{user_input}\n\nResults:\n\n Sorry guys i no know Malayalam please type English")
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n Sorry guys i no know Malayalam please type English")
        await s.delete()
        return
 
     if user_input.lower() in ["how to create like you", "how to create like a bot"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery: <code>{user_input}</code>\n\nResults:\n\n First open chrome search:- https://console.cloud.google.com/ Then sign up with your google account, click on the nagivation mark.Click the API AND SERVICESclick the CREDENTIALS Click on the API KEY and then it will creating your api and copy your api key and use in bot. **")
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n First open chrome search:- https://console.cloud.google.com/ Then sign up with your google account, click on the nagivation mark.Click the API AND SERVICESclick the CREDENTIALS Click on the API KEY and then it will creating your api and copy your api key and use in bot. **")
        await s.delete()
        return
 
     if user_input.lower() in ["who is mrz thoppi ", "mrz thoppi"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery: <code>{user_input}</code>\n\nResults:\n\n Thoppi, also known as Muhammad Nihad is a resident of Kerala's Kannur district. He is a 24-year-old YouTube sensation. Thoppi, popular among the late Gen Z and Gen Alpha as a gamer, Thoppi's in-game name is MrZ Thoppi, a name feared and revered by many in the gaming battlegrounds. thippi hate ameen yana vazha he hete ameen **")
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n Thoppi, also known as Muhammad Nihad is a resident of Kerala's Kannur district. He is a 24-year-old YouTube sensation. Thoppi, popular among the late Gen Z and Gen Alpha as a gamer, Thoppi's in-game name is MrZ Thoppi, a name feared and revered by many in the gaming battlegrounds. thippi hate ameen yana vazha he hete ameen **")
        await s.delete()
        return
 
     if user_input.lower() in ["who are you"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuery: <code>{user_input}</code>\n\nResults:\n\n Iam TEST,Im developer by sharingClub. ")
+       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n Iam TEST,Im developer by sharingClub. ")
        await s.delete()
        return
 
