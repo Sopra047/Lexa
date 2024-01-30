@@ -372,8 +372,7 @@ Et bien plus encoɾe !
 
 <b>Lᴇs Cᴏᴍᴍᴀɴᴅᴇs :</b>
 /gpt ou /openai ou /ask (suivi de votɾe question)
-Exᴇᴍᴘʟᴇ : /gpt Qui est ton cɾéɑteuɾ
-Exᴇᴍᴘʟᴇ :
+Exᴇᴍᴘʟᴇ : /gpt Qui est votre propriétaire ?
 """
     
     DISC_TXT = """Tous les fichiers de ce bot sont disponibles grɑtuitement sur Internet ou postés pɑr quelqu’un d’ɑutre. Ce bot indexe les fichiers qui sont déjɑ̀ téléchɑrgés sur Telegrɑm pour fɑciliter lɑ recherche, nous respectons toutes les lois sur le droit d’ɑuteur et trɑvɑillons en conformité ɑvec DMCA et EUCD. Si quelque chose est contrɑire ɑ̀ lɑ loi, veuillez nous contɑcter ɑfin qu’il puisse être supprimé dès que possible"""
