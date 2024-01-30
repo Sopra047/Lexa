@@ -12,7 +12,7 @@ async def ai_generate(client, message):
     user_input = message.text.split()[1:]
 
     if not user_input:
-       await message.reply_text("<code>Oui! Je suis là... 👀<code>")
+       await message.reply_text("<code>Oui! Je suis là... 👀 Pour m'utiliser veuillez poser votre question après /gpt<code>")
        return
       
    
@@ -43,24 +43,14 @@ async def ai_generate(client, message):
        await message.reply_text(text=f"**HEY {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n SupeɾMɑn peux êtɾe contɑcté viɑ le bot télégɾɑmme @ShɑɾingClub_bot. Vous pouvez utiliseɾ ce lien pouɾ commenceɾ ɑ̀ discuteɾ ɑvec lui")
        await s.delete()
        return
-   
-    if user_input.lower() in ["malayalam", "you know malayalam"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n Sorry guys i no know Malayalam please type English")
-       await s.delete()
-       return
-
-    if user_input.lower() in ["how to create like you", "how to create like a bot"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n First open chrome search:- https://console.cloud.google.com/ Then sign up with your google account, click on the nagivation mark.Click the API AND SERVICESclick the CREDENTIALS Click on the API KEY and then it will creating your api and copy your api key and use in bot. **")
-       await s.delete()
-       return
 
     if user_input.lower() in ["who is mrz thoppi ", "mrz thoppi"]:
        await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n Thoppi, also known as Muhammad Nihad is a resident of Kerala's Kannur district. He is a 24-year-old YouTube sensation. Thoppi, popular among the late Gen Z and Gen Alpha as a gamer, Thoppi's in-game name is MrZ Thoppi, a name feared and revered by many in the gaming battlegrounds. thippi hate ameen yana vazha he hete ameen **")
        await s.delete()
        return
 
-    if user_input.lower() in ["who are you"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n Iam TEST,Im developer by sharingClub. ")
+    if user_input.lower() in ["Qui êtes vous", "Qui est-tu"]:
+       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n Je suis lɑ Belle Alice développeɾ pɑɾ Shɑɾing Club.")
        await s.delete()
        return
 
