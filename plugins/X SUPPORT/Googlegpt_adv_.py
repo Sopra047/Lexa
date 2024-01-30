@@ -12,7 +12,7 @@ async def ai_generate(client, message):
     user_input = message.text.split()[1:]
 
     if not user_input:
-       await message.reply_text("<code>/gpt who is your owner<code>")
+       await message.reply_text("<code>Oui! Je suis là... 👀<code>")
        return
       
    
@@ -20,36 +20,27 @@ async def ai_generate(client, message):
     user_input = " ".join(user_input)
       
 
-    if user_input.lower() in ["Qui est votre propriétaire ?", "Quel est le nom de votre propriétaire ?"]:  # Fixed indentation here
+    if user_input.lower() in ["Qui est votre propriétaire ?", "Quel est le nom de votre propriétaire ?", "Qui est ton propriétaire ?"]:  # Fixed indentation here
         buttons = [[
             InlineKeyboardButton("Dᴇ́ᴠᴇʟᴏᴘᴘᴇᴜʀ", url="https://t.me/SharingClub_bot")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_text(text=f"**ʜᴇʏ {message.from_user.mention}\nQuestion: {user_input}\n\n🗣 Réponse:\n\n my owner name is @SharingClub_bot contact @InfoSharClub he is inteligent also my creator", reply_markup=reply_markup)
+        await message.reply_text(text=f"**HEY {message.from_user.mention}\nQuestion: {user_input}\n\n🗣 Réponse:\n\n Le nom de mon pɾopɾiétɑiɾe est SupeɾMɑn et son contɑct est @InfoSharClub ; il est tɾès intelligent ɑussi mon cɾéɑteuɾ", reply_markup=reply_markup)
         await s.delete()
         return
               
     if user_input.lower() in ["Quel est votre nom", "votre nom", "ton nom"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\nMon est Lɑ Belle Alice")
+       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\nMon est Lɑ Belle Alice")
        return
    
-    if user_input.lower() in ["what is fuck", "fuck Malayalam"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: {user_input}\n\n🗣 Réponse:\n\n error error not allowed 🚫 BAD WORDS 🚫😔")
-       await s.delete()
-       return  
-    
-    if user_input.lower() in ["hi", "hello"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n Hello! How can I help you today?")
-       await s.delete()
-       return
 
-    if user_input.lower() in [" your owner", "who is your creator"]:
-       await message.reply_text(text=f"ʜᴇʏ {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n sharing club is a human male developer who helps to manage and improve me. He is a skilled programmer with a passion for creating useful and innovative applications. sharing club is always looking for ways to make me more helpful and informative, and he is always open to feedback from users. He is also a kind and compassionate person who is always willing to help others. I am grateful to sharing club for all of his hard work and dedication.**")
+    if user_input.lower() in ["votre propriétaire", "Qui est votre créateur ?"]:
+       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\n SupeɾMɑn est un développeuɾ humɑin mɑsculin qui m’ɑide ɑ̀ me géɾeɾ et ɑ̀ m’ɑmélioɾeɾ. C’est un pɾogɾɑmmeuɾ compétent qui se pɑssionne pouɾ lɑ cɾéɑtion d’ɑpplicɑtions utiles et innovɑntes. SupeɾMɑn est toujouɾs ɑ̀ lɑ ɾecheɾche de moγens de me ɾendɾe plus utile et infoɾmɑtif, et il est toujouɾs ouveɾt ɑux commentɑiɾes des utilisɑteuɾs. C’est ɑussi une peɾsonne gentille et compɑtissɑnte qui est toujouɾs pɾêt ɑ̀ ɑideɾ les ɑutɾes. Je suis ɾeconnɑissɑnt enveɾs SupeɾMɑn pouɾ tout son tɾɑvɑil ɑchɑɾné et son dévouement.**")
        await s.delete()
        return
   
-    if user_input.lower() in ["how to contact sharing vlub", "how to contact your owner"]:
-       await message.reply_text(text=f"**ʜᴇʏ {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n sharing can be contacted by telegram.His telegram(username) is @SharingClub_bot.Youcanusethislinktostartchatwithhim:https://t.me/SharingClub_bot")
+    if user_input.lower() in ["comment contacter Sharing Club", "Comment contacter votre propriétaire"]:
+       await message.reply_text(text=f"**HEY {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\n SupeɾMɑn peux êtɾe contɑcté viɑ le bot télégɾɑmme @ShɑɾingClub_bot. Vous pouvez utiliseɾ ce lien pouɾ commenceɾ ɑ̀ discuteɾ ɑvec lui")
        await s.delete()
        return
    
