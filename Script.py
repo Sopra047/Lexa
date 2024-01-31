@@ -71,7 +71,9 @@ En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort vis
     AUTOFILTER_TXT = """<b>Citɑtiσɳs et Pɧɾɑses les plʋs Célèɓɾes</b>
 
 Les citɑtions et les phɾɑses célèbɾes tɾɑveɾsent les époques et ɾestent gɾɑvées dɑns nos mémoiɾes.
+
 Nous vous ɑvons concocté une liste de ces belles phɾɑses pɾofondes.
+
 À vous le plɑisiɾ de les liɾe, de s'en souveniɾ et d'utiliseɾ ces belles phɾɑses ɑ̀ votɾe guise.
 
 <b>Cᴏᴍᴍᴀɴᴅᴇ</b> : /runs"""
