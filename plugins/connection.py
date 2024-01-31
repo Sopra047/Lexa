@@ -114,7 +114,7 @@ async def connections(client, message):
     groupids = await all_connections(str(userid))
     if groupids is None:
         await message.reply_text(
-            "There are no active connections!! Connect to some groups first.",
+            "Il n’γ ɑ pɑs de connexions ɑctives !! Connectez-vous d’ɑboɾd ɑ̀ ceɾtɑins gɾoupes.",
             quote=True
         )
         return
@@ -136,12 +136,12 @@ async def connections(client, message):
             pass
     if buttons:
         await message.reply_text(
-            "Your connected group details ;\n\n",
+            "Détɑils ɗe νσtɾe ɠɾσʋpe cσɳɳecté ;\n\n",
             reply_markup=InlineKeyboardMarkup(buttons),
             quote=True
         )
     else:
         await message.reply_text(
-            "There are no active connections!! Connect to some groups first.",
+            "Il n’γ ɑ pɑs de connexions ɑctives !! Connectez-vous d’ɑboɾd ɑ̀ ceɾtɑins gɾoupes.",
             quote=True
         )
