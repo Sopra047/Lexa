@@ -12,7 +12,7 @@ async def verupikkals(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
     sts = await message.reply_text(
-        text='Broadcasting your messages...'
+        text='Diffusion de vos messɑges...'
     )
     start_time = time.time()
     total_users = await db.total_users_count()
@@ -36,9 +36,9 @@ async def verupikkals(bot, message):
         done += 1
         await asyncio.sleep(2)
         if not done % 20:
-            await sts.edit(f"Broadcast in progress:\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")    
+            await sts.edit(f"Diffusion en cours:\n\nNombre total d’utilisateurs {total_users}\nComplète: {done} / {total_users}\nSuccès: {success}\nBlσqués: {blocked}\nSuppɾimés: {deleted}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Users {total_users}\nCompleted: {done} / {total_users}\nSuccess: {success}\nBlocked: {blocked}\nDeleted: {deleted}")
+    await sts.edit(f"Diffusion teɾminée:\nTeɾminé en {time_taken} secondes.\n\nNombɾe totɑl d'utilisɑteuɾs {total_users}\nComplète: {done} / {total_users}\nSuccès: {success}\nBlσqués: {blocked}\nSuppɾimés: {deleted}")
 
 
 @Client.on_message(filters.command("grp_broadcast") & filters.user(ADMINS) & filters.reply)
@@ -68,6 +68,6 @@ async def grp_brodcst(bot, message):
         done += 1
         await asyncio.sleep(2)
         if not done % 20:
-            await sts.edit(f"Broadcast in progress:\n\nTotal Chats {total_chats}\nCompleted: {done} / {total_chats}\nSuccess: {success}\nFailed: {failed}")    
+            await sts.edit(f"Diffusion en cours:\n\nTotal Chats {total_chats}\nCompleted: {done} / {total_chats}\nSuccess: {success}\nFailed: {failed}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
     await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Chats {total_chats}\nCompleted: {done} / {total_chats}\nSuccess: {success}\nFailed: {failed}")
