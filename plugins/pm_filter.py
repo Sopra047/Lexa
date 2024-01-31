@@ -859,7 +859,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🛅 ᴘᴏʟɪᴄᴇ 🖊', callback_data='font'),
             InlineKeyboardButton('🔠 ɢᴛʀᴀɴs 📚', callback_data='gtrans')
         ], [
-            InlineKeyboardButton('📇 ᴄɪᴛᴀᴛɪᴏɴs 📒', callback_data="autofilter")
+            InlineKeyboardButton('📕 ᴄɪᴛᴀᴛɪᴏɴs 📒', callback_data="autofilter")
         ], [
             InlineKeyboardButton('ꭱꭼꭲꮻꮜꭱ', callback_data='start')
         ]]
