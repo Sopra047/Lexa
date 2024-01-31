@@ -55,7 +55,7 @@ NOR_IMG = environ.get('NOR_IMG', "https://telegra.ph/file/5eda205dbb69aba621376.
 SPELL_IMG = environ.get('SPELL_IMG',"https://telegra.ph/file/5eda205dbb69aba621376.jpg")
 
 # Welcome area
-MELCOW_IMG = environ.get('MELCOW_IMG',"https://telegra.ph/file/e54cae941b9b81f13eb71.jpg")
+MELCOW_IMG = environ.get('MELCOW_IMG',"https://telegra.ph/file/6849472620d6bd833f527.jpg")
 MELCOW_VID = environ.get('MELCOW_VID',"")
 
 
@@ -118,10 +118,10 @@ S_GROUP = environ.get('S_GROUP',"https://t.me/TestDek")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/SharVision_Support")
 #Must change this link to work redirect (FILE_FORWORD)
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+-he3Hfab_xgzMTdk")
-MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
+MSG_ALRT = environ.get('MSG_ALRT', 'Vᥱ́rιfιᥱr ᥱt ᥱssᥲყᥱr toᥙtᥱs mᥱs foᥒᥴtιoᥒᥒᥲᥣιtᥱ́s')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'XBOTSUPPORTS')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'SHAR_GROUP')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
