@@ -298,10 +298,7 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et s
 🔖 Tɪᴛʀᴇ :<a href={url}>{title}</a>
 🎭 Gᴇɴʀᴇ : {genres}
 🎖 Nᴏᴛᴀᴛɪᴏɴ : <a href={url}/ratings>{rating}</a> / 10
-📆 Aɴɴᴇ́ᴇ : {release_date}
-
-©{message.chat.title}</b>
-"""
+📆 Aɴɴᴇ́ᴇ : {release_date}</b>"""
 
     CUSTOM_FILE_CAPTION = """<b>📂 Nom du fıchıer : {file_name}
     🟢<a href=https://t.me/Sharing_Club><b>Vσs ƞσʋνeɑʋtés</b></a>🟢
