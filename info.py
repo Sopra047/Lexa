@@ -101,7 +101,7 @@ AI = is_enabled((environ.get("AI","True")), True)
 OPENAI_API = environ.get("OPENAI_API","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")
 GOOGLE_API_KEY = os.environ.get('API_KEY', 'AIzaSyAtTHpvXSKFAkOTJ6e161w2lOfhAgEEod4') # give your Google api key
 AI_LOGS = int(environ.get("AI_LOGS","-1002139339008")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/TestDek')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/VisionsT')
 
 
 #Auto approve
@@ -114,8 +114,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/TestDek")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/SharVision_Support")
+S_GROUP = environ.get('S_GROUP',"https://t.me/VisionsT")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/SharVision")
 #Must change this link to work redirect (FILE_FORWORD)
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+-he3Hfab_xgzMTdk")
 MSG_ALRT = environ.get('MSG_ALRT', 'Vᥱ́rιfιᥱr ᥱt ᥱssᥲყᥱr toᥙtᥱs mᥱs foᥒᥴtιoᥒᥒᥲᥣιtᥱ́s')
