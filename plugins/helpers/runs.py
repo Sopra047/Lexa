@@ -31,7 +31,8 @@ RUN_STRINGS = (
      "Le pire ennemi du marin, ce n'est pas la tempête qui fait rage ; ce n'est pas la vague écumante qui s'abat sur le pont, emportant tout sur son passage ; ce n'est pas le récif perfide caché à fleur d'eau et qui déchire le flanc du navire ; le pire ennemi du marin, c'est l'alcool ! Hergé",
      "Agis avec gentillesse, mais n'attends pas de la reconnaissance. Confucius",
      "Les gens faibles se vengent. Les gens forts pardonnent. Les gens intelligents ignorent. Albert Einstein",
-     "Il faudrait essayer d'être heureux, ne serait-ce que pour donner l'exemple. Jacques Prévert", 
+     "Il faudrait essayer d'être heureux, ne serait-ce que pour donner l'exemple. Jacques Prévert",
+     "Le courage n'est pas l'absence de peur, mais la capacité de vaincre ce qui fait peur. Nelson Mandela",
 )
 
 
