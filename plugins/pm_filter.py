@@ -817,7 +817,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )                    
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton(' 👨‍👩‍👦‍👦 — 𝐑𝐞𝐣𝐨𝐢𝐠𝐧𝐞𝐳-𝐍𝐨𝐮𝐬 — 👨‍👩‍👦‍👦 ', url=f'https://t.me/SharVision')
+            InlineKeyboardButton(' 👨‍👩‍👦‍👦 — 𝐑𝐞𝐣𝐨𝐢𝐠𝐧𝐞𝐳-𝐍𝐨𝐮𝐬 — 👨‍👩‍👦‍👦 ', url=f'https://t.me/Shar_Group')
                   ],[
                     InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/Katnices'),
                     InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/Belle_Alice')
@@ -885,7 +885,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "spc":
         buttons = [[
-            InlineKeyboardButton('Log', url="https://t.me/SharVision"),
+            InlineKeyboardButton('Log', url="https://t.me/Shar_Group"),
             ], [
                 InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ’ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
                 InlineKeyboardButton('👥 Gɾσʋpe Visiσɳ', url='https://t.me/VisionsT'),
