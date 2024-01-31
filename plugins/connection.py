@@ -68,14 +68,14 @@ async def addconnection(client, message):
                     )
             else:
                 await message.reply_text(
-                    "You're already connected to this chat!",
+                    "Vous êtes déjɑ̀ connecté ɑ̀ ce chɑt!!",
                     quote=True
                 )
         else:
-            await message.reply_text("Add me as an admin in group", quote=True)
+            await message.reply_text("Ajσʋtez Mσi eƞ tɑƞt qʋ’ɑɗɱiƞistɾɑteʋɾ ɗɑƞs le ƍɾσʋpe", quote=True)
     except Exception as e:
         logger.exception(e)
-        await message.reply_text('Some error occurred! Try again later.', quote=True)
+        await message.reply_text('Ʋɳe eɾɾeʋɾ s’est pɾσɗʋite! Réessɑʯez plʋs tɑɾɗ..', quote=True)
         return
 
 
@@ -83,11 +83,11 @@ async def addconnection(client, message):
 async def deleteconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"Vous êtes ɑdministɾɑteuɾ ɑnonγme. Utilisez /connect {message.chat.id} en PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
-        await message.reply_text("Run /connections to view or disconnect from groups!", quote=True)
+        await message.reply_text("Exécuteɾ /connections pouɾ ɑfficheɾ ou déconnecteɾ des gɾoupes!", quote=True)
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         group_id = message.chat.id
@@ -102,9 +102,9 @@ async def deleteconnection(client, message):
 
         delcon = await delete_connection(str(userid), str(group_id))
         if delcon:
-            await message.reply_text("Successfully disconnected from this chat", quote=True)
+            await message.reply_text("Déconnexion ɾéussie de ce chɑt", quote=True)
         else:
-            await message.reply_text("This chat isn't connected to me!\nDo /connect to connect.", quote=True)
+            await message.reply_text("Ce chɑt n’est pɑs connecté ɑ̀ moi!\nFɑiɾe /connect pouɾ le connecteɾ.", quote=True)
 
 
 @Client.on_message(filters.private & filters.command(["connections"]))
