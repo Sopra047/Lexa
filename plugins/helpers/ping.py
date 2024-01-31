@@ -8,7 +8,7 @@ from info import COMMAND_HAND_LER
 from plugins.helper_functions.cust_p_filters import f_onw_fliter
 
 # -- Constants -- #
-ALIVE = "<b>Pɑs moɾt mɑis toujouɾs lɑ̀. Meɾci de pɾendɾe de mes nouvelles. j'ɑi beɑucoup d'ɑffection pouɾ ceux qui demɑnde d'ɑpɾès moi. Bisous😘😘</b>" 
+ALIVE = "<b>Pɑs moɾt mɑis toujouɾs lɑ̀. Meɾci de pɾendɾe de mes nouvelles. j'ɑi beɑucoup d'ɑffection pouɾ ceux qui demɑnde d'ɑpɾès moi. Bisous😘😘 /start</b>" 
 # -- Constants End -- #
 
 
