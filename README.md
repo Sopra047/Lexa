@@ -1,11 +1,3 @@
-<p align="center">
-  <im<p align="center">
-   <img src="https://telegra.ph/file/91b93e3df64d237df5643.jpg" alt="NARUTO">
-
-  <img src="https://img.shields.io/badge/ʙᴏᴛ-red?logo=telegram" width="80">
- 
-  ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝑊𝑒𝑙𝑐𝑜𝑚𝑒+𝑇𝑜+MRZ-BOTZ-Bot;𝐴+𝑠𝑖𝑚𝑝𝑙𝑒+𝑎𝑛𝑑+𝑝𝑜𝑤𝑒𝑟𝑓𝑢𝑙+𝐵𝑜𝑡!;𝐼𝑛𝑑𝑒𝑥𝑒𝑠+𝐹𝑖𝑙𝑒𝑠+𝑎𝑏𝑜𝑣𝑒+2𝐺𝐵;𝐴+𝐵𝑜𝑡+𝑤𝑖𝑡ℎ+𝑑𝑜𝑢𝑏𝑙𝑒+𝑏𝑢𝑡𝑡𝑜𝑛!;𝑆𝑡𝑎𝑟𝑡+𝑚𝑒𝑠𝑠𝑎𝑔𝑒+𝑤𝑖𝑡ℎ+𝑝𝑖𝑐!;𝐴𝑛𝑑+𝑚𝑜𝑟𝑒+𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠!)
-</p>
 <b>All this codes are created by our developers
 
 
@@ -24,17 +16,6 @@
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
 * `FILE_FORWARD` : File redirect to channel telegram channel link eg: https://t.me/**************
 * `DELETE_CHANNELS` : you can delete multiple files by forwarding those files into a private channel. Firstly make a private channel, add your bot as admin, add that channel's ID as a variable named DELETE_CHANNELS and forward the files to that private channel and the bot will delete those files from its database. You can check logs to confirm whether the file is deleted from the bot's database or not.
-
-
-## Deploy
-You can deploy this bot anywhere.
-
-
-<details><summary>Deploy To Heroku</summary>
-<br>
-<p>
-<a href="https://heroku.com/deploy?template=https://github.com/Naruto46i/NARUTO-AUTO-FILTER-V-1">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 
 ## Commands
 
