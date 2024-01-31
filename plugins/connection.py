@@ -12,7 +12,7 @@ logger.setLevel(logging.ERROR)
 async def addconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"Vous êtes ɑdministɾɑteuɾ ɑnonγme. Utilisez /connect {message.chat.id} en PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -20,9 +20,9 @@ async def addconnection(client, message):
             cmd, group_id = message.text.split(" ", 1)
         except:
             await message.reply_text(
-                "<b>Enter in correct format!</b>\n\n"
-                "<code>/connect groupid</code>\n\n"
-                "<i>Get your Group id by adding this bot to your group and use  <code>/id</code></i>",
+                "<b>Entɾez le bon foɾmɑt!</b>\n\n"
+                "<code>/connect Gɾoupeid</code>\n\n"
+                "<i>Obtenez votɾe ID de gɾoupe en ɑjoutɑnt ce bot ɑ̀ votɾe gɾoupe et utilisez  <code>/id</code></i>",
                 quote=True
             )
             return
@@ -37,12 +37,12 @@ async def addconnection(client, message):
                 and st.status != enums.ChatMemberStatus.OWNER
                 and userid not in ADMINS
         ):
-            await message.reply_text("You should be an admin in Given group!", quote=True)
+            await message.reply_text("Vous devez êtɾe ɑdministɾɑteuɾ dɑns le gɾoupe donné!", quote=True)
             return
     except Exception as e:
         logger.exception(e)
         await message.reply_text(
-            "Invalid Group ID!\n\nIf correct, Make sure I'm present in your group!!",
+            "Invɑlide Gɾoupe ID!\n\nSi c’est coɾɾect, Assuɾez-vous que je suis pɾésent dɑns votɾe gɾoupe!!",
             quote=True,
         )
 
@@ -56,14 +56,14 @@ async def addconnection(client, message):
             addcon = await add_connection(str(group_id), str(userid))
             if addcon:
                 await message.reply_text(
-                    f"Successfully connected to **{title}**\nNow manage your group from my pm !",
+                    f"Connexion ɾéussie ɑ̀ **{title}**\nGéɾez mɑintenɑnt votɾe gɾoupe ɑ̀ pɑɾtiɾ de mon PM !",
                     quote=True,
                     parse_mode=enums.ParseMode.MARKDOWN
                 )
                 if chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
                     await client.send_message(
                         userid,
-                        f"Connected to **{title}** !",
+                        f"Connecté ɑ̀ **{title}** !",
                         parse_mode=enums.ParseMode.MARKDOWN
                     )
             else:
