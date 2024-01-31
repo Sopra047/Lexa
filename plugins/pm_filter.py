@@ -913,7 +913,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('🔮 Stɑtistique', callback_data='stats'),
-            InlineKeyboardButton('🔎 Ᏼꭼꮮꮮꭼ Ꭺꮮꮖꮯꭼ', url='https://t.me/Belalicebot')
+            InlineKeyboardButton('🔎 Recɦeɾcɦe', switch_inline_query_current_chat='')
         ], [
             InlineKeyboardButton('🧑‍💻 ɪηғᴏ ɗєᴠ', callback_data='source'),
             InlineKeyboardButton('💝 𝖥𝖺𝗂𝗋𝖾 𝗎𝗇 𝖣𝗈𝗇 💝', callback_data='manuelfilter')
