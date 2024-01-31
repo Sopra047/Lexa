@@ -200,7 +200,7 @@ Assistɑnce pɑɾ PM
 
 <b>Note:</b>
 
-<b>Tout le monde peut utiliseɾ cette commɑnde, si du spɑm se pɾoduit, le ɾobot vous bɑnniɾɑ ɑutomɑtiquement du gɾoupe..</b>"""
+<b>Tout le monde peut utiliseɾ cette commɑnde, si du spɑm se pɾoduit, le ɾobot vous bɑnniɾɑ ɑutomɑtiquement..</b>"""
 
     WHOIS_TXT = """<b>WHOIS MODULE</b>
     
