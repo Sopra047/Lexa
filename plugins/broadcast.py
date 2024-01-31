@@ -46,7 +46,7 @@ async def grp_brodcst(bot, message):
     chats = await db.get_all_chats()
     b_msg = message.reply_to_message
     sts = await message.reply_text(
-        text='Broadcasting your messages...'
+        text='Diffusion en cours:...'
     )
     start_time = time.time()
     total_chats = await db.total_chat_count()
@@ -68,6 +68,6 @@ async def grp_brodcst(bot, message):
         done += 1
         await asyncio.sleep(2)
         if not done % 20:
-            await sts.edit(f"Diffusion en cours:\n\nTotal Chats {total_chats}\nCompleted: {done} / {total_chats}\nSuccess: {success}\nFailed: {failed}")    
+            await sts.edit(f"Diffusion en cours:\n\nTotal Chats {total_chats}\nComplète: {done} / {total_chats}\nSuccès: {success}\nÉchoué: {failed}")    
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
-    await sts.edit(f"Broadcast Completed:\nCompleted in {time_taken} seconds.\n\nTotal Chats {total_chats}\nCompleted: {done} / {total_chats}\nSuccess: {success}\nFailed: {failed}")
+    await sts.edit(f"Diffusion teɾminée:\nTeɾminé en {time_taken} secondes.\n\nTotal Chats {total_chats}\nComplète: {done} / {total_chats}\nSuccès: {success}\nÉchoué: {failed}")
