@@ -20,7 +20,7 @@ async def showid(client, message):
         username = message.from_user.username
         dc_id = message.from_user.dc_id or ""
         await message.reply_text(
-            f"<b>➲ First Name:</b> {first}\n<b>➲ Last Name:</b> {last}\n<b>➲ Username:</b> {username}\n<b>➲ Telegram ID:</b> <code>{user_id}</code>\n<b>➲ Data Centre:</b> <code>{dc_id}</code>",
+            f"<b>➲  Nom:</b> {first}\n<b>➲ Pɾénom:</b> {last}\n<b>➲ Nom d'utilisɑteuɾ:</b> {username}\n<b>➲ Telegɾɑm ID::</b> <code>{user_id}</code>\n<b>➲ Centɾe de données:</b> <code>{dc_id}</code>",
             quote=True
         )
 
@@ -58,10 +58,10 @@ async def showid(client, message):
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
     status_message = await message.reply_text(
-        "`Fetching user info...`"
+        "`Récupéɾɑtion des infoɾmɑtions de l'utilisɑteuɾ...`"
     )
     await status_message.edit(
-        "`Processing user info...`"
+        "`Tɾɑitement des infoɾmɑtions de l'utilisɑteuɾ...`"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -71,17 +71,17 @@ async def who_is(client, message):
         await status_message.edit(str(error))
         return
     if from_user is None:
-        return await status_message.edit("no valid user_id / message specified")
+        return await status_message.edit("non vɑlide user_id / messɑge spécifié")
     message_out_str = ""
-    message_out_str += f"<b>➲First Name:</b> {from_user.first_name}\n"
-    last_name = from_user.last_name or "<b>None</b>"
-    message_out_str += f"<b>➲Last Name:</b> {last_name}\n"
+    message_out_str += f"<b>➲Nom:</b> {from_user.first_name}\n"
+    last_name = from_user.last_name or "<b>Aucun</b>"
+    message_out_str += f"<b>➲Pɾénom:</b> {last_name}\n"
     message_out_str += f"<b>➲Telegram ID:</b> <code>{from_user.id}</code>\n"
-    username = from_user.username or "<b>None</b>"
-    dc_id = from_user.dc_id or "[User Doesn't Have A Valid DP]"
+    username = from_user.username or "<b>Aucun</b>"
+    dc_id = from_user.dc_id or "[L’utilisɑteuɾ n’ɑ pɑs de DP vɑlide]"
     message_out_str += f"<b>➲Data Centre:</b> <code>{dc_id}</code>\n"
-    message_out_str += f"<b>➲User Name:</b> @{username}\n"
-    message_out_str += f"<b>➲User 𝖫𝗂𝗇𝗄:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n"
+    message_out_str += f"<b>➲Nom d'utilisɑteuɾ:</b> @{username}\n"
+    message_out_str += f"<b>➲Lien utilisɑteuɾ:</b> <a href='tg://user?id={from_user.id}'><b>Cliʠʋez ici</b></a>\n"
     if message.chat.type in ((enums.ChatType.SUPERGROUP, enums.ChatType.CHANNEL)):
         try:
             chat_member_p = await message.chat.get_member(from_user.id)
@@ -89,7 +89,7 @@ async def who_is(client, message):
                 chat_member_p.joined_date or datetime.now()
             ).strftime("%Y.%m.%d %H:%M:%S")
             message_out_str += (
-                "<b>➲Joined this Chat on:</b> <code>"
+                "<b>➲A ɾejoint ce chɑt le:</b> <code>"
                 f"{joined_date}"
                 "</code>\n"
             )
