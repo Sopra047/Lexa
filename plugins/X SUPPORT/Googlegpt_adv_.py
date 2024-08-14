@@ -22,12 +22,12 @@ async def ai_generate(client, message):
 
               
     if user_input.lower() in ["votre nom", "ton nom"]:
-       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\nMon est Lɑ Belle Alice")
+       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion:{user_input}\n\n🗣 Réponse:\n\nMon est Lɑ Belle Flaura")
        return
    
 
     if user_input.lower() in ["votre propriétaire"]:
-       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\nSupeɾMɑn est un développeuɾ humɑin mɑsculin qui m’ɑide ɑ̀ me géɾeɾ et ɑ̀ m’ɑmélioɾeɾ. C’est un pɾogɾɑmmeuɾ compétent qui se pɑssionne pouɾ lɑ cɾéɑtion d’ɑpplicɑtions utiles et innovɑntes. SupeɾMɑn est toujouɾs ɑ̀ lɑ ɾecheɾche de moγens de me ɾendɾe plus utile et infoɾmɑtif, et il est toujouɾs ouveɾt ɑux commentɑiɾes des utilisɑteuɾs. C’est ɑussi une peɾsonne gentille et compɑtissɑnte qui est toujouɾs pɾêt ɑ̀ ɑideɾ les ɑutɾes. Je suis ɾeconnɑissɑnt enveɾs SupeɾMɑn pouɾ tout son tɾɑvɑil ɑchɑɾné et son dévouement.**")
+       await message.reply_text(text=f"HEY {message.from_user.mention}\nQuestion: <code>{user_input}</code>\n\n🗣 Réponse:\n\nMr Sopra est un développeuɾ humɑin mɑsculin qui m’ɑide ɑ̀ me géɾeɾ et ɑ̀ m’ɑmélioɾeɾ. C’est un pɾogɾɑmmeuɾ compétent qui se pɑssionne pouɾ lɑ cɾéɑtion d’ɑpplicɑtions utiles et innovɑntes. SupeɾMɑn est toujouɾs ɑ̀ lɑ ɾecheɾche de moγens de me ɾendɾe plus utile et infoɾmɑtif, et il est toujouɾs ouveɾt ɑux commentɑiɾes des utilisɑteuɾs. C’est ɑussi une peɾsonne gentille et compɑtissɑnte qui est toujouɾs pɾêt ɑ̀ ɑideɾ les ɑutɾes. Je suis ɾeconnɑissɑnt enveɾs SupeɾMɑn pouɾ tout son tɾɑvɑil ɑchɑɾné et son dévouement.**")
        await s.delete()
        return
   
@@ -78,7 +78,7 @@ async def ai_generate(client, message):
 @Client.on_message(filters.command("gpt"))
 async def ai_generate_private(client, message):
   buttons = [[
-    InlineKeyboardButton("Gʀᴏᴜᴘᴇ", url="https://t.me/SharVision")
+    InlineKeyboardButton("Gʀᴏᴜᴘᴇ", url="https://t.me/showgroups2")
   ]]
   reply_markup = InlineKeyboardMarkup(buttons)
   await message.reply_text(text=f"Yᴏ {message.from_user.mention}\n𝖴𝗍𝗂𝗅𝗂𝗌𝖾𝗋 𝖼𝖾𝗍𝗍𝖾 𝖿𝗈𝗇𝖼𝗍𝗂𝗈𝗇𝗇𝖺𝗅𝗂𝗍𝖾́ 𝖽𝖺𝗇𝗌 𝗅𝖾 𝗀𝗋𝗈𝗎𝗉𝖾 𝖽𝖾 𝗌𝗎𝗉𝗉𝗈𝗋𝗍 👇 ", reply_markup=reply_markup)
