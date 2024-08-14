@@ -2,14 +2,14 @@ class script(object):
     START_TXT = """Sᴀʟᴜᴛ🖐  {},
 Mᴏɴ Nᴏᴍ ᴇsᴛ <a href=https://t.me/{}>{}</a>, Jᴇ ᴘᴇᴜx ᴛᴇ ғᴏᴜʀɴɪʀ ᴅᴇs ғɪʟᴍs ᴇᴛ ᴅᴇs sᴇ́ʀɪᴇs﹐ ɪʟ sᴜғғɪᴛ ᴊᴜsᴛᴇ ᴅᴇ ʀᴇᴊᴏɪɴᴅʀᴇ ᴍᴇs ᴄᴀɴᴀᴜx ᴇᴛ ᴅᴇ ᴘʀᴏғɪᴛᴇʀ 😍"""
     HELP_TXT = """ {}
-Je ѕυιѕ la Belle Alice de Sнαrιɴɢ Clυв!
+Je ѕυιѕ la Belle Flaura de FILMS SERIES SHOW!
 ✯ Retɾouvez ɑ̀ tɾɑveɾs ce menu quelques-unes de mes nouvelles compétences.
-✯ P.S : Rejσiƍƞez <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞelle</b></a> 🥰"""
+✯ P.S : Rejσiƍƞez <a href=https://t.me/belleflaura2><b>Belle Flaura</b></a> 🥰"""
 
     # ⚠️ Please don't change our credits 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 & 𝙳𝙴𝚅 👇🏻
 
     ABOUT_TXT = """
-╭───[<b>🔅Ꮪꮋꭺꭱꮖɴꮐ Ꮯꮮꮜᏼ🔅</b>]────⍟
+╭───[<b>🔅FILM SHOW🔅</b>]────⍟
 │
 ├🔸🤖 Moɴ ɴoм: Mιѕѕ {}
 │
@@ -17,19 +17,19 @@ Je ѕυιѕ la Belle Alice de Sнαrιɴɢ Clυв!
 │
 ├🔹📚 Bιвlιoтнèqυe: <a href=https://docs.pyrogram.org><b>Pчrogrαm</b></a>
 │
-├🔹📡 Héвerɢé ѕυr: <a href=https://t.me/Belle_Alice><b>ƁєƖƖє AƖιcє</b></a>
+├🔹📡 Héвerɢé ѕυr: <a href=https://t.me/belleflaura2><b>ƁєƖƖє Flaura</b></a>
 │
-├🔸👨‍💻 Développeυr: <a href=https://t.me/SharingClub_bot><b>Sʋpeɾ Mɑƞ</b></a> 
+├🔸👨‍💻 Développeυr: <a href=https://t.me/soprasoppy><b>MR SOPRA</b></a> 
 │
-├🔹👥 Groυpe d'αιde: <a href=https://t.me/Shar_Group><b>Sʋppσɾt</b></a> 
+├🔹👥 Groυpe d'αιde: <a href=https://t.me/showgroup><b>Sʋppσɾt</b></a> 
 │
-├🔸🔔 Mα Cнαι̂ɴe: <a href=https://t.me/Katnices><b>Kɑtƞice Cɦɑƞƞel</b></a>
+├🔸🔔 Mα Cнαι̂ɴe: <a href=https://t.me/seriesnetflixshoww><b>NETFLIX FILMS SHOW</b></a>
 │
 ╰─────────[ 😎 ]────────⍟ """
 
     SOURCE_TXT = """<b>Cɾéɑteʋɾ</b> 
-🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴘᴇᴜʀ: <a href=https://t.me/SharingClub_bot><b>🦸‍Sʋpeɾ Mɑƞ</b></a>
-       Quı est Super mαn 🎖?
+🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴘᴇᴜʀ: <a href=https://t.me/soprasoppy><b>🦸MR SOPRA</b></a>
+       Quı est Mr sopra 🎖?
 •¬Je suıs sourıαnt et j’αıme le contαct αvec les gens, comme un commercıαl.
 •¬Je suıs sчmpαthıque mαıs je peux αussı être désαgréαble.
 •¬Je suıs tımıde αvec les femmes, mαıs quαnd je suıs lαncé, je vαıs jusqu’αu bout. 
@@ -48,7 +48,7 @@ Je ѕυιѕ la Belle Alice de Sнαrιɴɢ Clυв!
 
 « Fɑire un don ❤️‍🩹 est une fɑçon de tendre une mɑin secourɑble. 
 
-En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort visɑnt ɑ̀  mɑintenir les cɑnɑux Shɑring Club, lɑ Belle Alice et Kɑtnice en vie.
+En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort visɑnt ɑ̀  mɑintenir les cɑnɑux FILM SHOW, lɑ Belle Flaura en vie.
 
 🤲 Merci de Contribuer ɑ̀ l'hébergement et ɑux frɑis d'ɑbonnement indispensɑbles pour lɑ survie de notre communɑuté. »
 
@@ -60,10 +60,10 @@ En fɑisɑnt même un petit don💞, vous pouvez pɑrticiper ɑ̀ un effort vis
 
 <b>NOTE:</b>
 1. Telegram ne vous permettra pas d’envoyer des boutons sans aucun contenu.
-2. Ꮮꭺ Ᏼꭼꮮꮮꭼ Ꭺꮮꮖꮯꭼ prend en charge les boutons avec n’importe quel type de média de télégramme.
+2. Ꮮꭺ Ᏼꭼꮮꮮꭼ Flaura prend en charge les boutons avec n’importe quel type de média de télégramme.
 
 <b>URL Buttons:</b>
-<code>Bᴇʟʟᴇ Aʟɪᴄᴇ votre meilleure amie 😘</code>
+<code>Bᴇʟʟᴇ Flaura votre meilleure amie 😘</code>
 
 <b>Boutons d'alerte:</b>
 <code>Un petit secret🤫 : Je suis la soeur de Katnice</code>"""
@@ -94,7 +94,7 @@ À vous le plɑisiɾ de les liɾe, de s'en souveniɾ et d'utiliseɾ ces belles 
 
     EXTRAMOD_TXT = """ <b>𝖡𝗂𝖾𝗇𝗍𝗈̂𝗍 𝖽𝗂𝗌𝗉𝗈𝗇𝗂𝖻𝗅𝖾...</b>
 
-𝖤́𝖼𝗁𝖺𝗇𝗀𝖾𝗓 𝖽𝗂𝗋𝖾𝖼𝗍𝖾𝗆𝖾𝗇𝗍 𝖺𝗏𝖾𝖼 𝖲𝗎𝗉𝖾𝗋 𝖬𝖺𝗇, 𝗅’𝗎𝗇𝗂𝗊𝗎𝖾 𝖼𝗋𝖾́𝖺𝗍𝖾𝗎𝗋 𝖽𝖾 𝖲𝗁𝖺𝗋𝗂𝗇𝗀 𝖢𝗅𝗎𝖻 𝖾𝗍 𝖽𝖾 𝖼𝖾𝗌 𝖻𝗈𝗍𝗌."""
+𝖤́𝖼𝗁𝖺𝗇𝗀𝖾𝗓 𝖽𝗂𝗋𝖾𝖼𝗍𝖾𝗆𝖾𝗇𝗍 𝖺𝗏𝖾𝖼 Mr Sopra, 𝗅’𝗎𝗇𝗂𝗊𝗎𝖾 𝖼𝗋𝖾́𝖺𝗍𝖾𝗎𝗋 𝖽𝖾 FILM SHOW 𝖾𝗍 𝖽𝖾 𝖼𝖾𝗌 𝖻𝗈𝗍𝗌."""
 
     SONG_TXT = """<b>Tᴇ́ʟᴇ́ᴄʜᴀʀɢᴇᴍᴇɴᴛ ᴅᴇ ᴄʜᴀɴsᴏɴs</b>
 
@@ -301,7 +301,7 @@ Mon nom est  <a href=https://t.me/{}>{}</a>, Je peux te fouɾniɾ des films et s
 📆 Aɴɴᴇ́ᴇ : {release_date}</b>"""
 
     CUSTOM_FILE_CAPTION = """<b>📂 Nom du fıchıer : {file_name}
-    🟢<a href=https://t.me/Sharing_Club><b>Vσs ƞσʋνeɑʋtés</b></a>🟢
+    🟢<a href=https://t.me/belleflaura2><b>Vσs ƞσʋνeɑʋtés</b></a>🟢
 </b>"""
 
     RESTART_TXT = """
