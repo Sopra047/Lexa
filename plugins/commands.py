@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 𝐍𝐨𝐮𝐯𝐞𝐥𝐥𝐞𝐬 🤖', url="https://t.me/Belle_Alice")
+                InlineKeyboardButton('🤖 𝐍𝐨𝐮𝐯𝐞𝐥𝐥𝐞𝐬 🤖', url="https://t.me/belleflaura2")
             ],
             [
                 InlineKeyboardButton('📚 Aiɗes', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,10 +42,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton(' 👨‍👩‍👦‍👦 — 𝐑𝐞𝐣𝐨𝐢𝐠𝐧𝐞𝐳-𝐍𝐨𝐮𝐬 — 👨‍👩‍👦‍👦 ', url=f'https://t.me/Shar_Group')
+            InlineKeyboardButton(' 👨‍👩‍👦‍👦 — 𝐑𝐞𝐣𝐨𝐢𝐠𝐧𝐞𝐳-𝐍𝐨𝐮𝐬 — 👨‍👩‍👦‍👦 ', url=f'https://t.me/showgroups2')
                   ],[
-                    InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/Katnices'),
-                    InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/Belle_Alice')
+                    InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/belleflaura2'),
+                    InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/seriesnetflixshoww')
                   ],[
                     InlineKeyboardButton('📚 Aiɗes', callback_data="spu"),
                     InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about'),
