@@ -118,7 +118,7 @@ async def pm_text(bot, message):
     await message.reply_text("<b>Votɾe messɑge ɑ été envoγé ɑ̀ mon modéɾɑteuɾ !</b>",
                              reply_markup=InlineKeyboardMarkup(
                                  [[
-                                     InlineKeyboardButton('📍 Lᴇ ғɪʟᴍ ᴇsᴛ ɪᴄɪ 📍', url='https://t.me/Group_SharClub')
+                                     InlineKeyboardButton('📍 Lᴇ ғɪʟᴍ ᴇsᴛ ɪᴄɪ 📍', url='https://t.me/seriesnetflixshoww')
                                  ]]
                              )
                              )
@@ -208,12 +208,12 @@ async def next_page(bot, query):
             ]
     btn.insert(0,
                [
-                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴs ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/Group_SharClub'),
+                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴs ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/cinenetflixshow'),
                ]
                )
     btn.insert(1,
                [
-                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', url='https://t.me/Sharing_Club'),
+                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', url='https://t.me/filmsserieshoww'),
                    InlineKeyboardButton("🌐 Lᴀɴɢᴜᴇs 🌏", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
                ]
               )
@@ -792,22 +792,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "reqinfo":
         await query.answer(
-            "⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nAprès 10 minutes, ce messɑge serɑ ɑutomɑtiquement supprimé\n\nSi vous ne voyez pɑs le fichier de film / série demɑndé, regɑrdez lɑ pɑge suivɑnte\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @Sharing_Club",
+            "⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nAprès 10 minutes, ce messɑge serɑ ɑutomɑtiquement supprimé\n\nSi vous ne voyez pɑs le fichier de film / série demɑndé, regɑrdez lɑ pɑge suivɑnte\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @showgroup",
             show_alert=True)
 
     elif query.data == "minfo":
         await query.answer(
-            "⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nFᴏʀᴍᴀᴛ ᴅᴇ ᴅᴇᴍᴀɴᴅᴇ ᴅᴇ ғɪʟᴍ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nAʟʟᴇᴢ sᴜʀ Gᴏᴏɢʟᴇ ➠ Tᴀᴘᴇᴢ ʟᴇ ɴᴏᴍ ᴅᴜ ғɪʟᴍ ➠ Cᴏᴘɪᴇᴢ ʟᴇ ɴᴏᴍ ᴄᴏʀʀᴇᴄᴛ ➠ Cᴏʟʟᴇᴢ ᴅᴀɴs ᴄᴇ Gʀᴏᴜᴘᴇ\n\nExemple : Avɑtɑr\n\n🚯 N’utiliser pɑs ➠ ':(!,./)\n\n @Sharing_Club",
+            "⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nFᴏʀᴍᴀᴛ ᴅᴇ ᴅᴇᴍᴀɴᴅᴇ ᴅᴇ ғɪʟᴍ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nAʟʟᴇᴢ sᴜʀ Gᴏᴏɢʟᴇ ➠ Tᴀᴘᴇᴢ ʟᴇ ɴᴏᴍ ᴅᴜ ғɪʟᴍ ➠ Cᴏᴘɪᴇᴢ ʟᴇ ɴᴏᴍ ᴄᴏʀʀᴇᴄᴛ ➠ Cᴏʟʟᴇᴢ ᴅᴀɴs ᴄᴇ Gʀᴏᴜᴘᴇ\n\nExemple : Avɑtɑr\n\n🚯 N’utiliser pɑs ➠ ':(!,./)\n\n @showgroup",
             show_alert=True)
 
     elif query.data == "sinfo":
         await query.answer(
-            "⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nFᴏʀᴍᴀᴛ ᴅᴇ ᴅᴇᴍᴀɴᴅᴇ sᴇ́ʀɪᴇ \n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nAʟʟᴇᴢ sᴜʀ Gᴏᴏɢʟᴇ ➠ Tᴀᴘᴇᴢ ʟᴇ ɴᴏᴍ ᴅᴇ sᴇ́ʀɪᴇ ➠ Cᴏᴘɪᴇᴢ ʟᴇ ɴᴏᴍ ᴄᴏʀʀᴇᴄᴛ ➠ Cᴏʟʟᴇᴢ ᴅᴀɴs ᴄᴇ Gʀᴏᴜᴘᴇ\n\nExemple : Arrow S01\n\n🚯 N’utiliser pɑs ➠ ':(!,./)\n\n @Sharing_Club",
+            "⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nFᴏʀᴍᴀᴛ ᴅᴇ ᴅᴇᴍᴀɴᴅᴇ sᴇ́ʀɪᴇ \n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nAʟʟᴇᴢ sᴜʀ Gᴏᴏɢʟᴇ ➠ Tᴀᴘᴇᴢ ʟᴇ ɴᴏᴍ ᴅᴇ sᴇ́ʀɪᴇ ➠ Cᴏᴘɪᴇᴢ ʟᴇ ɴᴏᴍ ᴄᴏʀʀᴇᴄᴛ ➠ Cᴏʟʟᴇᴢ ᴅᴀɴs ᴄᴇ Gʀᴏᴜᴘᴇ\n\nExemple : Arrow S01\n\n🚯 N’utiliser pɑs ➠ ':(!,./)\n\n @showgroup",
             show_alert=True)
 
     elif query.data == "tinfo":
         await query.answer(
-            "▣Iɴғᴏ▣\n\n★ Tᥲρᥱz ᥣ’orthogrᥲρhᥱ ᥴorrᥱᥴtᥱ (ɢᴏᴏɢʟᴇ)\n\n★ Sι voᥙs ᥒ’obtᥱᥒᥱz ρᥲs votrᥱ fιᥴhιᥱr dᥲᥒs ᥣᥲ ρᥲgᥱ, ᥣ’ᥱ́tᥲρᥱ sᥙιvᥲᥒtᥱ ᥴoᥒsιstᥱ ᥲ̀ ᥴᥣιqᥙᥱr sᥙr ᥣᥱ boᥙtoᥒ sᥙιvᥲᥒt.\n\n★ Coᥒtιᥒᥙᥱz ᥴᥱttᥱ mᥱ́thodᥱ ρoᥙr obtᥱᥒιr votrᥱ fιᥴhιᥱr\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @SharClub",
+            "▣Iɴғᴏ▣\n\n★ Tᥲρᥱz ᥣ’orthogrᥲρhᥱ ᥴorrᥱᥴtᥱ (ɢᴏᴏɢʟᴇ)\n\n★ Sι voᥙs ᥒ’obtᥱᥒᥱz ρᥲs votrᥱ fιᥴhιᥱr dᥲᥒs ᥣᥲ ρᥲgᥱ, ᥣ’ᥱ́tᥲρᥱ sᥙιvᥲᥒtᥱ ᥴoᥒsιstᥱ ᥲ̀ ᥴᥣιqᥙᥱr sᥙr ᥣᥱ boᥙtoᥒ sᥙιvᥲᥒt.\n\n★ Coᥒtιᥒᥙᥱz ᥴᥱttᥱ mᥱ́thodᥱ ρoᥙr obtᥱᥒιr votrᥱ fιᥴhιᥱr\n\n❣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @showgroup",
             show_alert=True)
 
     elif query.data == "fmal":
@@ -817,10 +817,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )                    
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton(' 👨‍👩‍👦‍👦 — 𝐑𝐞𝐣𝐨𝐢𝐠𝐧𝐞𝐳-𝐍𝐨𝐮𝐬 — 👨‍👩‍👦‍👦 ', url=f'https://t.me/Shar_Group')
+            InlineKeyboardButton(' 👨‍👩‍👦‍👦 — 𝐑𝐞𝐣𝐨𝐢𝐠𝐧𝐞𝐳-𝐍𝐨𝐮𝐬 — 👨‍👩‍👦‍👦 ', url=f'https://t.me/showgroup')
                   ],[
-                    InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/Katnices'),
-                    InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/Belle_Alice')
+                    InlineKeyboardButton('👩‍🦰 ᴍᴀ ᴄᴏᴘɪɴᴇ', url='https://t.me/belleflaura2'),
+                    InlineKeyboardButton('👩‍🎤 ᴍᴏɴ ᴄᴀɴᴀʟ 👩‍🎤', url='https://t.me/seriesnetflixshoww')
                   ],[
                     InlineKeyboardButton('📚 Aiɗes', callback_data="spu"),
                     InlineKeyboardButton('📋 Iɴғoѕ', callback_data='about'),
@@ -887,20 +887,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('Log', url="https://t.me/Shar_Group"),
             ], [
-                InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ’ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
-                InlineKeyboardButton('👥 Gɾσʋpe Visiσɳ', url='https://t.me/VisionsT'),
+                InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ’ᴀɪᴅᴇ', url='https://t.me/showgroup'),
+                InlineKeyboardButton('👥 Gɾσʋpe Visiσɳ', url='https://t.me/showgroups2'),
             ], [
-                InlineKeyboardButton('🖼 Pσsteɾs Séɾies', url='https://t.me/Sharliste'),
-                InlineKeyboardButton('🎬 Pσsteɾs Filɱs', url='https://t.me/FilmsListe'),
+                InlineKeyboardButton('🖼 Pσsteɾs Séɾies', url='https://t.me/cinenetflixshow'),
+                InlineKeyboardButton('🎬 Pσsteɾs Filɱs', url='https://t.me/netflixshowww'),
             ], [
-                InlineKeyboardButton('↪️ Vσs Reqʋête Filɱ & Séɾie ↩️', url='https://t.me/Group_SharClub'),    
+                InlineKeyboardButton('↪️ Vσs Reqʋête Filɱ & Séɾie ↩️', url='https://t.me/filmsserieshoww'),    
             ], [
-                InlineKeyboardButton('📺 Pσsteɾs Sɑɠɑ', url='https://t.me/Filmlistes'),
-                InlineKeyboardButton('🗂 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club'),
+                InlineKeyboardButton('📺 Pσsteɾs Sɑɠɑ', url='https://t.me/seriesnetflixshoww'),
+                InlineKeyboardButton('🗂 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/belleflaura2'),
         
             ], [
                 InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
-                InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/SharingClub_bot'),
+                InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/soprasoppy'),
             ], [
                 InlineKeyboardButton('🏠 𝐀𝐜𝐜𝐮𝐞𝐢𝐥', callback_data='start')
         ]]
@@ -934,20 +934,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "spu":
         buttons = [[
-                InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ’ᴀɪᴅᴇ', url='https://t.me/Shar_Group'),
-                InlineKeyboardButton('👥 Gɾσʋpe Visiσɳ', url='https://t.me/VisionsT'),
+                InlineKeyboardButton('👨‍👩‍👦Gʀᴏᴜᴘᴇ ᴅ’ᴀɪᴅᴇ', url='https://t.me/showgroup'),
+                InlineKeyboardButton('👥 Gɾσʋpe Visiσɳ', url='https://t.me/showgroups2'),
             ], [
-                InlineKeyboardButton('🖼 Pσsteɾs Séɾies', url='https://t.me/Sharliste'),
-                InlineKeyboardButton('🎬 Pσsteɾs Filɱs', url='https://t.me/FilmsListe'),
+                InlineKeyboardButton('🖼 Pσsteɾs Séɾies', url='https://t.me/cinenetflixshow'),
+                InlineKeyboardButton('🎬 Pσsteɾs Filɱs', url='https://t.me/netflixshowww'),
             ],  [
-                InlineKeyboardButton('↪️ Vσs Reqʋête Filɱ & Séɾie ↩️', url='https://t.me/Group_SharClub'),    
+                InlineKeyboardButton('↪️ Vσs Reqʋête Filɱ & Séɾie ↩️', url='https://t.me/filmsserieshoww'),    
             ],  [
-                InlineKeyboardButton('📺 Pσsteɾs Sɑɠɑ', url='https://t.me/Filmlistes'),
-                InlineKeyboardButton('🗂 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/Sharing_Club'),
+                InlineKeyboardButton('📺 Pσsteɾs Sɑɠɑ', url='https://t.me/seriesnetflixshoww'),
+                InlineKeyboardButton('🗂 Mєѕ Ƈнαι̂ηєѕ', url='https://t.me/belleflaura2'),
         
             ], [
                 InlineKeyboardButton('🆘 Adмιɴ', callback_data='extra'),
-                InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/SharingClub_bot'),
+                InlineKeyboardButton('📨Cσƞtɑctez-ƞσʋs', url='https://t.me/soprasoppy'),
             ], [
                 InlineKeyboardButton('⏮ RETOUR', callback_data='start')
         ]]
@@ -980,7 +980,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⏮ RETOUR', callback_data='about'),
-            InlineKeyboardButton('💝 Doɴ ❤️‍🩹', url='https://t.me/InfoSharClub')
+            InlineKeyboardButton('💝 Doɴ ❤️‍🩹', url='https://t.me/soprasoppy')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1428,12 +1428,12 @@ async def auto_filter(client, msg, spoll=False):
     key = f"{message.chat.id}-{message.id}"
     btn.insert(0,
                [
-                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴs ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/Group_SharClub'),
+                   InlineKeyboardButton(f'⭕ ʀᴇᴊᴏɪɴs ᴘᴏᴜʀ ᴅᴇ ɴᴏᴜᴠᴇᴀᴜx ғɪʟᴍs ⭕', url='https://t.me/filmsserieshoww'),
                ]
                )
     btn.insert(1,
                [
-                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', url='https://t.me/Sharing_Club'),
+                   InlineKeyboardButton(f'Fɪʟᴍ / Sᴇ́ʀɪᴇ', url='https://t.me/netflixshowww'),
                    InlineKeyboardButton("🌐 Lᴀɴɢᴜᴇs 🌏​", callback_data=f"languages#{search.replace(' ', '_')}#{key}")
                ]
               )
@@ -1492,7 +1492,7 @@ async def auto_filter(client, msg, spoll=False):
                     text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ’ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ’ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ’ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ’ɪᴄɪ...</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [[
-                            InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/Group_SharClub')
+                            InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/showgroups2')
                         ]]
                     )
                 )
@@ -1518,7 +1518,7 @@ async def auto_filter(client, msg, spoll=False):
                     text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Rᴇ́sᴜʟᴛᴀᴛs ᴏɴᴛ ᴇ́ᴛᴇ́s ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ’ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ’ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ’ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ’ɪᴄɪ...</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [[
-                            InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/Group_SharClub')
+                            InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/showgroups2')
                         ]]
                     )
                 )
@@ -1546,7 +1546,7 @@ async def auto_filter(client, msg, spoll=False):
                     text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ’ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ’ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ’ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ’ɪᴄɪ...</b>",
                     reply_markup=InlineKeyboardMarkup(
                         [[
-                            InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/Group_SharClub')
+                            InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/showgroups2')
                         ]]
                     )
                 )
@@ -1572,7 +1572,7 @@ async def auto_filter(client, msg, spoll=False):
                 text=f"<b>HEY {message.from_user.mention}, {str(total_results)} Rᴇ́sᴜʟᴛᴀᴛs ᴛʀᴏᴜᴠᴇ́ ᴅᴀɴs ᴍᴀ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs ᴘᴏᴜʀ ᴠᴏᴛʀᴇ ʀᴇϙᴜᴇ̂ᴛᴇ {search}. Vᴇᴜɪʟʟᴇᴢ ᴜᴛɪʟɪsᴇʀ ʟ·ᴜɴ ᴅᴇ ᴍᴇs Gʀᴏᴜᴘᴇ ᴅᴇ ʀᴇᴄʜᴇʀᴄʜᴇ ᴏᴜ ᴄʀᴇ́ᴇʀ ᴜɴ ɢʀᴏᴜᴘᴇ ᴇᴛ ᴍ·ᴀᴊᴏᴜᴛᴇʀ ᴇɴ ᴛᴀɴᴛ ϙᴜ·ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴇᴜʀ ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇs ғɪᴄʜɪᴇʀs ᴠɪᴅᴇ́ᴏ. Cᴇᴄɪ ᴇsᴛ ᴜɴ ɢʀᴏᴜᴘᴇ ᴅᴇ sᴜᴘᴘᴏʀᴛ. Rᴀɪsᴏɴ ᴘᴏᴜʀ ʟᴀϙᴜᴇʟʟᴇ ᴠᴏᴜs ɴᴇ ᴘᴏᴜʀʀᴇᴢ ᴘᴀs ᴏʙᴛᴇɴɪʀ ᴅᴇ ғɪᴄʜɪᴇʀs ᴅ’ɪᴄɪ...</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [[
-                        InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/Group_SharClub')
+                        InlineKeyboardButton('Dᴇᴍᴀɴᴅᴇᴢ-ɪᴄɪ 🚀', url='https://t.me/showgroups2')
                     ]]
                 )
             )
