@@ -23,7 +23,7 @@ async def index_files(bot, query):
     if raju == 'reject':
         await query.message.delete()
         await bot.send_message(int(from_user),
-                               f'Nᥱ trᥲᥒsfᥱ́rᥱr ρᥣᥙs dᥱ fιᥴhιᥱrs 📂 vᥱᥒᥲᥒt dᥱ {chat} ou de n*ımporte quel répertoıre sous peıne d*être bαnnı.\nMeѕѕαɢe de SυperMαɴ',
+                               f'Nᥱ trᥲᥒsfᥱ́rᥱr ρᥣᥙs dᥱ fιᥴhιᥱrs 📂 vᥱᥒᥲᥒt dᥱ {chat} ou de n*ımporte quel répertoıre sous peıne d*être bαnnı.\nMeѕѕαɢe de Mr sopra',
                                reply_to_message_id=int(lst_msg_id))
         return
 
@@ -68,7 +68,7 @@ async def send_for_index(bot, message):
     try:
         await bot.get_chat(chat_id)
     except ChannelInvalid:
-        return await message.reply('Il peut s’agir d’un canal / groupe privé😔. Faites de moi un administratrice là-bas pour indexer les fichiers.😀\nBesoins de fichiers Contactez VisionTeam Support\n@VisionsT')
+        return await message.reply('Il peut s’agir d’un canal / groupe privé😔. Faites de moi un administratrice là-bas pour indexer les fichiers.😀\nBesoins de fichiers Contactez SHOWGROUP Support\n@showgroup')
     except (UsernameInvalid, UsernameNotModified):
         return await message.reply('Lien spécifié non vɑlide.')
     except Exception as e:
@@ -117,7 +117,7 @@ async def send_for_index(bot, message):
     await bot.send_message(LOG_CHANNEL,
                            f'#IndexRequest\n\nPar : {message.from_user.mention} (<code>{message.from_user.id}</code>)\nChat ID/ Username - <code> {chat_id}</code>\nLast Message ID - <code>{last_msg_id}</code>\nInviteLink - {link}',
                            reply_markup=reply_markup)
-    await message.reply('ᒍᥱ ᥒᥱ ⳽ᥙɩ⳽ ρᥲ⳽ ʋotɾᥱ ρoᥙᑲᥱꙆꙆᥱ 🚮, ❌Evıter ὰ l*αvenır de me trαnsférer des fıchıers 📂.\nFɑite pɑr @SharClub')
+    await message.reply('ᒍᥱ ᥒᥱ ⳽ᥙɩ⳽ ρᥲ⳽ ʋotɾᥱ ρoᥙᑲᥱꙆꙆᥱ 🚮, ❌Evıter ὰ l*αvenır de me trαnsférer des fıchıers 📂.\nFɑite pɑr @seriesnetflixshoww')
 
 
 @Client.on_message(filters.command('setskip') & filters.user(ADMINS))
