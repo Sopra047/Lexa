@@ -27,7 +27,7 @@ async def gen_link_s(bot, message):
         return await message.reply('Contact le créateur @soprasoppy..')
     file_type = replied.media
     if file_type not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
-        return await message.reply("Contact le créateur @SharingClub_bot")
+        return await message.reply("Contact le créateur @soprasoppy")
     if message.has_protected_content and message.chat.id not in ADMINS:
         return await message.reply("okDa")
     file_id, ref = unpack_new_file_id((getattr(replied, file_type.value)).file_id)
@@ -40,10 +40,10 @@ async def gen_link_s(bot, message):
 @Client.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
 async def gen_link_batch(bot, message):
     if " " not in message.text:
-        return await message.reply("Non prise en charge.\nConseil <code>Rejoint @VisionsT pour être assister par SuperMan</code>.")
+        return await message.reply("Non prise en charge.\nConseil <code>Rejoint @showgroup pour être assister par Mr Sopra</code>.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
-        return await message.reply("Non prise en charge.\nConseil <code>Rejoint @VisionsT pour être assister par SuperMan</code>.")
+        return await message.reply("Non prise en charge.\nConseil <code>Rejoint @showgroup pour être assister par Mr Sopra</code>.")
     cmd, first, last = links
     regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
     match = regex.match(first)
