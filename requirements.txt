@@ -1,4 +1,4 @@
-pyrogram>=2.0.30
+pyrotgfork>=2.0.30
 TgCrypto
 uvloop
 lexica-api
