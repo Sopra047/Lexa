@@ -1,6 +1,9 @@
 import logging
 import logging.config
+from pyrogram import utils as pyroutils
 
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
